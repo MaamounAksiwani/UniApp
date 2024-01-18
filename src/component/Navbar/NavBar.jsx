@@ -31,7 +31,7 @@ const NavBar = () => {
                         <a href="#">Find Programs</a>
                         <Link to='/students/'>Students</Link>
                         <a href="#">Study Agents</a>
-                        <Link to='/School/' >School</Link>
+                        <Link to='/schools/' >School</Link>
                         <div className="burger-menu-container">
                             {/* onMouseLeave={handleToggleMenu} */}
                             <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={handleToggleMenu}>

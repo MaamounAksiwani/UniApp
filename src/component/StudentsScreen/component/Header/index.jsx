@@ -1,7 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 const Header = () => {
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
     return (
         <>
             <div className='studentsPage'>
@@ -19,30 +29,33 @@ const Header = () => {
                                 </div>
                             </div>
                             <div>
-                                <div style={{
-                                    margin:'25px 0px',
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    alignItems: "center",
-                                }}>
+                                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave} style={{
+                                        margin: '25px 0px',
+                                        display: "flex",
+                                        justifyContent: "space-between",
+                                        alignItems: "center",
+                                    }}>
                                     <img src='https://uni-app.com/wp-content/uploads/2022/04/plus-light.svg' style={{ width: "100px", height: "50px" }} alt='not found' />
                                     <img
                                         src="https://uni-app.com/wp-content/uploads/2022/04/feather-pointed-light.svg"
                                         style={{
                                             width: "100px",
                                             height: "50px",
-
                                         }}
                                         alt="not found"
                                     />
                                 </div>
                                 <img src="https://uni-app.com/wp-content/uploads/2022/03/uniapp_students.jpg" alt="mobile image not found" className='mainImage' />
 
-                                <div style={{
-                                    display: "flex",
-                                    justifyContent: "space-between",
-                                    alignItems: "center"
-                                }}>
+                                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave} style={{
+                                        display: "flex",
+                                        justifyContent: "space-between",
+                                        alignItems: "center"
+                                    }}>
                                     <img src='https://uni-app.com/wp-content/uploads/2022/04/book-open-light.svg' style={{
                                         width: "100px",
                                         height: "50px",

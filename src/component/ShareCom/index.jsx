@@ -1,19 +1,31 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 
 const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
+
+    const [isHovered, setIsHovered] = useState(false);
+
+    const handleMouseEnter = () => {
+        setIsHovered(true);
+    };
+
+    const handleMouseLeave = () => {
+        setIsHovered(false);
+    };
     return (
         <div className='shareComCont'>
             <Container maxWidth="lg">
-                <div>
+                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}>
                     <img src={image1} alt="image not found" style={{ width: "60px", height: "75px", color: "red", padding: "25px" }} />
                 </div>
                 <div className='sideMain'>
 
-                   {!subTitle ?  flag ? <h2> Your Complete <span className='title'> University Application </span> Guide </h2>
-                   : <h2 className='headerName'>Apply for a <span className='title'> Bachelors or Masters </span>  Revealed  on UniApp</h2> : subTitle}
-                
+                    {!subTitle ? flag ? <h2> Your Complete <span className='title'> University Application </span> Guide </h2>
+                        : <h2 className='headerName'>Apply for a <span className='title'> Bachelors or Masters </span>  Revealed  on UniApp</h2> : subTitle}
+
 
                     <h1 style={{ textAlign: 'center', color: "#333", fontSize: "36px", marginBottom: "25px" }}>{text}</h1>
 
@@ -23,8 +35,10 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                         </span>
                     </div>
                 </div>
-                <div className='rightSide'>
-                    <img src={image2} alt="image not found" style={{ padding: "25px", width: "60px", height: "75px", color:'red' }} />
+                <div className={` rightSide hover-text ${isHovered ? 'hovered' : ''}`}
+                    onMouseEnter={handleMouseEnter}
+                    onMouseLeave={handleMouseLeave}>
+                    <img src={image2} alt="image not found" style={{ padding: "25px", width: "60px", height: "75px", color: 'red' }} />
                 </div>
             </Container >
         </div >

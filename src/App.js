@@ -6,6 +6,7 @@ import HomeScreen from "./component/Screen/HomeScreen";
 import FaqScreen from "./component/Screen/FaqScreen";
 import StudentsScreen from "./component/StudentsScreen";
 import SchoolScreen from "./component/SchoolScreen";
+import ContactUsScreen from "./component/contactUsScreen";
 
 
 const App = () => {
@@ -17,7 +18,8 @@ const App = () => {
           <Route exact path="/" element={<HomeScreen />} />
           <Route  path="/faq/" element={<FaqScreen />} />
           <Route  path="/Students/" element={<StudentsScreen />} />
-          <Route  path="/School/" element={<SchoolScreen />} />
+          <Route  path="/schools/" element={<SchoolScreen />} />
+          <Route  path="/contact-us/" element={<ContactUsScreen />} />
         </Routes>
         <Footer />
       </BrowserRouter>

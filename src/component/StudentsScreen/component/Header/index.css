@@ -20,3 +20,12 @@
       width: 40%;
     }
   }
+
+
+  .hover-text {
+    transition: all 0.3s ease;
+  }
+  
+  .hover-text.hovered {
+    transform: translate(-5px, -5px); /* Adjust as needed */
+  }

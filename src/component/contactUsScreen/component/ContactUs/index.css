@@ -1,0 +1,35 @@
+.contactUsOption{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contactBox{
+    display: flex;
+    justify-content: space-between;
+
+    /* align-items: center; */
+}
+
+.contactBox h1{
+    color: #333;
+    font-size: 18px;
+}
+
+.contactBox p{
+    color: #696969;
+}
+
+@media only screen and (max-width: 768px) {
+    .contactUsOption {
+      flex-direction: column;
+      /* justify-content: space-between; */
+    }
+    .contactBox{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    
+  }
+

@@ -1,7 +1,59 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
+import { Link, NavLink } from 'react-router-dom'
+
 import { Container } from '@mui/material';
 const Header = () => {
+    const [TeamCount, setTeamCount] = useState(0);
+    const [RateCount, setRateCount] = useState(0);
+    const [StudentCount, setStudentCount] = useState(0);
+    const [AgentsCount, setAgentsCount] = useState(0);
+
+
+
+    const increaseCount = () => {
+        if (TeamCount < 100) {
+            setTimeout(() => {
+                setTeamCount(TeamCount + 1);
+            }, 10);
+        }
+    };
+
+    const Rate = () => {
+        if (RateCount < 500) {
+            setTimeout(() => {
+                setRateCount(RateCount + 4);
+            }, 10);
+
+        }
+    }
+
+    const Student = () => {
+        if (StudentCount < 250) {
+            setTimeout(() => {
+                setStudentCount(StudentCount + 2);
+            }, 10);
+
+        }
+    }
+
+    const Agents = () => {
+        if (AgentsCount < 1000) {
+            setTimeout(() => {
+                setAgentsCount(AgentsCount + 10);
+            }, 10);
+
+        }
+    }
+
+    useEffect(() => {
+        increaseCount();
+        Rate();
+        Agents();
+        Student();
+    })
+
+
     return (
         <>
             <div style={{ padding: '0px 0px 50px 0px' }}>
@@ -16,27 +68,31 @@ const Header = () => {
                                     .</p>
                                 <div className='btnStyle'>
                                     <span>
-                                        <a> Partner With Us</a>
+                                        <Link to='/contact-us/'> Partner With Us</Link>
                                     </span>
                                 </div>
                             </div>
                             <div className='count'>
                                 <div>
-                                    <div>
-                                        <h1>50+</h1>
+
+                                    <div style={{ padding: '5px' }}>
+                                        <h1>{TeamCount}+</h1>
                                         <p> Team Members</p>
                                     </div>
-                                    <div>
-                                        <h1>80+</h1>
+
+                                    <div style={{ padding: '5px' }}>
+                                        <h1>{StudentCount}<span>+</span></h1>
                                         <p> Student's nationality </p>
                                     </div>
                                 </div>
                                 <div>
-                                    <div>
-                                        <h1>99+</h1>
+                                    <div style={{ padding: '5px' }}>
+                                        <h1>{RateCount}+</h1>
                                         <p> satisfaction rate</p>
-                                    </div>  <div>
-                                        <h1>1.000+</h1>
+                                    </div>
+
+                                    <div style={{ padding: '5px' }}>
+                                        <h1>{AgentsCount}+</h1>
                                         <p>vetted agents </p>
                                     </div>
                                 </div>

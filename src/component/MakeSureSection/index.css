@@ -11,14 +11,15 @@
 .count h1 {
   font-size: 40px;
   font-weight: bold;
-  color: #378fb4;
+  color: #76d4f9;
+  margin-bottom: 0;
 }
 .count p {
+  margin-top: 0;
   text-transform: uppercase;
-  color: #333;
+  color: #3f3a64;
   font-size: 15px;
   font-weight: bold;
-  line-height: 0.05;
   text-align: center;
 }
 .count {

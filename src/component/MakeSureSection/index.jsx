@@ -33,15 +33,15 @@ const MakeSureSection = () => {
                                 <div>
                                     <div>
                                         <AssistWalkerIcon style={{ fontSize: "50px", color: "#378fb4" }} />
-                                        <h4>Admission Counselling</h4>
-                                        <p>From the comfort of your home, schedule a meeting with an expert and receive a free consultation.</p>
+                                        <h4 style={{ marginBottom: '5px' }}>Admission Counselling</h4>
+                                        <p style={{ marginTop: '0' }}>From the comfort of your home, schedule a meeting with an expert and receive a free consultation.</p>
                                     </div>
 
                                 </div>
                                 <div>
                                     <AssistWalkerIcon style={{ fontSize: "50px", color: "#378fb4" }} />
-                                    <h4>Smart Application</h4>
-                                    <p>With your profile, you will be able to apply for multiple programs with one click.</p>
+                                    <h4 style={{ marginBottom: '5px' }}>Smart Application</h4>
+                                    <p style={{ marginTop: '0' }}>With your profile, you will be able to apply for multiple programs with one click.</p>
 
                                 </div>
                             </div>
@@ -49,23 +49,19 @@ const MakeSureSection = () => {
                                 <div>
                                     <div>
                                         <AssistWalkerIcon style={{ fontSize: "50px", color: "#378fb4" }} />
-                                        <h4>Partner Schools</h4>
-                                        <p>Choose from thousands of study programs across the world.
+                                        <h4 style={{ marginBottom: '5px' }}>Partner Schools</h4>
+                                        <p style={{ marginTop: '0' }}>Choose from thousands of study programs across the world.
                                             .</p>
                                     </div>
-
                                 </div>
                                 <div>
                                     <AssistWalkerIcon style={{ fontSize: "50px", color: "#378fb4" }} />
-                                    <h4>Continuous Support</h4>
-                                    <p>Advisors provide 1 on 1 support at any step of the journey..</p>
+                                    <h4 style={{ marginBottom: '5px' }}>Continuous Support</h4>
+                                    <p style={{ marginTop: '0' }}>Advisors provide 1 on 1 support at any step of the journey..</p>
                                 </div>
                             </div>
                         </div>
-
-
                         <div className='right-side'>
-
                             <img src="https://uni-app.com/wp-content/uploads/2022/02/uniapp-laptop-dashboard.png" alt="image not found" />
                         </div>
                     </div>
