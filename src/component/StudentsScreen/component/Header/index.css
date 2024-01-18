@@ -1,0 +1,22 @@
+.studentsPage-content .mainImage{
+    border-radius: 5px;
+    width: 100%;
+}
+
+.studentsPage-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .studentsPage-content {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    .studentsPage-content > div {
+      width: 40%;
+    }
+  }

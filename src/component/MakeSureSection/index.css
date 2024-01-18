@@ -1,0 +1,62 @@
+.MakeSureSection-container {
+  padding: 35px 0px;
+}
+
+.MakeSureSection-container h1 {
+  text-align: center;
+  font-size: 26px;
+  color: #333333;
+}
+
+.count h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #378fb4;
+}
+.count p {
+  text-transform: uppercase;
+  color: #333;
+  font-size: 15px;
+  font-weight: bold;
+  line-height: 0.05;
+  text-align: center;
+}
+.count {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.main-content {
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.first-section {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.first-section div {
+  margin: 10px 10px;
+}
+.first-section p{
+  color: #333;
+}
+
+@media only screen and (min-width: 768px) {
+  .main-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .main-content > div {
+    width: 45%;
+  }
+}

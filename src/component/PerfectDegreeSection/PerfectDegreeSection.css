@@ -1,0 +1,48 @@
+.main-title {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+}
+
+.cardC h2 {
+  font-size: 25px;
+  line-height: 1.5;
+  color: #333;
+  margin-bottom: 0;
+}
+.cardC {
+  flex: 0 0 30%;
+  margin: 10px;
+  padding: 18px 5px;
+  border: 1px solid #eee;
+  border-radius: 5px;
+  height: 100%;
+  text-align: center;
+}
+.cardC p {
+  color: #696969;
+  font-size: 15px;
+}
+.cardC img {
+  width: 200px;
+  height: 59.86px;
+  margin: 25px 0px;
+}
+
+.link {
+  margin: 25px 0px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .cardC {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .cardC {
+    flex: 0 0 100%;
+  }
+}

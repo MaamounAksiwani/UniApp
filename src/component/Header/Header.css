@@ -1,0 +1,40 @@
+.header-container {
+  background-image: url("https://images.pexels.com/photos/3648850/pexels-photo-3648850.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"); /* Replace with the path to your background image */
+  background-size: cover;
+  background-position: center;
+  height: 70vh;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.header-text {
+  margin-left: 20px;
+  color: white;
+}
+.mainTitle {
+  font-weight: 400;
+  letter-spacing: 3px;
+}
+.subTitle {
+  font-size: 72px;
+  line-height: 1.13em;
+}
+.headerButton {
+  margin-top: 25px;
+  border: none;
+  display: inline-block;
+  border-radius: 15px;
+  padding: 10px 40px;
+  background-color: #027aaa;
+  font-size: 16px;
+}
+.des {
+  font-size: 19px;
+}
+
+@media only screen and (max-width: 600px) {
+  .header-text {
+    text-align: center;
+  }
+}

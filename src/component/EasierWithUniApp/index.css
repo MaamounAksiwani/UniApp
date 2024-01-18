@@ -1,0 +1,35 @@
+.EasierWithUniApp {
+  background-color: #f1fbff;
+  padding: 25px 0px;
+}
+.download {
+  display: flex;
+}
+.download img {
+  height: 35px;
+}
+.download a:nth-child(2) {
+  margin: 0px 10px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .content > div {
+    width: 40%;
+  }
+}
+
+.title {
+  color: #76d4f9;
+}

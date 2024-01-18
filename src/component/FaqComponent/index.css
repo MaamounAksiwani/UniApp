@@ -1,0 +1,73 @@
+.ContainerCollapse {
+  display: flex;
+  justify-content: space-between;
+ align-items: center;
+  /* flex-wrap: wrap; */
+}
+@media only screen and (max-width: 768px) {
+  .ContainerCollapse {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+.IconButton {
+  border: 0.5px solid #ddd;
+  display: flex;
+  font-weight: 300;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 0px 25px;
+  border-radius: 5px;
+}
+.IconButton h3 {
+  color: #696969;
+  font-weight: 600;
+  font-size: 15px;
+}
+.IconButton:hover h3{
+    color: #fff;
+}
+.IconButton:hover {
+  cursor: pointer;
+  background-color: #76d4f9;
+  border: 1px solid #76d4f9;
+}
+.iconStyle{
+    color: #fff;
+    background-color: #696969;
+    border-radius: 50%;
+}
+
+.IconButton:hover .iconStyle{
+    border-radius: 50%;
+    color: #76d4f9;
+    font-size: 24px;
+    background-color: #FFF;
+}
+.Collapse{
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    background-color:#fff;
+}
+
+.Collapse ul {
+    list-style-type: disc;
+    margin-left: 20px;
+    padding: 25px;
+  }
+  .Collapse ul li{
+    color: #696969;
+    font-size: 15px;
+    margin: 10px 0px;
+  }
+  .collapse-box{
+    /* margin-bottom: 25px; */
+    margin: 25px;
+  }
+
+  .collapse-box p{
+    color: #696969;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding: 25px;
+  }

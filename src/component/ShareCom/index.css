@@ -1,0 +1,43 @@
+.shareComCont {
+  background-color: #f1fbff;
+  padding: 25px 0px;
+}
+.headerTitle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.rightSide {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.sideMain {
+  text-align: center;
+}
+
+.headerName {
+  color: #333;
+  font-size: 22px;
+}
+.btnStyle {
+  margin-top: 50px;
+}
+
+.btnStyle span {
+  padding: 15px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  color: #fff;
+  background-color: #6ac5f1;
+  font-weight: 500;
+}
+
+.btnStyle span:hover {
+  background-color: #007dae;
+  color: #fff;
+  cursor: pointer;
+}
+.title {
+  color: #76d4f9;
+}

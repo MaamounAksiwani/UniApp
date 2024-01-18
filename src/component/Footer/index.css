@@ -1,0 +1,98 @@
+.Footer {
+  background-color: #081f32;
+
+  color: #fff;
+}
+.faqBtn {
+  border: 1px solid #76d4f9;
+  padding: 20px;
+  border-radius: 10px;
+  color: #FFF;
+  cursor: pointer;
+}
+
+.faqBtn:hover {
+  
+  color: #FFF;
+    background-color: #76d4f9;
+  }
+
+.footer {
+  padding: 80px 0;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+ul {
+  list-style: none;
+  margin-top: 0;
+  padding-left:0;
+}
+
+.footer-col {
+  width: 25%;
+}
+
+.footer-col h4 {
+  font-size: 18px;
+  color: #fff;
+  text-transform: capitalize;
+  margin-bottom: 35px;
+  font-weight: 500;
+  position: relative;
+}
+
+.footer-col ul li:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+.footer-col ul li a {
+  color: #ddd;
+  display: block;
+  font-size: 1rem;
+  font-weight: 300;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-col .social-links a {
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.2);
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  text-align: center;
+  margin: 0 10px 10px 0;
+  line-height: 40px;
+  transition: all 0.5s ease;
+}
+
+@media (max-width: 767px) {
+  .footer-col {
+    width: 50%;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 574px) {
+  .footer-col {
+    width: 100%;
+  }
+}
+
+.hoho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

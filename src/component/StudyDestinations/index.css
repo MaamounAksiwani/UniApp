@@ -1,0 +1,81 @@
+.main-title {
+  text-align: center;
+  font-size: 26px;
+  color: #333;
+}
+
+.cardBox {
+  /* background-color: red; */
+  margin: 50px 0px;
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.countryCard h2 {
+  font-size: 20px;
+  line-height: 1.5;
+  margin-bottom: 0;
+}
+.countryCard {
+  flex: 0 0 23%;
+  margin: 10px;
+  padding: 25px 0px;
+  border: 1px solid #eee;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+.countryCard:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-style: solid;
+  border-color: #efefef;
+  border-width: 1px 1px 1px 1px;
+}
+
+.countryCard p {
+  color: #696969;
+  padding: 10px;
+  text-align: center;
+  margin: 14px 0px 0px;
+}
+
+.countryCard img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.link {
+  margin: 25px 0px;
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+}
+
+.btn {
+  border: 1px solid #6ac5f1;
+  padding: 15px 30px;
+  font-size: 14px;
+  border-radius: 30px;
+  color: #6ac5f1;
+  margin: 50px 0px;
+  font-weight: 500;
+}
+
+.btn:hover {
+  background-color: #6ac5f1;
+  color: #fff;
+}
+@media (max-width: 768px) {
+  .countryCard {
+    flex: 0 0 45%;
+  }
+}
+
+@media (max-width: 576px) {
+  .countryCard {
+    flex: 0 0 100%;
+  }
+}

@@ -1,0 +1,63 @@
+import React from 'react';
+import './index.css';
+import { Container } from '@mui/material';
+import { Link, NavLink } from 'react-router-dom'
+
+const Footer = () => {
+    return (
+        <div className='Footer'>
+            <Container maxWidth="lg">
+                <footer class="footer">
+                    <div class="container row">
+                        <div class="footer-col">
+                            <h4>Questions ?</h4>
+                            <p>Find the frequently asked questions and answers about the study abroad journey.
+                                You are not alone, many of the students have the same questions like you. Explore now!</p>
+                            <div style={{ marginTop: "45px" }}>
+
+                                <Link to='/faq/' className='faqBtn'>FAQ</Link>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Explore</h4>
+                            <div className='hoho'>
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Universities</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Students</a></li>
+                                    <li><a href="#">Recruitment Partners</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="footer-col">
+                            <h4>Information</h4>
+                            <ul>
+                                <li><a href="#">Privacy</a></li>
+                                <li><a href="#">Impressum</a></li>
+                                <li><a href="#">Terms</a></li>
+                            </ul>
+                            <div>
+                                <div className='download'>
+                                    <a href="https://play.google.com/store/apps/details?id=com.neom_gmb_h.uni_app" target="_blank">
+                                        <img src="https://uni-app.com/wp-content/uploads/2022/09/uniapp-play-store-button.png" alt="android not found" />
+                                    </a>
+
+                                    <a href="https://apps.apple.com/de/app/uniapp/id1636265816?l=en" target="_blank">
+
+                                        <img src="https://uni-app.com/wp-content/uploads/2022/09/uniapp-app-store-button.png" alt=' apple not found' />
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <h4 style={{ textAlign: 'center', marginTop: '50px', fontWeight: '100' }}>© 2022 Uni-App. All Rights Reserved</h4>
+                </footer>
+            </Container>
+        </div>
+    );
+}
+
+export default Footer;
