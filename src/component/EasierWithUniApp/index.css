@@ -28,7 +28,18 @@
   .content > div {
     width: 40%;
   }
+  
 }
+
+@media only screen and (max-width: 600px) {
+  .content{
+    flex-direction: column-reverse;
+  }
+.content > div{
+  margin: 20px 0px;
+}
+}
+
 
 .title {
   color: #76d4f9;

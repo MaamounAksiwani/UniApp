@@ -49,14 +49,29 @@
 .first-section p{
   color: #333;
 }
+.right-side img{
+  width: 100%;
+}
 
 @media only screen and (min-width: 768px) {
   .main-content {
     flex-direction: row;
     justify-content: space-between;
   }
+  
 
   .main-content > div {
     width: 45%;
+  }
+}
+
+
+@media only screen and (max-width: 600px) {
+  .right-side img{
+    margin-top: 50px;
+    
+  }
+  .first-section {
+    flex-direction: column;
   }
 }

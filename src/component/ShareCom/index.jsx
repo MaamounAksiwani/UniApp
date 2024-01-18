@@ -7,7 +7,7 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
         <div className='shareComCont'>
             <Container maxWidth="lg">
                 <div>
-                    <img src={image1} alt="image not found" style={{ width: "100px", height: "75px", color: "red", padding: "25px" }} />
+                    <img src={image1} alt="image not found" style={{ width: "60px", height: "75px", color: "red", padding: "25px" }} />
                 </div>
                 <div className='sideMain'>
 
@@ -24,7 +24,7 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                     </div>
                 </div>
                 <div className='rightSide'>
-                    <img src={image2} alt="image not found" style={{ padding: "25px", width: "100px", height: "75px", color:'red' }} />
+                    <img src={image2} alt="image not found" style={{ padding: "25px", width: "60px", height: "75px", color:'red' }} />
                 </div>
             </Container >
         </div >

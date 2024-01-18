@@ -11,10 +11,10 @@ import StudyDestinations from "../../StudyDestinations";
 
 
 const HomeScreen = () => {
-    return (
-         <>
- <Header />
-      <ApplyForABachelors />
+  return (
+    <>
+      {/* <Header /> */}
+      {/* <ApplyForABachelors /> */}
       <Platform />
       <EasierWithUniApp />
       <MakeSureSection />
@@ -37,11 +37,11 @@ const HomeScreen = () => {
         btnText="Student Application Guide"
         flag={true}
       />
-         
-         </>
-   
-        
-    );
+
+    </>
+
+
+  );
 }
 
 export default HomeScreen;

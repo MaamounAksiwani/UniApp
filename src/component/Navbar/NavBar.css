@@ -52,7 +52,6 @@
 }
 
 @media (max-width: 768px) {
-  /* Show burger icon on mobile screens */
   .burger {
     display: block;
     color: red;
@@ -62,3 +61,60 @@
     display: none;
   }
 }
+
+/* 76d4f9 */
+.burger-menu-container {
+  position: relative;
+  display: inline-block; /* Make sure it doesn't collapse when dropdown is displayed */
+}
+
+.burger-menu {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.bar {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  margin: 3px 0;
+  transition: 0.4s;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 5px); /* Adjust the top position as needed */
+  left: 0;
+  width: 150px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  color: #696969;
+  display: none;
+  border-bottom: 2px solid #76d4f9;
+}
+
+.dropdown-menu:hover{
+  color: black;
+}
+
+
+
+.burger-menu-container:hover .dropdown-menu,
+.dropdown-menu:hover {
+  display: flex;
+  flex-direction: column;
+}
+
+.dropdown-menu div {
+  padding: 8px;
+  cursor: pointer;
+}
+
+/* Reset transform on hover to keep the burger as default */
+.burger-menu:hover {
+  transform: none;
+}
+
+/* Add any additional styles as needed */

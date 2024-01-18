@@ -62,6 +62,9 @@
   }
   .collapse-box{
     /* margin-bottom: 25px; */
+    margin: 20px 0px;
+  }
+  .childBox{
     margin: 25px;
   }
 

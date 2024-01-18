@@ -392,7 +392,7 @@ const FaqComponent = () => {
                 <div>
                     {content.map((item) => {
                         return (
-                            <div className='collapse-box' key={item.id}>
+                            <div className='collapse-box childBox' key={item.id}>
                                 <div className='IconButton' onClick={() => handleToggle(item.id)}>
                                     <h3 onClick={() => handleToggle(item.id)}>{item.title} </h3>
                                     {openStates[item.id] ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}
@@ -418,7 +418,7 @@ const FaqComponent = () => {
                     <div>
                         {contentRightSide.map((item) => {
                             return (
-                                <div className='collapse-box' key={item.id}>
+                                <div className='collapse-box childBox' key={item.id}>
                                     <div className='IconButton' onClick={() => handleToggle(item.id)}>
                                         <h3 onClick={() => handleToggle(item.id)}>{item.title} </h3>
                                         {openStates[item.id] ? <RemoveIcon className='iconStyle' /> : <AddIcon className='iconStyle' />}

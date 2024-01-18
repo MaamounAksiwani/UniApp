@@ -1,0 +1,14 @@
+.count{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+    align-items: center;
+}
+.count p{
+    font-weight: bold;
+}
+
+.count h1{
+    font-size: 60px;
+    font-weight: bold;
+}

@@ -8,6 +8,18 @@ const NavBar = () => {
     const togglePages = () => {
         setShowPages(!showPages);
     };
+
+
+    const [isOpen, setIsOpen] = useState(false);
+
+    const handleToggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
+    const handleMouseEnterDropdown = () => {
+        setIsOpen(true);
+    };
+
     return (
         <div className='main'>
             <Container maxWidth="lg">
@@ -19,7 +31,24 @@ const NavBar = () => {
                         <a href="#">Find Programs</a>
                         <Link to='/students/'>Students</Link>
                         <a href="#">Study Agents</a>
-                        <a href="#">School</a>
+                        <Link to='/School/' >School</Link>
+                        <div className="burger-menu-container">
+                            {/* onMouseLeave={handleToggleMenu} */}
+                            <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
+                                <div className="bar"></div>
+                                <div className="bar"></div>
+                                <div className="bar"></div>
+                            </div>
+                            {isOpen && (
+
+                                
+                                <div className="dropdown-menu" onMouseEnter={handleMouseEnterDropdown}>
+                                    <div>Menu Item 1</div>
+                                    <div>Menu Item 2</div>
+                                    <div>Menu Item 3</div>
+                                </div>
+                            )}
+                        </div>
                     </div>
                     <div className="burger" onClick={togglePages}>
                         <div className="line"></div>

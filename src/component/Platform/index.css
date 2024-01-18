@@ -43,7 +43,18 @@
 .card img {
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+}
+.card .img1{  
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
+}
+
+
+.card .img2{  
+  border-radius: 30% 70% 70% 30% / 20% 20% 50% 50% ;
+}
+
+.card .img3{  
+  border-radius: 30% 70% 70% 30% / 30% 30% 70% 70% ;
 }
 
 .link {
