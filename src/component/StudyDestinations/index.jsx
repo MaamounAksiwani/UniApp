@@ -60,7 +60,8 @@ const StudyDestinations = () => {
 
                     <div className='btn'>
                         <span>
-                            <a> View All Study Destinations</a>
+                        View All Study Destinations
+                            {/* <a> View All Study Destinations</a> */}
                         </span>
                     </div>
 

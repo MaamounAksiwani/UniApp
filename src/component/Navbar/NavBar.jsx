@@ -30,10 +30,9 @@ const NavBar = () => {
                     <div className={`pages ${showPages ? 'show' : ''}`}>
                         <a href="#">Find Programs</a>
                         <Link to='/students/'>Students</Link>
-                        <a href="#">Study Agents</a>
+                        <Link to="/study-agents/">Study Agents</Link>
                         <Link to='/schools/' >School</Link>
                         <div className="burger-menu-container">
-                            {/* onMouseLeave={handleToggleMenu} */}
                             <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
                                 <div className="bar"></div>
                                 <div className="bar"></div>

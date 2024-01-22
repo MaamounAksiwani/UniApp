@@ -7,6 +7,8 @@ import FaqScreen from "./component/Screen/FaqScreen";
 import StudentsScreen from "./component/StudentsScreen";
 import SchoolScreen from "./component/SchoolScreen";
 import ContactUsScreen from "./component/contactUsScreen";
+import StudyAgents from "./component/StudyAgents";
+
 
 
 const App = () => {
@@ -20,6 +22,7 @@ const App = () => {
           <Route  path="/Students/" element={<StudentsScreen />} />
           <Route  path="/schools/" element={<SchoolScreen />} />
           <Route  path="/contact-us/" element={<ContactUsScreen />} />
+          <Route  path="/study-agents/" element={<StudyAgents />} />
         </Routes>
         <Footer />
       </BrowserRouter>
