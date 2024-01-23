@@ -53,14 +53,14 @@ const Header = () => {
     })
 
     return (
-        <div className='shareComCont'>
+        
             <Container maxWidth="lg">
             <div style={{ padding: '0px 0px 50px 0px' }}>
                 <div className='Container-studentsPage'>
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>
                             <div>
-                                <p style={{ fontWeight: '500' }}>PARTNERSHIP WITH  <span className='title'>UNIAPP</span> </p>
+                                
                                 <h1> University <span className='title'>Applications made easy</span> for your student's recruitment activities</h1>
                                 <p>When you grow we grow, Uni-App works with the power of artificial
                                      intelligence to simplify the process of recruiting international  Students,  lets make international education a priority</p>
@@ -102,7 +102,7 @@ const Header = () => {
                 </div>
             </div>
             </Container >
-        </div >
+    
     );
 }
 export default Header;

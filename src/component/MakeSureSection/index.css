@@ -75,4 +75,9 @@
   .first-section {
     flex-direction: column;
   }
+  .count{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
 }

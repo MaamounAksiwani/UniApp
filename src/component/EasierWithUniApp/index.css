@@ -19,6 +19,10 @@
   align-items: center;
 }
 
+.content div:nth-child(2) img{
+  width: 100%;
+}
+
 @media only screen and (min-width: 768px) {
   .content {
     flex-direction: row;
@@ -28,18 +32,16 @@
   .content > div {
     width: 40%;
   }
-  
 }
 
 @media only screen and (max-width: 600px) {
-  .content{
+  .content {
     flex-direction: column-reverse;
   }
-.content > div{
-  margin: 20px 0px;
+  .content > div {
+    margin: 20px 0px;
+  }
 }
-}
-
 
 .title {
   color: #76d4f9;
