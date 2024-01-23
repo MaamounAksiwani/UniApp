@@ -49,3 +49,15 @@
 .hover-text.hovered {
   transform: translate(-5px, -5px); /* Adjust as needed */
 }
+
+.shareComCont img {
+  width: 60px;
+  height: 75px;
+  padding: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .shareComCont img {
+    display: none;
+  }
+}

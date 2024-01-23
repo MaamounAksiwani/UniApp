@@ -19,7 +19,7 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                 <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    <img src={image1} alt="image not found" style={{ width: "60px", height: "75px", color: "red", padding: "25px" }} />
+                    <img src={image1} alt="image not found" />
                 </div>
                 <div className='sideMain'>
 
@@ -38,7 +38,7 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                 <div className={` rightSide hover-text ${isHovered ? 'hovered' : ''}`}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
-                    <img src={image2} alt="image not found" style={{ padding: "25px", width: "60px", height: "75px", color: 'red' }} />
+                    <img src={image2} alt="image not found" />
                 </div>
             </Container >
         </div >
