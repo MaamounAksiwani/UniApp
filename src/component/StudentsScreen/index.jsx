@@ -6,6 +6,7 @@ import UniWork from './component/UniWork';
 import UniversityApplication from './component/UniversityApplication';
 import StudyDestinations from '../StudyDestinations';
 import PerfectDegreeSection from '../PerfectDegreeSection';
+import ChooseUniApp from './component/ChooseUniApp';
 
 const StudentsScreen = () => {
   return (
@@ -21,6 +22,8 @@ const StudentsScreen = () => {
       />
       <UniWork/>
       <UniversityApplication/>
+      
+      <ChooseUniApp/>
       <StudyDestinations/>
       <ShareCom
         text="We’re always here for you"

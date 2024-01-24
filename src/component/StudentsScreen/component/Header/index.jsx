@@ -37,13 +37,10 @@ const Header = () => {
                                         justifyContent: "space-between",
                                         alignItems: "center",
                                     }}>
-                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/plus-light.svg' style={{ width: "100px", height: "50px" }} alt='not found' />
+                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/plus-light.svg' className='imageHeader' alt='not found' />
                                     <img
                                         src="https://uni-app.com/wp-content/uploads/2022/04/feather-pointed-light.svg"
-                                        style={{
-                                            width: "100px",
-                                            height: "50px",
-                                        }}
+                                        className='imageHeader'
                                         alt="not found"
                                     />
                                 </div>
@@ -56,17 +53,10 @@ const Header = () => {
                                         justifyContent: "space-between",
                                         alignItems: "center"
                                     }}>
-                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/book-open-light.svg' style={{
-                                        width: "100px",
-                                        height: "50px",
-                                    }} alt='not found' />
+                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/book-open-light.svg' className='imageHeader' alt='not found' />
                                     <img
                                         src="https://uni-app.com/wp-content/uploads/2022/04/diamond-light.svg"
-                                        style={{
-                                            width: "100px",
-                                            height: "50px",
-
-                                        }}
+                                        className='imageHeader'
                                         alt="not found"
                                     />
                                 </div>

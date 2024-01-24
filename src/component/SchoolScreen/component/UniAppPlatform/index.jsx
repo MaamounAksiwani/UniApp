@@ -18,14 +18,14 @@ const UniAppPlatform = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                        <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>Global Targets</h3>
                                         <p style={{marginTop:'0'}}>From the comfort of your home, schedule a meeting with an expert and receive a free consultation.</p>
                                     </div>
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                    <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Pre Scanning</h3>
                                     <p style={{marginTop:'0'}}>With your profile, you will be able to apply for multiple programs with one click.</p>
 
@@ -34,7 +34,7 @@ const UniAppPlatform = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                        <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>Data Insights</h3>
                                         <p style={{marginTop:'0'}}>Choose from thousands of study programs across the world.
                                             .</p>
@@ -42,7 +42,7 @@ const UniAppPlatform = () => {
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                    <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Decades of expertise</h3>
                                     <p style={{marginTop:'0'}}>Advisors provide 1 on 1 support at any step of the journey..</p>
                                 </div>

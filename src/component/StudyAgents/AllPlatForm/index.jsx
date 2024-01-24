@@ -16,14 +16,14 @@ const AllPlatForm = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                        <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>Program Finder</h3>
                                         <p style={{marginTop:'0'}}>Our AI-powered matches students with the eligible desired courses</p>
                                     </div>
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                    <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Global Reach</h3>
                                     <p style={{marginTop:'0'}}>in MENA, Europe & Asia, receive leads who urge for higher education.</p>
 
@@ -32,7 +32,7 @@ const AllPlatForm = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                        <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>One application</h3>
                                         <p style={{marginTop:'0'}}>one application form to apply to multiple programs for free.
                                             .</p>
@@ -40,7 +40,7 @@ const AllPlatForm = () => {
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                                    <HandshakeIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Lead Management</h3>
                                     <p style={{marginTop:'0'}}>Uni-App allows you to track and convert leads into applicants</p>
                                 </div>
