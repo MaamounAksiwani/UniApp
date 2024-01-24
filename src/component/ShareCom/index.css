@@ -25,10 +25,11 @@
 }
 
 .btnStyle span {
-  padding: 15px 30px;
+  padding: 20px 40px;
   font-size: 14px;
   border-radius: 30px;
   color: #fff;
+  font-size: 15px;
   background-color: #6ac5f1;
   font-weight: 500;
 }

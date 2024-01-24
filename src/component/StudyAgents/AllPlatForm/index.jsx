@@ -2,16 +2,14 @@ import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 import HandshakeIcon from '@mui/icons-material/Handshake'
-const UniAppPlatform = () => {
-
-
+const AllPlatForm = () => {
     return (
         <>
             <div className="uniAppPlatform">
                 <Container maxWidth="lg">
 
-                    <p style={{textAlign:'center' , color:"#696969"}}>MAXIMIZE REACH</p>
-                    <h1 style={{textAlign:'center'}}>UniApp is <span className='title'>One Platform</span> Built to Place <br /> Students and Deliver Quality Applications</h1>
+                    <p style={{textAlign:'center' , color:"#696969"}}>ALL IN ONE PLATFORM</p>
+                    <h1 style={{textAlign:'center'}}>One <span class='title'>Solution</span> that <span class='title'> supports</span> every steps</h1>
 
                     <div className='main-content'>
                         <div className='left-side'>
@@ -19,15 +17,15 @@ const UniAppPlatform = () => {
                                 <div>
                                     <div>
                                         <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
-                                        <h3 style={{marginBottom:'5px'}}>Global Targets</h3>
-                                        <p style={{marginTop:'0'}}>From the comfort of your home, schedule a meeting with an expert and receive a free consultation.</p>
+                                        <h3 style={{marginBottom:'5px'}}>Program Finder</h3>
+                                        <p style={{marginTop:'0'}}>Our AI-powered matches students with the eligible desired courses</p>
                                     </div>
 
                                 </div>
                                 <div>
                                     <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
-                                    <h3 style={{marginBottom:'5px'}}>Pre Scanning</h3>
-                                    <p style={{marginTop:'0'}}>With your profile, you will be able to apply for multiple programs with one click.</p>
+                                    <h3 style={{marginBottom:'5px'}}>Global Reach</h3>
+                                    <p style={{marginTop:'0'}}>in MENA, Europe & Asia, receive leads who urge for higher education.</p>
 
                                 </div>
                             </div>
@@ -35,16 +33,16 @@ const UniAppPlatform = () => {
                                 <div>
                                     <div>
                                         <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
-                                        <h3 style={{marginBottom:'5px'}}>Data Insights</h3>
-                                        <p style={{marginTop:'0'}}>Choose from thousands of study programs across the world.
+                                        <h3 style={{marginBottom:'5px'}}>One application</h3>
+                                        <p style={{marginTop:'0'}}>one application form to apply to multiple programs for free.
                                             .</p>
                                     </div>
 
                                 </div>
                                 <div>
                                     <HandshakeIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
-                                    <h3 style={{marginBottom:'5px'}}>Decades of expertise</h3>
-                                    <p style={{marginTop:'0'}}>Advisors provide 1 on 1 support at any step of the journey..</p>
+                                    <h3 style={{marginBottom:'5px'}}>Lead Management</h3>
+                                    <p style={{marginTop:'0'}}>Uni-App allows you to track and convert leads into applicants</p>
                                 </div>
                             </div>
                         </div>
@@ -65,4 +63,4 @@ const UniAppPlatform = () => {
 
 }
 
-export default UniAppPlatform;
+export default AllPlatForm;

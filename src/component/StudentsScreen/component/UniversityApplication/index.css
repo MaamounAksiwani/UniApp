@@ -9,7 +9,11 @@
   background-color: #ffff;
   font-weight: 500;
 }
-
+.imgIcon{
+  padding: 25px;
+  width: 100px;
+  height: 75px;
+}
 
 .rightSide {
     display: flex;
@@ -24,3 +28,10 @@
   .hover-text.hovered {
     transform: translate(-10px, 10px);
   }
+  @media only screen and (max-width: 768px) {
+   .imgIcon{
+   display: none;
+   }
+    
+  }
+

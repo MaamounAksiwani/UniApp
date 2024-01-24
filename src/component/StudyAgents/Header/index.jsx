@@ -8,8 +8,6 @@ const Header = () => {
     const [StudentCount, setStudentCount] = useState(0);
     const [AgentsCount, setAgentsCount] = useState(0);
 
-
-
     const increaseCount = () => {
         if (TeamCount < 100) {
             setTimeout(() => {
@@ -53,7 +51,7 @@ const Header = () => {
     })
 
     return (
-        
+        <div style={{backgroundColor:'#fff'}}>
             <Container maxWidth="lg">
             <div style={{ padding: '0px 0px 50px 0px' }}>
                 <div className='Container-studentsPage'>
@@ -102,7 +100,7 @@ const Header = () => {
                 </div>
             </div>
             </Container >
-    
+            </div>
     );
 }
 export default Header;

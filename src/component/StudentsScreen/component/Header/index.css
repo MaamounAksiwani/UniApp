@@ -1,31 +1,41 @@
-.studentsPage-content .mainImage{
-    border-radius: 5px;
-    width: 100%;
+.studentsPage-content .mainImage {
+  border-radius: 5px;
+  width: 100%;
 }
 
 .studentsPage-content {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .studentsPage-content {
+    flex-direction: row;
     justify-content: space-between;
-    align-items: center;
   }
 
-  @media only screen and (min-width: 768px) {
-    .studentsPage-content {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-  
-    .studentsPage-content > div {
-      width: 45%;
-    }
+  .studentsPage-content > div {
+    width: 45%;
+  }
+}
+
+.hover-text {
+  transition: all 0.3s ease;
+}
+
+.hover-text.hovered {
+  transform: translate(-5px, -5px);
+}
+
+@media only screen and (min-width: 768px) {
+  .studentsPage-content {
+    flex-direction: row;
+    justify-content: space-between;
   }
 
-
-  .hover-text {
-    transition: all 0.3s ease;
+  .studentsPage-content > div {
+    width: 45%;
   }
-  
-  .hover-text.hovered {
-    transform: translate(-5px, -5px); /* Adjust as needed */
-  }
+}

@@ -13,18 +13,18 @@ const UniversityApplication = () => {
     };
     return (
         <>
-            <div style={{ backgroundColor: '#0077A7ad' }}>
+            <div style={{ backgroundColor: '#0077A7ad', padding:'36px' }}>
                 <Container maxWidth="lg">
                     <div className={`rightSide hover-text ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
-                        <img src='https://uni-app.com/wp-content/uploads/2022/04/signs-post-light.svg' alt="image not found" style={{ width: "100px", height: "75px", color: "red", padding: "25px" }} />
+                        <img src='https://uni-app.com/wp-content/uploads/2022/04/signs-post-light.svg' alt="image not found"  className='imgIcon' />
                     </div>
                     <div className='sideMain'>
 
                         <h2 style={{ color: '#fff' }}> You can be your own guiding star with our help!</h2>
 
-                        <h1 style={{ textAlign: 'center', color: "#fff", fontSize: "36px", marginBottom: "25px" }}>You can be your own guiding star with our help!
+                        <h1 style={{ textAlign: 'center', color: "#fff", fontSize: "36px" }}>You can be your own guiding star with our help!
                         </h1>
 
                         <div className='UniversityApplicationBtn'>
@@ -36,7 +36,7 @@ const UniversityApplication = () => {
                     <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
-                        <img src='https://uni-app.com/wp-content/uploads/2022/03/envelope-open-text-light-2.svg' alt="image not found" style={{ padding: "25px", width: "100px", height: "75px", color: 'red' }} />
+                        <img src='https://uni-app.com/wp-content/uploads/2022/03/envelope-open-text-light-2.svg' alt="image not found" className='imgIcon' />
                     </div>
                 </Container>
             </div>

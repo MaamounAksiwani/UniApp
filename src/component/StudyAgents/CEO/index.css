@@ -1,0 +1,47 @@
+.mainSection{
+    display: flex;
+    padding: 50px 0px;
+    align-items: center;
+}
+
+.mainSection div:first-child{
+    flex: 1;
+}
+
+.mainSection div:nth-child(2){
+    flex: 3;
+}
+
+.mainSection div:nth-child(2) h1{
+    color: #333333;
+    font-size: 32px;
+    font-weight: 400;
+}
+
+.mainSection div:nth-child(2) span{
+    color: #333333;
+    font-weight: 400;
+}
+
+.mainSection div:nth-child(2) p{
+    font-weight: 700;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .mainSection{
+        flex-direction: column;
+    }
+
+    .mainSection div:first-child{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mainSection div:nth-child(2){
+        padding: 10px;
+        text-align: center;
+    }
+  }
