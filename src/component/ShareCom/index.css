@@ -24,6 +24,12 @@
   margin-top: 50px;
 }
 
+.titleHeader{
+  text-align: center;
+  font-size: 33px;
+  margin-bottom: 25px;
+}
+
 .btnStyle span {
   padding: 20px 40px;
   font-size: 14px;
@@ -48,7 +54,7 @@
 }
 
 .hover-text.hovered {
-  transform: translate(-5px, -5px); /* Adjust as needed */
+  transform: translate(-5px, -5px);
 }
 
 .shareComCont img {
@@ -60,5 +66,11 @@
 @media only screen and (max-width: 768px) {
   .shareComCont img {
     display: none;
+  }
+  .shareComCont{
+    padding: 50px 0px;
+  }
+  .sideMain .titleHeader{
+    font-size: 25px;
   }
 }
