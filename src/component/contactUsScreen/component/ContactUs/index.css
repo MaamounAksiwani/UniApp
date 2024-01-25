@@ -21,7 +21,6 @@
     .contactUsOption {
         display: flex;
       flex-direction: column;
-      /* justify-content: space-between; */
     }
     .contactBox{
         flex-direction: column;

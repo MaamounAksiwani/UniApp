@@ -1,0 +1,44 @@
+.mainBox {
+  display: flex;
+  font-family: "Open Sans", sans-serif;
+  padding: 50px 0px;
+}
+
+.mainBox .left-side {
+  flex: 1.5;
+}
+.mainBox .left-side div {
+  border: 0.1px solid #eee;
+  margin: 10px 25px;
+  transition: 0.3s ease;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.mainBox .left-side div:hover {
+  background-color: #378fb4;
+}
+
+.mainBox .left-side div:hover h4 {
+  color: #fff;
+}
+.mainBox .right-side {
+  flex: 3;
+  background-color: #eee;
+  margin: 10px;
+}
+
+.left-side h4 {
+  padding: 0px 15px;
+  color: #696969;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .mainBox{
+    flex-direction: column-reverse;
+  }
+
+  
+}

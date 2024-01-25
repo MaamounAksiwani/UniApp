@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './index.css';
 import { Container } from '@mui/material';
+import { Link, NavLink } from 'react-router-dom'
 const UniversityApplication = () => {
     const [isHovered, setIsHovered] = useState(false);
 
@@ -13,12 +14,12 @@ const UniversityApplication = () => {
     };
     return (
         <>
-            <div style={{ backgroundColor: '#0077A7ad', padding:'36px' }}>
+            <div style={{ backgroundColor: '#0077A7ad', padding: '36px' }}>
                 <Container maxWidth="lg">
                     <div className={`rightSide hover-text ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
-                        <img src='https://uni-app.com/wp-content/uploads/2022/04/signs-post-light.svg' alt="image not found"  className='imgIcon' />
+                        <img src='https://uni-app.com/wp-content/uploads/2022/04/signs-post-light.svg' alt="image not found" className='imgIcon' />
                     </div>
                     <div className='sideMain'>
 
@@ -28,9 +29,7 @@ const UniversityApplication = () => {
                         </h1>
 
                         <div className='UniversityApplicationBtn'>
-                            <span>
-                                <a> Student Application Guide </a>
-                            </span>
+                            <Link className='link' to='/student-application-guide/' >Student Application Guide</Link>
                         </div>
                     </div>
                     <div className={`hover-text ${isHovered ? 'hovered' : ''}`}

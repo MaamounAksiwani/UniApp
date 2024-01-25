@@ -1,37 +1,38 @@
 .UniversityApplicationBtn {
-  margin-top: 50px;
+  /* margin-top: 50px; */
+  cursor: pointer;
 }
-.UniversityApplicationBtn span {
+.UniversityApplicationBtn .link {
   padding: 15px 30px;
   font-size: 14px;
+  text-decoration: none;
+  display: inline-block;
   border-radius: 30px;
   color: #007dae;
   background-color: #ffff;
   font-weight: 500;
+  transition: 0.3s ease;
 }
-.imgIcon{
-  padding: 25px;
+.imgIcon {
   width: 100px;
   height: 75px;
 }
 
 .rightSide {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 
-  .hover-text {
-    transition: all 0.3s ease;
-  }
-  
-  .hover-text.hovered {
-    transform: translate(-10px, 10px);
-  }
-  @media only screen and (max-width: 768px) {
-   .imgIcon{
-   display: none;
-   }
-    
-  }
+.hover-text {
+  transition: all 0.3s ease;
+}
 
+.hover-text.hovered {
+  transform: translate(-10px, 10px);
+}
+@media only screen and (max-width: 768px) {
+  .imgIcon {
+    display: none;
+  }
+}

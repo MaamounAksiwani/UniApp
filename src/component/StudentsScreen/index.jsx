@@ -22,7 +22,6 @@ const StudentsScreen = () => {
       />
       <UniWork/>
       <UniversityApplication/>
-      
       <ChooseUniApp/>
       <StudyDestinations/>
       <ShareCom

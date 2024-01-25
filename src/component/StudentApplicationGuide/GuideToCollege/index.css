@@ -1,0 +1,98 @@
+.container {
+  position: relative;
+  height: 250px;
+  overflow: hidden;
+}
+
+.background-image {
+  width: 100%;
+  height: 100%;
+  background: url("https://images.pexels.com/photos/7718757/pexels-photo-7718757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+    center/cover no-repeat;
+  filter: brightness(0.7);
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.centered-text {
+  position: absolute;
+  color: white;
+  text-align: center;
+  width: 80%;
+  top: 50%;
+  font-weight: bold;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 27px;
+}
+
+.contact{
+    padding: 75px 0px;
+    display: flex;
+    align-items: center;
+    background-color: #fff !important;
+}
+.contact h1{
+  color: #333;
+}
+
+.contact div:first-child{
+  flex: 2;
+}
+
+.contact div:nth-child(2){
+  flex: 2;
+}
+
+.contact div img{
+  width: 100%;
+}
+
+.contact p{
+  font-size: 15px;
+    color: #696969;
+}
+.transferLink{
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.transfer-page{
+  font-size: 15px;
+  font-weight: bold;
+  color:#76d4f9;
+  text-decoration: none;
+
+}
+
+.Guide-Support{
+  background-color: #76d4f9;
+  padding: 50px;
+ border-radius: 10px; 
+}
+.Guide-Support h1{
+  color: #fff;
+  margin: 5px 0px 10px 0px;
+  font-size: 39px;
+}
+
+.Guide-Support h6{
+  font-size: 18px;
+  color: #333;
+  font-weight: 200;
+  margin: 0 0 16px;
+}
+
+@media only screen and (max-width: 768px) {
+  .contact{
+    flex-direction: column-reverse;
+  }
+
+  
+}
