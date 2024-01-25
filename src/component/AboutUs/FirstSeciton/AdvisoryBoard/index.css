@@ -40,7 +40,7 @@
   }
   
   .AdvisoryCard:hover .overlayAdvisoryCard {
-    opacity: 1; /* Show overlay on hover */
+    opacity: 1;
   }
 @media only screen and (max-width: 768px) {
   .AdvisoryCard img {
@@ -50,6 +50,8 @@
   .AdvisoryCard:hover .image-container {
     transform: none;
   }
-
+  .overlayAdvisoryCard {
+    display: none;
+  }
 
 }

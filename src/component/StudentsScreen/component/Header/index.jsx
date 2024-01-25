@@ -19,7 +19,7 @@ const Header = () => {
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>
                             <div>
-                                <h1> <span className='title'>Study</span> in Europe and Worldwide</h1>
+                                <h1> <span className='title'>Study</span> in Europe <br /> and Worldwide</h1>
                                 <p>Apply for a Masters's degree or a bachelor's degree and discover schools, get 1-on-1
                                     support from our study agents to start your dream at the best Universities, and easily submit your applications. Uni-App guides you!.</p>
                                 <div className='btnStyle'>
