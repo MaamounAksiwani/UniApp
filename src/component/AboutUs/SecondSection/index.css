@@ -1,0 +1,28 @@
+.headerRows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerRows div:first-child {
+  flex: 1.5;
+}
+.headerRows .holder {
+  flex: 1;
+  margin: 0px 50px;
+}
+
+.holder p{
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .headerRows {
+    flex-direction: column;
+  }
+  .headerRows .holder {
+    flex: 1;
+    margin: 0px;
+  }
+}

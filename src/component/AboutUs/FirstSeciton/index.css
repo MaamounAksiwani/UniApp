@@ -1,0 +1,52 @@
+.headerImg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.headerImg div:first-child {
+  flex: 1;
+}
+.headerImg div:nth-child(2) {
+  flex: 2;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .headerImg {
+    flex-direction: column-reverse;
+  }
+}
+
+.headerRow .text-header{
+  width: 35%;
+}
+
+.text-header h6{
+  color: #333;
+  font-weight: 400;
+  letter-spacing: 1px;
+}
+
+.text-header h6 span{
+  font-weight: bold;
+}
+
+.imageHeader{
+  z-index: 10000;
+  margin-bottom: -50px;
+  margin-left: -25px;
+}
+
+
+@media only screen and (max-width: 768px) {
+  .headerRow .text-header{
+    width: 100%;
+  }
+  .headerRow{
+    flex-direction: column-reverse;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}

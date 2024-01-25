@@ -1,0 +1,103 @@
+.teamBody {
+  padding: 100px 0px 50px 0;
+}
+
+.teamTitle {
+  text-align: center;
+}
+
+.teamTitle h5 {
+  color: #333;
+  font-weight: 600;
+  margin-bottom: 0px;
+}
+
+.ManagementTitle {
+  color: #76d4f9;
+  font-weight: 400;
+}
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+}
+
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  
+}
+
+.TeamCard {
+  position: relative;
+  text-align: center;
+  max-width: 500px;
+  margin: 0px 10px;
+  overflow: hidden;
+}
+
+.TeamCard img {
+  max-width: 100%;
+  height: auto;
+  width: 200px;
+  
+}
+
+.overlay {
+  position: absolute;
+  left: 30px;
+  border-radius: 3px;
+  bottom: 100px;
+  width: 140px;
+  height: 35px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.TeamCard:hover .overlay {
+  opacity: 1; /* Show overlay on hover */
+}
+
+.App h2 {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.App p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #333;
+}
+
+.image-container {
+  transition: 0.3s ease;
+  overflow: hidden;
+}
+
+.TeamCard:hover .image-container {
+  transform: scale(1.1);
+}
+
+@media only screen and (max-width: 768px) {
+  .card-container {
+    flex-direction: column;
+  }
+  .TeamCard img {
+    width: 100%;
+  }
+  .overlay {
+    display: none;
+  }
+  .TeamCard:hover .image-container {
+    transform: none;
+  }
+}
+
+
+/* .card-container */

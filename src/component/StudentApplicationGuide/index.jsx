@@ -2,7 +2,6 @@ import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 import StudentAppGuide from './GuideToCollege';
-// import StudentAppGuide from './StudentAppGuide';
 const StudentApplicationGuide = () => {
     return (
         <>

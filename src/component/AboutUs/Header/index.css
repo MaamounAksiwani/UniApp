@@ -1,0 +1,44 @@
+.parentDiv {
+  position: relative;
+  height: 60vh;
+}
+
+.backgroundImagee {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("https://images.pexels.com/photos/3490856/pexels-photo-3490856.jpeg")
+  center/cover no-repeat;
+filter: brightness(0.7);
+}
+
+.overlayy {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.centerText {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff;
+}
+
+.centerText p {
+  font-weight: 700;
+  font-size: 35px;
+}
+
+@media only screen and (max-width: 768px) {
+  .centerText p{
+    font-size: 20px;
+  }
+}
+
+
