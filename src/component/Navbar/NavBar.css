@@ -1,6 +1,9 @@
+.bodyNavBar{
+  font-family: 'Montserrat', sans-serif;
+  
+}
 .main {
-  background-color: #fff;
-  box-shadow: 0 4px 5px rgba(0, 0, 0, 0.1);
+  /* box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1); */
 }
 
 .navbar {
@@ -65,7 +68,7 @@
 /* 76d4f9 */
 .burger-menu-container {
   position: relative;
-  display: inline-block; /* Make sure it doesn't collapse when dropdown is displayed */
+  display: inline-block; 
 }
 
 .burger-menu {
@@ -84,7 +87,7 @@
 
 .dropdown-menu {
   position: absolute;
-  top: calc(100% + 5px); /* Adjust the top position as needed */
+  top: calc(100% + 5px);
   left: 0;
   width: 150px;
   background-color: #fff;
@@ -112,9 +115,6 @@
   cursor: pointer;
 }
 
-/* Reset transform on hover to keep the burger as default */
 .burger-menu:hover {
   transform: none;
 }
-
-/* Add any additional styles as needed */

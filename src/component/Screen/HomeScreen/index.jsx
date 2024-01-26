@@ -13,9 +13,9 @@ import StudyDestinations from "../../StudyDestinations";
 const HomeScreen = () => {
   return (
     <>
-      {/* <Header /> */}
-      {/* <ApplyForABachelors /> */}
-      <Platform />
+      <Header />
+      <ApplyForABachelors />
+      {/* <Platform /> */}
       <EasierWithUniApp />
       <MakeSureSection />
       <Secrets />

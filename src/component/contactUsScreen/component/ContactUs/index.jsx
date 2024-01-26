@@ -10,7 +10,7 @@ import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
 const ContactUs = () => {
     return (
-        <>
+        <div style={{padding:'100px 0px'}}>
 
             <Container maxWidth="lg">
                 <h1 style={{ color: '#333', fontSize: '30px', textAlign: 'center' , marginBottom:'50px' }}>For more information about Uni-App, get in <br /> touch via</h1>
@@ -54,7 +54,7 @@ const ContactUs = () => {
                 
             </Container>
 
-        </>
+        </div>
     );
 }
 

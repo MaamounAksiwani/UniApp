@@ -41,6 +41,8 @@ const ApplyForABachelors = () => {
     };
 
     return (
+        <body className='bodyApplyForABachelors'>
+
         <Container maxWidth="lg">
             <div className='box'>
                 <h2>Apply for a Bachelors, Masters, or Postgraduate Degree</h2>
@@ -80,6 +82,7 @@ const ApplyForABachelors = () => {
                 </div>
             </div>
         </Container>
+        </body>
     );
 };
 

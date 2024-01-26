@@ -10,7 +10,7 @@ import ShareCom from '../ShareCom';
 
 const StudyAgents = () => {
     return (
-        <div>
+      <div style={{padding:'100px 0px' }}> 
           <Header/>
           <Ainternational/>
           <CEO/>

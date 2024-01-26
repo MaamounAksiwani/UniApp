@@ -51,7 +51,7 @@ const Header = () => {
     })
 
     return (
-        <div style={{backgroundColor:'#fff'}}>
+        <div>
             <Container maxWidth="lg">
             <div style={{ padding: '0px 0px 50px 0px' }}>
                 <div className='Container-studentsPage'>

@@ -8,14 +8,16 @@ import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 const Header = () => {
     return (
-        <>
+        <body className='bodyHeaderUnderNavBar'>
             <div className="header-container">
+                <div className="overlayImg"></div>
                 <Container maxWidth="lg">
-                    <div className="header-text">
+        
+                  <div className="header-text">
                         <p className='mainTitle'>
-                            STUDY MASTER'S, BACHELOR'S OR A <br /> POSTGRADUATE DEGREE
+                            STUDY MASTER'S, BACHELOR'S OR A  POSTGRADUATE DEGREE
                         </p>
-                        <h1 className='subTitle'>Plan your future <br /> with UniApp</h1>
+                        <h1 className='subTitle'>Plan your future with UniApp</h1>
                         <p className='des'>Apply for the first time to college or transfer to finish your degree .<br /> With Uni App, you can manage the whole college application <br /> process.
                         </p>
 
@@ -27,9 +29,12 @@ const Header = () => {
 
                     </div>
 
+                  
+
                 </Container>
+
             </div>
-        </>
+        </body>
     );
 }
 
