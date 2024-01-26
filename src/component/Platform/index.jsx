@@ -2,43 +2,51 @@ import React from 'react';
 import './index.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Container } from '@mui/material';
+import CategoryImage1 from '../../../src/until/Image/user1.png';
+import CategoryImage2 from '../../../src/until/Image/user2.png';
+import CategoryImage3 from '../../../src/until/Image/user3.png';
 
 const Platform = () => {
+
+    const data = [
+        {
+            id: 1,
+            category: `Students`,
+            des: 'We ensure that international students have access to top colleges worldwide by bringing university programs to students for them to discover, compare, and apply to',
+            image: CategoryImage1
+        },
+        {
+            id: 2,
+            category: `Study Agents`,
+            des: 'UniApp is your long-term partner -- our goal is to see you succeed and improve your recruit potential -- together we prioritize international education.',
+            image: CategoryImage2
+        },
+        {
+
+            id: 3,
+            category: `Partner Schools`,
+            des: `Broaden your worldwide reach You'll get access to thousands of approved and well-trained recruitment partners. Scale and diversify your school`,
+            image: CategoryImage3
+        }
+    ]
     return (
         <div style={{ margin: '50px 0px' }}>
             <Container maxWidth="lg">
                 <h1 className='main-title'>A Platform Built For International Education</h1>
                 <div className='cardBox'>
-                    <div className='card'>
-                        <img className='img1' src='https://images.pexels.com/photos/18489099/pexels-photo-18489099/free-photo-of-man-in-white-shirt-with-book-in-hands.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='Image 1' />
-                        <h2>Studebts</h2>
-
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-                        <div>
-                            <div className='link'>
-                                <a>Start here </a>
-                                <ArrowForwardIcon />
+                    {data.map((ele) => (
+                        <div className='card' key={ele.id}>
+                            <img className='img1' src={ele.image} alt='Image not Found' />
+                            <h2>{ele.category}</h2>
+                            <p>{ele.des}</p>
+                            <div>
+                                <div className='link'>
+                                    <a>Start here </a>
+                                    <ArrowForwardIcon />
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div className='card'>
-                        <img className='img2' src='https://images.pexels.com/photos/18489099/pexels-photo-18489099/free-photo-of-man-in-white-shirt-with-book-in-hands.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='Image 2' />
-                        <h2>Studay Agents</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-                        <div className='link'>
-                            <a>Start here </a>
-                            <ArrowForwardIcon />
-                        </div>
-                    </div>
-                    <div className='card'>
-                        <img className='img3' src='https://images.pexels.com/photos/18489099/pexels-photo-18489099/free-photo-of-man-in-white-shirt-with-book-in-hands.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load' alt='Image 3' />
-                        <h2>Partner Schools</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled</p>
-                        <div className='link'>
-                            <a>Start here </a>
-                            <ArrowForwardIcon />
-                        </div>
-                    </div>
+                    ))}
                 </div>
             </Container>
         </div>

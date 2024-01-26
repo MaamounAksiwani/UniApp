@@ -383,6 +383,7 @@ const FaqComponent = () => {
     ]
 
     return (
+        <div style={{padding:'100px 0px'}}>
         <Container maxWidth="lg">
             <div>
                 <p style={{ textAlign: 'center', fontSize: '18px', fontWeight: 300, letterSpacing: "3px" }}>FAQS AND ALL YOU NEED TO KNOW ABOUT STUDYING ABROAD</p>
@@ -443,6 +444,7 @@ const FaqComponent = () => {
                 </div>
             </div>
         </Container>
+        </div>
     )
 
 }

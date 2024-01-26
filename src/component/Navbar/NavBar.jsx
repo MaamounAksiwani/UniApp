@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Container from "@mui/material/Container";
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './NavBar.css';
 
 
 const Navbar = () => {
+    const location = useLocation();
+    const currentPath = location.pathname;
     const [showPages, setShowPages] = useState(false);
     const [isOpen, setIsOpen] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
@@ -37,19 +39,20 @@ const Navbar = () => {
         <body className='bodyNavBar'>
 
 
-        <div style={navbarStyle}>
-            <div style={{ background: !isScrolled ? 'transparent' : '#FFF' , transition: 'background 0.3s ease' }}>
-                <Container maxWidth="lg">
-                    <nav className="navbar">
-                        <Link to='/' className="logo">
-                            <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
-                        </Link>
-                        <div className={`pages ${showPages ? 'show' : ''}`}>
-                            {/* <a href="#">Find Programs</a> */}
-                            <Link style={{ color: !isScrolled ? '#fff' : '#000' , }} to='/students/'>Students</Link>
-                            <Link  style={{ color: !isScrolled ? '#fff' : '#000' , }} to="/study-agents/">Study Agents</Link>
-                            <Link style={{ color: !isScrolled ? '#fff' : '#000' , }} to='/schools/' >School</Link>
-                            {/* <div  className="burger-menu-container">
+            <div style={navbarStyle}>
+                <div style={{ background: !isScrolled ? 'transparent' : '#FFF', transition: 'background 0.3s ease' }}>
+                    <Container maxWidth="lg">
+                        <nav className="navbar">
+                            <Link to='/' className="logo">
+                                <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
+                            </Link>
+                            <div className={`pages ${showPages ? 'show' : ''}`}>
+                                {/* <a href="#">Find Programs</a> */}
+                                <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000'  }} to='/students/'>Students</Link>
+                                <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} to="/study-agents/">Study Agents</Link>
+                                <Link style={{ color: !isScrolled&& currentPath == '/' ? '#fff' : '#000'  }} to='/schools/' >School</Link>
+                              
+                                {/* <div  className="burger-menu-container">
                                 <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
                                     <div className="bar"></div>
                                     <div className="bar"></div>
@@ -63,16 +66,16 @@ const Navbar = () => {
                                     </div>
                                 )}
                             </div> */}
-                        </div>
-                        <div className="burger" onClick={togglePages}>
-                            <div className="line"></div>
-                            <div className="line"></div>
-                            <div className="line"></div>
-                        </div>
-                    </nav>
-                </Container>
-            </div>
-        </div >
+                            </div>
+                            <div className="burger" onClick={togglePages}>
+                                <div className="line"></div>
+                                <div className="line"></div>
+                                <div className="line"></div>
+                            </div>
+                        </nav>
+                    </Container>
+                </div>
+            </div >
         </body>
     );
 };

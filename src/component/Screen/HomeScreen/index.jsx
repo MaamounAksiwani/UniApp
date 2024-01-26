@@ -15,7 +15,7 @@ const HomeScreen = () => {
     <>
       <Header />
       <ApplyForABachelors />
-      {/* <Platform /> */}
+      <Platform />
       <EasierWithUniApp />
       <MakeSureSection />
       <Secrets />
