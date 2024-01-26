@@ -10,6 +10,7 @@ import ContactUsScreen from "./component/contactUsScreen";
 import StudyAgents from "./component/StudyAgents";
 import StudentApplicationGuide from "./component/StudentApplicationGuide";
 import AboutUs from "./component/AboutUs";
+import StudyInCountries from "./component/StudyInCountries";
 
 
 
@@ -27,6 +28,7 @@ const App = () => {
           <Route  path="/study-agents/" element={<StudyAgents />} />
           <Route  path="/student-application-guide/" element={<StudentApplicationGuide />} />   
           <Route  path="/about-us/" element={<AboutUs />} />
+          <Route  path="/study-destinations/study-in-germany/" element={<StudyInCountries />} />
         </Routes>
         <Footer />
       </BrowserRouter>

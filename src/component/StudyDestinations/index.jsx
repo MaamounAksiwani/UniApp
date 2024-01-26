@@ -2,8 +2,10 @@ import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import {  useNavigate  } from 'react-router-dom'
 
 const StudyDestinations = () => {
+    const navigate = useNavigate();
     const data = [
         {
             id: 1,
@@ -35,6 +37,14 @@ const StudyDestinations = () => {
             image: "https://uni-app.com/wp-content/uploads/2022/02/UK-21.svg",
         }
     ]
+
+
+    const handleClick = (path) => {
+        if(path === 'Germany'){
+            navigate('/study-destinations/study-in-germany/');
+        }
+      };
+
     return (
         <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
@@ -48,12 +58,12 @@ const StudyDestinations = () => {
                                     <img src={item.image} alt={`Image ${index + 1}`} />
                                     <h2>{item.cityName}</h2>
                                     <p>{item.title}</p>
-                                    <div>
-                                        <div className='link'>
+                                 
+                                        <div className='link' onClick={()=>{handleClick(item.cityName)}}>
                                             <a className='link-href'>Discover </a>
                                             <ArrowForwardIcon className='icon-link' />
                                         </div>
-                                    </div>
+                                
                                 </div>
                             ))}
                         </div>

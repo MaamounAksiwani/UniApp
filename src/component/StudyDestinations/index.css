@@ -7,7 +7,7 @@
 .gridContainer {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  gap: 15px;
+  gap: 5px;
 }
 .countryCard h2 {
   font-size: 20px;
