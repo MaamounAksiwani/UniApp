@@ -30,7 +30,7 @@ const Platform = () => {
         }
     ]
     return (
-        <div style={{ margin: '50px 0px' }}>
+        <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
                 <h1 className='main-title'>A Platform Built For International Education</h1>
                 <div className='cardBox'>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './index.css';
 import {
     Container
@@ -7,6 +7,61 @@ import {
 import AssistWalkerIcon from '@mui/icons-material/AssistWalker';
 
 const MakeSureSection = () => {
+    const [isScrolled, setIsScrolled] = useState(false);
+    const [TeamCount, setTeamCount] = useState(0);
+    const [RateCount, setRateCount] = useState(0);
+    const [StudentCount, setStudentCount] = useState(0);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const scrollPosition = window.scrollY;
+            setIsScrolled(scrollPosition > 1600);
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
+
+
+
+
+
+
+    const increaseCount = () => {
+        if (TeamCount < 100) {
+            setTimeout(() => {
+                setTeamCount(TeamCount + 1);
+            }, 10);
+        }
+    };
+
+    const Rate = () => {
+        if (RateCount < 500) {
+            setTimeout(() => {
+                setRateCount(RateCount + 4);
+            }, 10);
+
+        }
+    }
+
+    const Student = () => {
+        if (StudentCount < 250) {
+            setTimeout(() => {
+                setStudentCount(StudentCount + 2);
+            }, 10);
+
+        }
+    }
+
+
+    if (isScrolled) {
+        increaseCount();
+        Rate();
+        Student();
+    }
     return (
         <>
             <div className="MakeSureSection-container">
@@ -14,15 +69,16 @@ const MakeSureSection = () => {
                     <h1>We Make Sure Students Gain Admission to the  Best <br /> International Colleges and Universities</h1>
                     <div className='count'>
                         <div>
-                            <h1>50,000+</h1>
+                            {isScrolled}
+                            <h1>{TeamCount}+</h1>
                             <p>programs</p>
                         </div>
                         <div>
-                            <h1>1,000+</h1>
+                            <h1>{RateCount}+</h1>
                             <p>study agents</p>
                         </div>
                         <div>
-                            <h1>25+</h1>
+                            <h1>{StudentCount}+</h1>
                             <p>countries</p>
                         </div>
                     </div>

@@ -63,6 +63,17 @@
   padding: 25px;
 }
 
+.sideMain h2{
+  margin-bottom: 0;
+  font-size: 22px !important;
+}
+
+.sideMain h1{
+  margin-bottom: 0;
+  margin-top: 10px;
+  font-size: 30px !important;
+}
+
 @media only screen and (max-width: 768px) {
   .shareComCont img {
     display: none;

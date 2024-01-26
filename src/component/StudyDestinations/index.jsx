@@ -36,32 +36,31 @@ const StudyDestinations = () => {
         }
     ]
     return (
-        <div style={{padding:'50px 0px'}}>
+        <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
                 <p style={{ textAlign: 'center', fontSize: '23px', fontWeight: 300 }}>STUDY DESTINATIONS</p>
                 <h1 style={{ textAlign: 'center', color: '#333', fontSize: '36px' }}>  Our Study <span className='title'>Destination Guide</span> Will Help You <br /> Decide Where The Journey Starts</h1>
-                <div className='cardBox'>
-                    {data.map((item) => {
-                        return <>
-                            <div className='countryCard'>
-                                <img src={item.image} alt='Image 1' />
-                                <h2>{item.cityName}</h2>
-                                <p>{item.title}</p>
-                                <div>
-                                    <div className='link'>
-                                        <a>Discover </a>
-                                        <ArrowForwardIcon />
+                <div>
+                    <div className='cardBox'>
+                        <div className='gridContainer'>
+                            {data.map((item, index) => (
+                                <div key={index} className='countryCard'>
+                                    <img src={item.image} alt={`Image ${index + 1}`} />
+                                    <h2>{item.cityName}</h2>
+                                    <p>{item.title}</p>
+                                    <div>
+                                        <div className='link'>
+                                            <a className='link-href'>Discover </a>
+                                            <ArrowForwardIcon className='icon-link' />
+                                        </div>
                                     </div>
                                 </div>
-                            </div>
-
-                        </>
-                    })}
-
+                            ))}
+                        </div>
+                    </div>
                     <div className='btn'>
                         <span>
-                        View All Study Destinations
-                            {/* <a> View All Study Destinations</a> */}
+                            View All Study Destinations
                         </span>
                     </div>
 

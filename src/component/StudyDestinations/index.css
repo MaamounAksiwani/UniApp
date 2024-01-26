@@ -4,24 +4,21 @@
   color: #333;
 }
 
-.cardBox {
-  /* background-color: red; */
-  margin: 50px 0px;
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  flex-wrap: wrap;
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
 }
-
 .countryCard h2 {
   font-size: 20px;
   line-height: 1.5;
   margin-bottom: 0;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: 700;
 }
 .countryCard {
-  flex: 0 0 23%;
-  margin: 10px;
-  padding: 25px 0px;
+  padding: 20px 0px;
   border: 1px solid #eee;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
@@ -48,34 +45,51 @@
 }
 
 .link {
-  margin: 25px 0px;
+  font-weight: 500;
+  font-size: 13px;
   display: flex;
+  padding: 5px;
   justify-items: center;
   justify-content: center;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+.link:hover .link-href,
+.link:hover .icon-link {
+  color: #76d4f9;
+}
+
+.link .icon-link {
+  font-size: 18px;
+  margin-left: 8px;
+  cursor: pointer;
 }
 
 .btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn span {
   border: 1px solid #6ac5f1;
   padding: 15px 30px;
   font-size: 14px;
+  transition: 0.3s ease;
   border-radius: 30px;
   color: #6ac5f1;
   margin: 50px 0px;
-  font-weight: 500;
+  cursor: pointer;
 }
 
-.btn:hover {
+.btn span:hover {
   background-color: #6ac5f1;
   color: #fff;
 }
 @media (max-width: 768px) {
-  .countryCard {
-    flex: 0 0 45%;
-  }
-}
-
-@media (max-width: 576px) {
-  .countryCard {
-    flex: 0 0 100%;
+  .gridContainer {
+    display: flex;
+    flex-direction: column;
   }
 }

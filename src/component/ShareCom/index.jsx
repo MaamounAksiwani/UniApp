@@ -23,10 +23,10 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                 </div>
                 <div className='sideMain'>
 
-                    {!subTitle ? flag ? <h2> Your Complete <span className='title'> University Application </span> Guide </h2>
-                        : <h2 className='headerName'>Apply for a <span className='title'> Bachelors or Masters </span>  Revealed  on UniApp</h2> : subTitle}
-
-
+                    {!subTitle ? flag ?
+                     <h2> Your Complete <span className='title'> University Application </span> Guide </h2> 
+                     : <h2 className='headerName'>Apply for a <span className='title'> Bachelors or Masters </span>  Revealed  on UniApp</h2> 
+                     : subTitle}
                     <h1 className='titleHeader'>{text}</h1>
 
                     <div className='btnStyle'>
