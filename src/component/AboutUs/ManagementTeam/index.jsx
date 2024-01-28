@@ -2,12 +2,14 @@ import './index.css';
 import React from 'react';
 import Container from "@mui/material/Container";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+// tb7
+import tb7 from '../../../until/Image/JPG/tb7.jpg'
 const ManagementTeam = () => {
 
   const cardsData = [
     {
       id: 1,
-      imgSrc: 'https://images.pexels.com/photos/3777569/pexels-photo-3777569.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+      imgSrc: tb7,
       title: 'Simon Landsberg      ',
       Job: 'Chief Growth Officer',
     },

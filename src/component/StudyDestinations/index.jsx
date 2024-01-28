@@ -45,6 +45,11 @@ const StudyDestinations = () => {
         }
       };
 
+
+      const GoPageStudyDestinations = ()=>{
+        navigate('/study-destinations/');
+      }
+
     return (
         <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
@@ -58,18 +63,16 @@ const StudyDestinations = () => {
                                     <img src={item.image} alt={`Image ${index + 1}`} />
                                     <h2>{item.cityName}</h2>
                                     <p>{item.title}</p>
-                                 
                                         <div className='link' onClick={()=>{handleClick(item.cityName)}}>
                                             <a className='link-href'>Discover </a>
                                             <ArrowForwardIcon className='icon-link' />
                                         </div>
-                                
                                 </div>
                             ))}
                         </div>
                     </div>
                     <div className='btn'>
-                        <span>
+                        <span onClick={GoPageStudyDestinations}> 
                             View All Study Destinations
                         </span>
                     </div>

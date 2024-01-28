@@ -5,15 +5,16 @@ import Header from "../../Header/Header";
 import MakeSureSection from "../../MakeSureSection";
 import PerfectDegreeSection from "../../PerfectDegreeSection";
 import Platform from "../../Platform";
+import './index.css';
 import Secrets from "../../Secrets";
 import ShareCom from "../../ShareCom";
 import StudyDestinations from "../../StudyDestinations";
-
-
+// import divider from '../../../../src/until/Image/PNG/uniapp divider white.png'
 const HomeScreen = () => {
   return (
     <>
       <Header />
+      {/* <img src={divider} alt='not found' className='divider'/> */}
       <ApplyForABachelors />
       <Platform />
       <EasierWithUniApp />

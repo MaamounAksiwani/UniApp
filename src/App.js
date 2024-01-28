@@ -11,6 +11,10 @@ import StudyAgents from "./component/StudyAgents";
 import StudentApplicationGuide from "./component/StudentApplicationGuide";
 import AboutUs from "./component/AboutUs";
 import StudyInCountries from "./component/StudyInCountries";
+import AllCountries from "./component/StudyDestinations/AllCountries";
+import BachelorsDegrees from "./component/BachelorsDegrees";
+import ScrollToTop from "./component/ScrollToTop";
+import OnlineDegrees from "./component/OnlineDegrees";
 
 
 
@@ -19,6 +23,7 @@ const App = () => {
     <>
       <BrowserRouter>
         <NavBar />
+        {/* <ScrollToTop/> */}
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
           <Route  path="/faq/" element={<FaqScreen />} />
@@ -29,6 +34,11 @@ const App = () => {
           <Route  path="/student-application-guide/" element={<StudentApplicationGuide />} />   
           <Route  path="/about-us/" element={<AboutUs />} />
           <Route  path="/study-destinations/study-in-germany/" element={<StudyInCountries />} />
+          <Route  path="/study-destinations/" element={<AllCountries />} />
+          <Route  path="/bachelors-degrees/" element={<BachelorsDegrees />} />
+          
+          <Route  path="/online-degrees/" element={<OnlineDegrees />} />
+        
         </Routes>
         <Footer />
       </BrowserRouter>

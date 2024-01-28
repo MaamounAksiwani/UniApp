@@ -4,9 +4,11 @@ import './PerfectDegreeSection.css';
 import Container from "@mui/material/Container";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Logo from '../../../src/until/Image/bachelor.svg'
+import { useNavigate } from 'react-router-dom'
+
 
 const PerfectDegreeSection = () => {
-
+    const navigate = useNavigate();
     const data = [
         {
             id: 1,
@@ -30,11 +32,22 @@ const PerfectDegreeSection = () => {
             btnTitle: `Search Online courses`,
         }
     ]
+
+    const GoToPage = (pageName) => {
+        
+        if (pageName === `Bachelor's Degree`) {
+            navigate('/bachelors-degrees/');
+        } else if (pageName === `Master's Degree`) {
+            navigate('');
+        } else {
+            navigate('/online-degrees/');
+        }
+    }
     return (
         <div style={{ padding: '50px 0px 0px 0px' }}>
             <Container maxWidth="lg">
-                <p style={{ textAlign: 'center', fontSize: '23px', fontWeight: 300 }}>WHAT DEGREE ARE YOU LOOKING FOR?</p>
-                <h1 style={{ textAlign: 'center', color: '#333', fontSize: '36px' }}>Find Your <span className='title'>Perfect Degree </span>To Study Abroad Or Online</h1>
+                <p style={{ textAlign: 'center', fontSize: '16px', fontWeight: 400, letterSpacing: '2px' }}>WHAT DEGREE ARE YOU LOOKING FOR?</p>
+                <h1 style={{ textAlign: 'center', color: '#333', fontSize: '34px', marginTop: '0px' }}>Find Your <span className='title'>Perfect Degree </span>To Study Abroad Or Online</h1>
                 <div className='cardBox'>
                     {data.map((ele) => {
                         return (
@@ -43,9 +56,9 @@ const PerfectDegreeSection = () => {
                                 <h2>{ele.title}</h2>
                                 <p>{ele.des}</p>
                                 <div>
-                                    <div className='link'>
-                                        <a>{ele.btnTitle} </a>
-                                        <ArrowForwardIcon />
+                                    <div className='link'  onClick={() => { GoToPage(ele.title) }}>
+                                        <span>{ele.btnTitle} </span>
+                                        <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px', marginTop: '2px' }} />
                                     </div>
                                 </div>
                             </div>

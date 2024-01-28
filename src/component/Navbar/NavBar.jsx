@@ -31,7 +31,6 @@ const Navbar = () => {
     const navbarStyle = {
         position: 'fixed',
         width: '100%',
-
         zIndex: 10000000,
     };
 
@@ -40,7 +39,11 @@ const Navbar = () => {
 
 
             <div style={navbarStyle}>
-                <div style={{ background: !isScrolled ? 'transparent' : '#FFF', transition: 'background 0.3s ease' }}>
+
+                <div style={{
+                    background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/'
+                        && currentPath !== '/study-destinations/' && currentPath !== '/about-us/' && currentPath !== '/bachelors-degrees/' && currentPath !== '/online-degrees/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
+                }}>
                     <Container maxWidth="lg">
                         <nav className="navbar">
                             <Link to='/' className="logo">
@@ -48,10 +51,10 @@ const Navbar = () => {
                             </Link>
                             <div className={`pages ${showPages ? 'show' : ''}`}>
                                 {/* <a href="#">Find Programs</a> */}
-                                <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000'  }} to='/students/'>Students</Link>
+                                <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} to='/students/'>Students</Link>
                                 <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} to="/study-agents/">Study Agents</Link>
-                                <Link style={{ color: !isScrolled&& currentPath == '/' ? '#fff' : '#000'  }} to='/schools/' >School</Link>
-                              
+                                <Link style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} to='/schools/' >School</Link>
+
                                 {/* <div  className="burger-menu-container">
                                 <div className={`burger-menu ${isOpen ? 'open' : ''}`} onClick={handleToggleMenu}>
                                     <div className="bar"></div>

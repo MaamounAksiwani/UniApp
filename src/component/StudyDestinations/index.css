@@ -11,7 +11,7 @@
 }
 .countryCard h2 {
   font-size: 20px;
-  line-height: 1.5;
+  line-height: 1.3;
   margin-bottom: 0;
   cursor: pointer;
   font-size: 22px;
@@ -87,9 +87,114 @@
   background-color: #6ac5f1;
   color: #fff;
 }
+
+.parentTheCountry {
+  position: relative;
+  height: 47vh;
+  border-bottom: 8px solid #378fb4;
+}
+
+.backgroundImageMainCountry {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../../../src//until/Image/JPG/AdobeStock_219776591.jpeg")
+    center/cover no-repeat;
+  filter: brightness(0.7);
+}
+
+.CountryOverlay {
+  background-color: rgba(0, 0, 0, 0.1);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.CountryTextt {
+  position: absolute;
+  top: 35%;
+  color: #fff;
+  padding: 15px;
+}
+.CountryTextt h1 {
+  text-align: center;
+  padding: 0px 16px;
+  color: #ebebeb;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.CountryTextt p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #d8d8d8;
+}
+.sssss {
+  display: flex;
+  width: 75%;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sssss {
+    width: 100%;
+    flex-direction: column;
+  }
+  .searchBtn {
+    width: 40%;
+    margin-top: 15px;
+  }
+}
+
+.searchBtn {
+  background-color: #378fb4;
+  padding: 18px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  margin-left: 10px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+@media only screen and (max-width: 768px) {
+  .CountryText p {
+    font-size: 20px;
+  }
+}
+
 @media (max-width: 768px) {
   .gridContainer {
     display: flex;
     flex-direction: column;
+  }
+}
+
+.city {
+  padding: 50px 0px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+}
+
+.city div {
+  display: flex;
+  align-items: center;
+}
+
+.city p {
+  cursor: pointer;
+  color: #696969;
+}
+
+@media only screen and (max-width: 768px) {
+  .city {
+    display: flex;
+    flex-direction: column;
+    
   }
 }

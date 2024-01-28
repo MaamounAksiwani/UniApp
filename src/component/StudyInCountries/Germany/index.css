@@ -1,6 +1,6 @@
 .parentTheDiv {
     position: relative;
-    height: 40vh;
+    height: 55vh;
     border-bottom: 8px solid #378fb4;
   }
   
@@ -10,13 +10,13 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    background: url("https://images.pexels.com/photos/3490856/pexels-photo-3490856.jpeg")
+    background: url('../../../../src/until/Image/JPG/AdobeStock_487411238.jpeg')
     center/cover no-repeat;
   filter: brightness(0.7);
   }
   
   .CountryOverlay {
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.3);
     width: 100%;
     height: 100%;
     position: absolute;

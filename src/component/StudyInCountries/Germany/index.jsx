@@ -33,11 +33,6 @@ const Germany = () => {
 
             </div>
         </>
-        // <div style={{ padding: '100px 0px' }}>
-        //     <Container maxWidth="lg">
-        //         <h1>Germany </h1>
-        //     </Container>
-        // </div >
     );
 }
 export default Germany;

@@ -1,9 +1,10 @@
 import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink ,useNavigate} from 'react-router-dom'
 
 const Footer = () => {
+    const navigate = useNavigate();
     return (
         <div className='Footer'>
             <Container maxWidth="lg">
@@ -22,22 +23,22 @@ const Footer = () => {
                             <h4>Explore</h4>
                             <div className='hoho'>
                                 <ul>
-                                    <li><a href="#">About Us</a></li>
-                                    <li><a href="#">Universities</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li onClick={()=>{ navigate('/about-us/')}}>About us</li>
+                                    <li>Universities</li>
+                                    <li onClick={()=>{ navigate('/contact-us/')}}>Contact us</li>
                                 </ul>
                                 <ul>
-                                    <li><a href="#">Students</a></li>
-                                    <li><a href="#">Recruitment Partners</a></li>
+                                    <li>Students</li>
+                                    <li>Recruitment Partners</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="footer-col">
                             <h4>Information</h4>
                             <ul>
-                                <li><a href="#">Privacy</a></li>
-                                <li><a href="#">Impressum</a></li>
-                                <li><a href="#">Terms</a></li>
+                                <li>Privacy</li>
+                                <li>Impressum</li>
+                                <li>Terms</li>
                             </ul>
                             <div>
                                 <div className='download'>

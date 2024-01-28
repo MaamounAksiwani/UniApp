@@ -4,7 +4,7 @@ import { Container } from '@mui/material';
 import StudentAppGuide from './GuideToCollege';
 const StudentApplicationGuide = () => {
     return (
-        <>
+        <div style={{padding:'100px 0px'}}>
             <Container maxWidth="lg">
                 <div className='mainBox'>
                     <div className='left-side'>
@@ -29,7 +29,7 @@ const StudentApplicationGuide = () => {
                 </div>
 
             </Container>
-        </>
+        </div>
     );
 }
 export default StudentApplicationGuide;

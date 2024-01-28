@@ -2,11 +2,15 @@ import React from 'react';
 import './index.css';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { Container } from '@mui/material';
-import CategoryImage1 from '../../../src/until/Image/user1.png';
-import CategoryImage2 from '../../../src/until/Image/user2.png';
-import CategoryImage3 from '../../../src/until/Image/user3.png';
+import CategoryImage1 from '../../../src/until/Image/PNG/uniapp student.png';
+import CategoryImage2 from '../../../src/until/Image/PNG/uniapp - study agents.png';
+import CategoryImage3 from '../../../src/until/Image/PNG/uniapp - school partners.png';
+import { useNavigate } from 'react-router-dom'
+
 
 const Platform = () => {
+
+    const navigate = useNavigate();
 
     const data = [
         {
@@ -29,20 +33,31 @@ const Platform = () => {
             image: CategoryImage3
         }
     ]
+
+    const pageName = (name) => {
+        const pageMappings = {
+            'Students': '/students/',
+            'Study Agents': '/study-agents/',
+            'default': '/schools/'
+        };
+    
+        const pagePath = pageMappings[name] || pageMappings['default'];
+        navigate(pagePath);
+    };
     return (
         <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
                 <h1 className='main-title'>A Platform Built For International Education</h1>
                 <div className='cardBox'>
                     {data.map((ele) => (
-                        <div className='card' key={ele.id}>
+                        <div className='card' key={ele.id} onClick={() => { pageName(ele.category) }}>
                             <img className='img1' src={ele.image} alt='Image not Found' />
                             <h2>{ele.category}</h2>
                             <p>{ele.des}</p>
                             <div>
                                 <div className='link'>
-                                    <a>Start here </a>
-                                    <ArrowForwardIcon />
+                                    <span>Start here </span>
+                                    <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' , marginTop:'2px' }} />
                                 </div>
                             </div>
                         </div>
