@@ -5,7 +5,7 @@ import './index.css';
 const ApplyForABachelors = () => {
     const inputStyle = {
         backgroundColor: '#fff',
-        borderRadius: '40px',
+        borderRadius: '18px',
         margin:'0px 15px'
     };
 
@@ -30,8 +30,6 @@ const ApplyForABachelors = () => {
     ];
 
     const [selectedCategories, setSelectedCategories] = useState([]);
-
-    const [checked, setChecked] = useState(false);
 
     const handleCategoryClick = (category) => {
         const updatedCategories = selectedCategories.includes(category)

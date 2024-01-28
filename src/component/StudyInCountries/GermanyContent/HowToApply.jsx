@@ -143,8 +143,7 @@ const HowToApply = () => {
 
 
             <div>
-                <h2>Learn German (If Possible)
-
+                <h2>Learn German (If Possible) </h2>
                     <span>The next step when applying for university admission in Germany is an optional one but one that is highly recommended and is learning the German
                         language. You can expect to get to a pretty good level if you start learning it around six months before applying. Even if your program is in English
                         , it’s recommended to learn German or at least basic skills. This is because in lectures, even in English programs, professors and students may converse
@@ -152,7 +151,6 @@ const HowToApply = () => {
                         in German, so trying to meet them halfway can have benefits and earn you points.
 
                     </span>
-                </h2>
             </div>
 
           <div>

@@ -133,3 +133,21 @@
     width: 40%;
 
 }
+
+
+
+@media only screen and (max-width: 768px) {
+  .input1 , .input2{
+    width: 100%;
+  }
+  .input2{
+    margin: 15px 0px !important;
+  }
+  .inputs{
+    flex-direction: column;
+  }
+  .category{
+    min-width: 90px;
+  }
+
+}

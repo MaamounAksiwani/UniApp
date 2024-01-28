@@ -70,18 +70,24 @@
   .header-text {
     text-align: center;
     width: 100%;
-    padding: 0px;
+    padding: 10px 0px;
+    margin-top: 25px;
   }
   .mainTitle {
     font-size: 15px;
+    margin-top: 25px;
+    margin-bottom: 0;
+    line-height:1.5;
+    font-weight: bold;
   }
   .subTitle {
-    font: 40px;
+    font-size: 40px;
   }
   .des {
-    font-size: 15px;
+    font-size: 18px;
+    line-height: 1.4;
   }
   .header-container {
-    height: 50vh;
+    height: 90vh;
   }
 }
