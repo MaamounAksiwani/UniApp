@@ -19,7 +19,7 @@ const ChooseUniApp = () => {
 
                     <div>
                         <ShieldIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
-                        <h3>Admission Counselling</h3>
+                        <h3>Assdmission Counselling</h3>
                         <p>From the comfort of your home, talk to a study agent near you and receive a free consultation
                         </p>
 

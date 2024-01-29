@@ -6,7 +6,7 @@ import iconFeat from '../../../src/until/Image/SVG/handshake-duotone 2.svg'
 import iconFeat2 from '../../../src/until/Image/SVG/shield-duotone 2.svg'
 import iconFeat3 from '../../../src/until/Image/SVG/users-duotone 2.svg'
 import DevicesIcon from '@mui/icons-material/Devices';
-
+import laptop from '../../until/Image/PNG/uniapp-laptop-dashboard.png'
 import AssistWalkerIcon from '@mui/icons-material/AssistWalker';
 
 const MakeSureSection = () => {
@@ -69,7 +69,7 @@ const MakeSureSection = () => {
         <>
             <div className="MakeSureSection-container">
                 <Container maxWidth="lg">
-                    <h1>We Make Sure Students Gain Admission to the  Best <br /> International Colleges and Universities</h1>
+                    <h1 className='MakeSureSection-title'>We Make Sure Students Gain Admission to the  Best  International Colleges and Universities</h1>
                     <div className='count'>
                         <div>
                             {isScrolled}
@@ -93,14 +93,14 @@ const MakeSureSection = () => {
                                     <div>
                                         <img src={iconFeat2} alt='image not found ' style={{width:'50px' , height:'42px'}} />
                                     
-                                        <h3 style={{ marginBottom: '5px' }}>Admission Counselling</h3>
+                                        <h3 style={{ marginBottom: '5px', color:"#333" }}>Admission Counselling</h3>
                                         <p style={{ marginTop: '0' }}>From the comfort of your home, schedule a meeting with an expert and receive a free consultation.</p>
                                     </div>
 
                                 </div>
                                 <div>
                                     <DevicesIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
-                                    <h3 style={{ marginBottom: '5px' }}>Smart Application</h3>
+                                    <h3 style={{ marginBottom: '5px' , color:"#333" }}>Smart Application</h3>
                                     <p style={{ marginTop: '0' }}>With your profile, you will be able to apply for multiple programs with one click.</p>
 
                                 </div>
@@ -111,20 +111,20 @@ const MakeSureSection = () => {
                                         
                                     <img src={iconFeat} alt='not found img ' style={{width:'50px' , height:'42px'}}/>
                                       
-                                        <h3 style={{ marginBottom: '5px' }}>Partner Schools</h3>
+                                        <h3 style={{ marginBottom: '5px' , color:"#333" }}>Partner Schools</h3>
                                         <p style={{ marginTop: '0' }}>Choose from thousands of study programs across the world.
                                             .</p>
                                     </div>
                                 </div>
                                 <div>
                                     <img src={iconFeat3} alt='not found img' style={{width:'50px' , height:'42px'}}/>
-                                    <h3 style={{ marginBottom: '5px' }}>Continuous Support</h3>
+                                    <h3 style={{ marginBottom: '5px' , color:"#333"}}>Continuous Support</h3>
                                     <p style={{ marginTop: '0' }}>Advisors provide 1 on 1 support at any step of the journey..</p>
                                 </div>
                             </div>
                         </div>
                         <div className='right-side'>
-                            <img src="https://uni-app.com/wp-content/uploads/2022/02/uniapp-laptop-dashboard.png" alt="image not found" />
+                            <img src={laptop} alt="image not found" />
                         </div>
                     </div>
                 </Container>

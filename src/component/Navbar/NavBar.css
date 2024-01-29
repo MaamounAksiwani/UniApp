@@ -59,6 +59,11 @@
     display: block;
     color: red;
   }
+ 
+.logo img {
+  /* width: 75px; */
+  /* height: 75px; */
+}
 
   .pages {
     display: none;

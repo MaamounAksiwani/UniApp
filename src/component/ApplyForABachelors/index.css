@@ -1,6 +1,6 @@
 
 .bodyApplyForABachelors{
-  /* padding: 50px 0px; */
+  padding: 50px 0px;
 }
 .box {
   background-color: #378fb4;
@@ -148,6 +148,9 @@
   }
   .category{
     min-width: 90px;
+  }
+  .box h2 {
+    font-size: 30px;
   }
 
 }
