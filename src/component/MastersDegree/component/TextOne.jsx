@@ -1,24 +1,27 @@
-import React, { useState } from 'react';
 import './index.css';
+import React, { useState } from 'react';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import Image from "../../../until/Image/tourism-and-hospitality-management-masters-1.png"
-import SellIcon from '@mui/icons-material/Sell';
-import ShareIcon from '@mui/icons-material/Share';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import TwitterIcon from '@mui/icons-material/Twitter';
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import userImage from '../../../until/Image/cef6ad55dd285872cecd60dd8488e0b6.jpeg'
+import ShareLink from './ShareLink';
 const TextOne = () => {
-
-    const [showOptions, setShowOptions] = useState(false);
-
-    const handleIconHover = () => {
-        setShowOptions(true);
+    const [isHovered1, setHovered1] = useState(false);
+    const [isHovered2, setHovered2] = useState(false);
+    const divStyle = {
+        display: 'flex',
+        justifyContent: 'space-between',
+        padding: '10px',
+        cursor: 'pointer',
+        transition: 'background-image 0.3s',
     };
 
-    const handleIconLeave = () => {
-        setShowOptions(false);
-    };
-
+    const divHoverStyle = {
+        backgroundImage: `url("https://images.pexels.com/photos/923681/pexels-photo-923681.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")`,
+        backgroundSize: 'cover',
+        backgroundRepeat: 'no-repeat',
+      color:'#FFF'
+      };
     return (
         <div className='masterBody'>
 
@@ -454,44 +457,61 @@ const TextOne = () => {
             </div>
 
 
-            <div className='shareLink'>
+            <ShareLink title='study a masters degree,' subTitle='study tourism and hospitality' />
+
+
+
+            <div className='userSection'>
                 <div>
-                    <SellIcon style={{ color: '#696969', fontSize: '22px' }} />
-                    <p>study a master's degree,</p>
-                    <p>study tourism and hospitality</p>
+                    <div>
+                        <img src={userImage} alt='image not found' />
+
+                    </div>
+
+                    <div>
+                        <h3>LEILA EL BISHRY</h3>
+                        <p>Hi! I'm Leila, an extroverted introvert and a Libra who happens to work as a content creator. I'm a city
+                            girl who loves long summer days and thinks everything should be done with a lot of passion and soul.</p>
+                    </div>
+                </div>
+            </div>
+
+
+            {/* <div className='option'>
+
+                <div>
+                    <ArrowBackIosNewIcon style={{ fontSize: '18px', marginRight: '15px', color: '#20ad96' }} />
+
+                    <h6>What’s the Difference Between Leadership and Management?</h6>
                 </div>
 
-             
-                    <p style={{marginRight:'15px' ,fontWeight:'500'}}>Share this post</p>
-                    <div onMouseEnter={handleIconHover} style={{ position: 'relative' }}
-                        onMouseLeave={handleIconLeave}>
-                        <ShareIcon className='shareIcon' />
-                        {showOptions && (
-                            <div style={{
-                                position: 'absolute',
-                                bottom: '100%',
-                                left: '50%',
-                                marginBottom:'2px',
-                                transform: 'translateX(-50%)',
-                                backgroundColor: '#FFF',
-                                borderRadius: '5px',
-                                padding: '10px 35px',
-                                whiteSpace: 'nowrap',
-                                boxShadow:'0 15px 30px -10px rgba(0, 0, 0, 0.1)'
+                <div>
+                    <h6>A Guide to Understanding the 13 Weirdest Grading Systems Worldwide</h6>
+                    <ArrowForwardIosIcon style={{ fontSize: '18px', marginLeft: '15px', color: '#20ad96' }} />
+                </div>
 
-                            }}>
-                               <FacebookIcon className='FacebookIcon' />
-                               <TwitterIcon className='TwitterIcon' />
-                               <InstagramIcon className='InstagramIcon'/>
-                               <LinkedInIcon className='LinkedInIcon'/>
-                            </div>
-                        )}
-                    </div>
-              
+            </div> */}
+            <div className='option'>
+                <div
+                    style={{ ...divStyle, ...(isHovered1 ? divHoverStyle : {}) }}
+                    onMouseEnter={() => setHovered1(true)}
+                    onMouseLeave={() => setHovered1(false)}
+                >
+                    <ArrowBackIosNewIcon style={{ fontSize: '18px', marginRight: '15px', color: '#20ad96' }} />
+                    <h6>What’s the Difference Between Leadership and Management?</h6>
+                </div>
 
-
+                <div
+                    style={{ ...divStyle, ...(isHovered2 ? divHoverStyle : {}) }}
+                    onMouseEnter={() => setHovered2(true)}
+                    onMouseLeave={() => setHovered2(false)}
+                >
+                    <h6>A Guide to Understanding the 13 Weirdest Grading Systems Worldwide</h6>
+                    <ArrowForwardIosIcon style={{ fontSize: '18px', marginLeft: '15px', color: '#20ad96' }} />
+                </div>
             </div>
-            <hr style={{ width: '100%', borderTop: '1px solid #DDD', marginBottom: '25px' }} />
+
+
 
         </div>
     );

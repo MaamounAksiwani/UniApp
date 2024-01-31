@@ -72,12 +72,12 @@
   width: 100%;
 }
 .shareLink {
+  margin: 25px 0px;
   display: flex;
   transition: 0.3s ease;
   justify-content: space-between;
   align-items: center;
   margin-bottom: 25px;
-  /* background-color: red; */
 }
 
 .shareLink div:first-child p:hover {
@@ -93,6 +93,7 @@
   margin-top: 0px;
   font-size: 14px;
   cursor: pointer;
+  font-weight: 500;
   color: #696969;
 }
 .shareLink div:nth-child(2) p {
@@ -112,18 +113,75 @@
   color: #fff;
 }
 
-.FacebookIcon ,.InstagramIcon ,.LinkedInIcon  ,.TwitterIcon{
+.FacebookIcon,
+.InstagramIcon,
+.LinkedInIcon,
+.TwitterIcon {
   font-size: 25px;
-  margin: 0px 15px;
+  margin: 0px 10px;
   cursor: pointer;
   color: #ccc;
   transition: 0.3s ease;
 }
-.FacebookIcon:hover,.InstagramIcon:hover ,.LinkedInIcon:hover ,.TwitterIcon:hover{
-    color: #20ad96;
+.FacebookIcon:hover,
+.InstagramIcon:hover,
+.LinkedInIcon:hover,
+.TwitterIcon:hover {
+  color: #20ad96;
+}
+.userSection div:first-child {
+  display: flex;
+  align-items: center;
+}
+.userSection div:first-child div:nth-child(2) {
+  flex: 8;
+}
+.userSection p {
+  color: #696969;
+  margin: 18px 0px 0px;
+}
+
+.userSection h1 {
+  color: #333;
+  margin: 0px 0px 15px;
+}
+
+.userSection img {
+  border-radius: 50%;
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.option {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+.option div {
+  border: 1px solid #eee;
+  margin: 0px 10px;
+  padding: 15px;
+  box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  display: flex;
+  align-items: center
+}
+
+.option div h6 {
+  word-wrap: break-word;
+  font-size: 15px;
+  text-align: right;
 }
 @media only screen and (max-width: 768px) {
   .childMastersDegreeBody {
-    flex-direction: column-reverse;
+    flex-direction: column;
+  }
+  .userSection div:first-child {
+    flex-direction: column;
+    text-align: center;
+  }
+  .option{
+    display: flex;
+    flex-direction: column;
   }
 }
