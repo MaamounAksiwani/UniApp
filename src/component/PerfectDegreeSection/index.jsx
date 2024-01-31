@@ -38,7 +38,7 @@ const PerfectDegreeSection = () => {
         if (pageName === `Bachelor's Degree`) {
             navigate('/bachelors-degrees/');
         } else if (pageName === `Master's Degree`) {
-            navigate('');
+            navigate('/masters-degree-in-tourism-and-hospitality-management/');
         } else {
             navigate('/online-degrees/');
         }

@@ -13,6 +13,13 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
     const handleMouseLeave = () => {
         setIsHovered(false);
     };
+    const handelClick = ()=>{
+        if(btnText === 'Student Application Guide'){
+            window.location.href = 'https://www.facebook.com/uniapp.official';
+        }else if(btnText === 'Start Your Application'){
+            window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome';
+        }
+    }
     return (
         <div className='shareComCont'>
             <Container maxWidth="lg">
@@ -30,8 +37,8 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                     <h1 className='titleHeader'>{text}</h1>
 
                     <div className='btnStyle'>
-                        <span>
-                            <a> {btnText}</a>
+                        <span onClick={()=>{handelClick()}}>
+                         {btnText}
                         </span>
                     </div>
                 </div>

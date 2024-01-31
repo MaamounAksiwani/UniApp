@@ -3,6 +3,7 @@ import React from 'react';
 import Container from "@mui/material/Container";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 // tb7
+import YazanImage from '../../../until/Image/yazan.jpeg'
 import tb7 from '../../../until/Image/JPG/tb7.jpg'
 const ManagementTeam = () => {
 
@@ -21,8 +22,8 @@ const ManagementTeam = () => {
     },
     {
       id: 3,
-      imgSrc: 'https://images.pexels.com/photos/3778069/pexels-photo-3778069.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      title: 'Mahmud Hasan',
+      imgSrc: YazanImage,
+      title: 'Yazan Alkhatib',
       Job: 'Engineering',
     },
   ];
@@ -32,12 +33,9 @@ const ManagementTeam = () => {
     <body className='teamBody'>
       <Container maxWidth="lg">
         <div className='teamTitle'>
-
           <h5>BEHIND THE OPERATIONS </h5>
           <h1> <span className='ManagementTitle'>Management</span> <bold>Team</bold> </h1>
-
         </div>
-
         <div className="App">
           <div className="card-container">
             {cardsData.map((card) => (

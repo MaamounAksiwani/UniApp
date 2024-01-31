@@ -1,0 +1,129 @@
+.MastersDegreeBody {
+  padding: 100px 0px;
+}
+.childMastersDegreeBody {
+  display: flex;
+}
+
+.childMastersDegreeBody div:first-child img {
+  width: 500px;
+  height: 680px;
+}
+.childMastersDegreeBody div:first-child {
+  flex: 2;
+}
+.childMastersDegreeBody div:nth-child(2) {
+  flex: 1;
+}
+.masterTitle {
+  color: #696969;
+  cursor: pointer;
+  transition: 0.3s ease;
+  font-weight: 500;
+  font-size: 15px;
+}
+.masterTitle:hover {
+  color: #20ad96;
+}
+
+.masterBody h1 {
+  font-size: 32px;
+  color: #333;
+}
+.nameWithDate {
+  display: flex;
+  max-width: 250px;
+}
+.rightSideContact {
+  display: flex;
+  transition: 0.3s ease;
+  cursor: pointer;
+  align-items: center;
+}
+.rightSideContact:hover p {
+  color: #20ad96 !important;
+}
+.rightSideContact img {
+  width: 30px !important;
+  height: 30px !important;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.nameWithDate p {
+  color: #696969;
+  font-size: 15px;
+}
+.RightSideContact {
+  margin: 25px 0px;
+}
+
+.RightSideContact h1 {
+  font-weight: 400;
+  font-size: 32px;
+}
+.imgSection {
+  margin: 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.imgSection img {
+  width: 100%;
+}
+.shareLink {
+  display: flex;
+  transition: 0.3s ease;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+  /* background-color: red; */
+}
+
+.shareLink div:first-child p:hover {
+  color: #20ad96;
+}
+.shareLink div:nth-child(2) {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.shareLink div:first-child p {
+  margin-bottom: 0px;
+  margin-top: 0px;
+  font-size: 14px;
+  cursor: pointer;
+  color: #696969;
+}
+.shareLink div:nth-child(2) p {
+  font-weight: 500;
+  margin-right: 10px;
+}
+.shareIcon {
+  color: #20ad96;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: 0.3s ease;
+  padding: 10px;
+  background-color: #eee;
+}
+.shareIcon:hover {
+  background-color: #20ad96;
+  color: #fff;
+}
+
+.FacebookIcon ,.InstagramIcon ,.LinkedInIcon  ,.TwitterIcon{
+  font-size: 25px;
+  margin: 0px 15px;
+  cursor: pointer;
+  color: #ccc;
+  transition: 0.3s ease;
+}
+.FacebookIcon:hover,.InstagramIcon:hover ,.LinkedInIcon:hover ,.TwitterIcon:hover{
+    color: #20ad96;
+}
+@media only screen and (max-width: 768px) {
+  .childMastersDegreeBody {
+    flex-direction: column-reverse;
+  }
+}

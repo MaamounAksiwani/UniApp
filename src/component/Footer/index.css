@@ -96,3 +96,8 @@ ul {
   justify-content: space-between;
   align-items: center;
 }
+.hoho img{
+  width: 100px;
+  cursor: pointer;
+  height: 25px;
+}

@@ -35,6 +35,7 @@
   max-width: 500px;
   margin: 0px 10px;
   overflow: hidden;
+  height: 250px;
 }
 
 .TeamCard img {
@@ -61,7 +62,7 @@
 }
 
 .TeamCard:hover .overlay {
-  opacity: 1; /* Show overlay on hover */
+  opacity: 1;
 }
 
 .App h2 {

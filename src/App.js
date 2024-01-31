@@ -15,6 +15,7 @@ import AllCountries from "./component/StudyDestinations/AllCountries";
 import BachelorsDegrees from "./component/BachelorsDegrees";
 import ScrollToTop from "./component/ScrollToTop";
 import OnlineDegrees from "./component/OnlineDegrees";
+import MastersDegree from "./component/MastersDegree/Index";
 
 
 
@@ -36,9 +37,8 @@ const App = () => {
           <Route  path="/study-destinations/study-in-germany/" element={<StudyInCountries />} />
           <Route  path="/study-destinations/" element={<AllCountries />} />
           <Route  path="/bachelors-degrees/" element={<BachelorsDegrees />} />
-          
-          <Route  path="/online-degrees/" element={<OnlineDegrees />} />
-        
+          <Route  path="/online-degrees/" element={<OnlineDegrees />} />        
+          <Route  path="/masters-degree-in-tourism-and-hospitality-management/" element={<MastersDegree />} />
         </Routes>
         <Footer />
       </BrowserRouter>

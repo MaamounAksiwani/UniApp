@@ -1,4 +1,3 @@
-/* Add these styles to your index.css file */
 
 .parentTheCountry {
   position: relative;
@@ -25,16 +24,7 @@
   margin-bottom: 16px;
 }
 
-@media only screen and (min-width: 769px) {
-  .inputContainer {
-    flex-direction: row;
-  }
 
-  .inputContainer > * {
-    margin-bottom: 0;
-    margin-right: 16px;
-  }
-}
 
 .BachelorsDegreesText {
   position: absolute;
@@ -128,10 +118,6 @@
 }
 .degreesContact {
   padding: 25px 0px;
-}
-
-.degreesContact div{
-  /* background-color: red; */
 }
 
 .degreesContact ul {
@@ -299,5 +285,20 @@
   }
   .BachelorsDegreesText {
     top: 10%;
+  }
+
+}
+
+@media only screen and (min-width: 769px) {
+  .inputContainer {
+    flex-direction: row;
+  }
+
+  .inputContainer > * {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+  .BachelorsDegreesText h1 {
+    font-size: 35px;
   }
 }

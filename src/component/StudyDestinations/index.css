@@ -90,7 +90,7 @@
 
 .parentTheCountry {
   position: relative;
-  height: 47vh;
+  height: 50vh;
   border-bottom: 8px solid #378fb4;
 }
 
@@ -196,5 +196,21 @@
     display: flex;
     flex-direction: column;
     
+  }
+  .CountryTextt{
+    top: 20%;
+  }
+  .parentTheCountry {
+    height: 50vh !important;
+  }
+ 
+}
+
+@media only screen and (max-width: 600px) {
+  .parentTheCountry {
+    height: 75vh !important;
+  }
+  .CountryTextt h1{
+    font-size: 35px !important;
   }
 }

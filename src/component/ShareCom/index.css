@@ -60,6 +60,7 @@
 .shareComCont img {
   width: 60px;
   height: 75px;
+  opacity: 40%;
   padding: 25px;
 }
 

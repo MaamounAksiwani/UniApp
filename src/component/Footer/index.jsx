@@ -1,7 +1,9 @@
 import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
-import { Link, NavLink ,useNavigate} from 'react-router-dom'
+import { Link, NavLink, useNavigate } from 'react-router-dom'
+
+import Logo from '../../../src/until/Image/barmer-logo.png'
 
 const Footer = () => {
     const navigate = useNavigate();
@@ -14,22 +16,23 @@ const Footer = () => {
                             <h4>Questions ?</h4>
                             <p>Find the frequently asked questions and answers about the study abroad journey.
                                 You are not alone, many of the students have the same questions like you. Explore now!</p>
-                            <div style={{ marginTop: "45px" }}>
+                            <div style={{ marginTop: "25px" }}>
 
-                                <Link to='/faq/' className='faqBtn'>FAQ</Link>
+                                {/* <Link to='/faq/' className='faqBtn'>FAQ</Link> */}
                             </div>
                         </div>
                         <div class="footer-col">
                             <h4>Explore</h4>
                             <div className='hoho'>
                                 <ul>
-                                    <li onClick={()=>{ navigate('/about-us/')}}>About us</li>
+                                    <li onClick={() => { navigate('/about-us/') }}>About us</li>
                                     <li>Universities</li>
-                                    <li onClick={()=>{ navigate('/contact-us/')}}>Contact us</li>
+                                    <li onClick={() => { navigate('/contact-us/') }}>Contact us</li>
                                 </ul>
                                 <ul>
                                     <li>Students</li>
                                     <li>Recruitment Partners</li>
+                                    <img onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Finsurance%2Fbarmer' }} src={Logo} alt='logo not found' />
                                 </ul>
                             </div>
                         </div>

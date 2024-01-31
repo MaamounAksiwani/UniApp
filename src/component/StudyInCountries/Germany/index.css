@@ -1,81 +1,81 @@
 .parentTheDiv {
-    position: relative;
-    height: 55vh;
-    border-bottom: 8px solid #378fb4;
-  }
-  
-  .backgroundImageCountry {
-    background-size: cover;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    background: url('../../../../src/until/Image/JPG/AdobeStock_487411238.jpeg')
+  position: relative;
+  height: 55vh;
+  border-bottom: 8px solid #378fb4;
+}
+
+.backgroundImageCountry {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: url("../../../../src/until/Image/JPG/AdobeStock_487411238.jpeg")
     center/cover no-repeat;
-  filter: brightness(0.7);
-  }
-  
-  .CountryOverlay {
-    background-color: rgba(0, 0, 0, 0.3);
+  filter: brightness(0.4);
+}
+
+.CountryOverlay {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+}
+
+.CountryText {
+  position: absolute;
+  top: 25%;
+  color: #fff;
+  padding: 15px;
+}
+.CountryText h1 {
+  margin-bottom: 16px;
+  color: #ebebeb;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.CountryText p {
+  margin-bottom: 8px;
+  font-size: 16px;
+  font-weight: 900;
+  color: #d8d8d8;
+}
+.sssss {
+  display: flex;
+  width: 75%;
+  margin: 20px 0px;
+}
+
+@media only screen and (max-width: 768px) {
+  .sssss {
     width: 100%;
-    height: 100%;
-    position: absolute;
+    flex-direction: column;
   }
-  
-  .CountryText {
-    position: absolute;
-    top: 25%;
-    color: #fff;
-    padding: 15px;
+  .searchBtn {
+    width: 40%;
+    margin-top: 15px;
   }
-  .CountryText h1{
-    margin-bottom: 16px;
-    color: #EBEBEB;
-    font-size: 48px;
-    font-weight: 600;
-  }
-  
   .CountryText p {
-    margin-bottom: 8px;
-    font-size: 16px;
-    font-weight: 900;
-    color: #D8D8D8;
+    font-size: 20px;
   }
-  .sssss{
-    display: flex;
-    width: 75%;
-    margin: 20px 0px;
+  .CountryText{
+    top: 12.5%;
   }
+  .parentTheDiv{
+    height: 75vh;
+  }
+}
 
-  @media only screen and (max-width: 768px) {
-    .sssss {
-      width: 100%;
-      flex-direction: column; 
-    }
-    .searchBtn{
-      width: 40%;
-      margin-top: 15px;
-    }
-  }
+.searchBtn {
+  background-color: #378fb4;
+  padding: 18px 40px;
+  cursor: pointer;
+  border-radius: 30px;
+  border: none;
+  margin-left: 5px;
+  color: #fff;
+  font-weight: 500;
+  font-size: 17px;
+}
 
-  .searchBtn{
-    background-color: #378fb4;
-    padding: 18px 40px;
-    cursor: pointer;
-    border-radius: 30px;
-    border: none;
-    margin-left: 10px;
-    color: #fff;
-    font-weight: 500;
-    font-size: 17px;
-  }
-
-  
-  @media only screen and (max-width: 768px) {
-    .CountryText p{
-      font-size: 20px;
-    }
-  }
-  
-  
-  
