@@ -176,6 +176,14 @@
   .childMastersDegreeBody {
     flex-direction: column;
   }
+  .childMastersDegreeBody div:first-child {
+    /* flex: 10; */
+
+  }
+  .childMastersDegreeBody div:nth-child(2) {
+    flex: 1;
+    /* background-color: green; */
+  }
   .userSection div:first-child {
     flex-direction: column;
     text-align: center;
@@ -183,5 +191,8 @@
   .option{
     display: flex;
     flex-direction: column;
+  }
+  .option div{
+    margin: 10px 5px;
   }
 }

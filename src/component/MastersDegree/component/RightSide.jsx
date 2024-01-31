@@ -9,7 +9,7 @@ const RightSide = () => {
 
     return (
         <div className='masterBody'>
-            <img src={mainImg} alt='image not found' />
+            <img src={mainImg} alt='image not found' className='mainImg' />
             <h4 className='masterTitle'>MASTERS DEGREE</h4>
             <h1>Why study a master’s degree in tourism and hospitality management in 2023</h1>
 

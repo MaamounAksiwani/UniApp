@@ -39,7 +39,7 @@ const ShareLink = ({ title
                         <div style={{
                             position: 'absolute',
                             bottom: '100%',
-                            left: '50%',
+                            left: '-100%',
                             marginBottom: '2px',
                             transform: 'translateX(-50%)',
                             backgroundColor: '#FFF',
