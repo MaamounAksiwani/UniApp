@@ -1,0 +1,64 @@
+.MainCardCategory {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+  overflow: hidden;
+}
+.MainCardCategory .ContainerCard {
+  border-radius: 5px;
+  background-color: #fff;
+  margin: 20px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.MainCardCategory .ContainerCard img:hover {
+  transform: scale(1.1);
+  overflow: hidden;
+}
+
+.MainCardCategory img {
+  transition: 0.3s ease;
+  width: 370px !important;
+  height: 250px !important;
+  overflow: hidden;
+}
+.MainCardCategory p {
+  transition: 0.3s ease;
+  padding: 15px;
+  text-align: left;
+  cursor: pointer;
+  color: #333;
+  font-weight: bold;
+  font-size: 18px;
+}
+.MainCardCategory p:hover {
+  color: #20ad96;
+}
+
+.MainCardCategory .ContainerCard:first-child {
+  padding: 10px;
+}
+
+.MainCardCategory .ContainerCard:first-child p {
+  color: #696969;
+  font-weight: 300;
+  transition: 0.3s ease;
+  font-size: 17px;
+}
+
+.MainCardCategory .ContainerCard:first-child p:hover {
+  color: #20ad96;
+}
+
+@media only screen and (max-width: 768px) {
+  .MainCardCategory {
+    display: flex;
+    flex-direction: column;
+  }
+  .MainCardCategory img{
+    width: 100%;
+  }
+}
+
+/* MainCardCategory */

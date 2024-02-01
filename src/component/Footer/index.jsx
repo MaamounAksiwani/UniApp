@@ -1,7 +1,8 @@
 import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
-import { Link, NavLink, useNavigate } from 'react-router-dom'
+import { Link, NavLink } from 'react-router-dom'
+import { useNavigate } from 'react-router';
 
 import Logo from '../../../src/until/Image/barmer-logo.png'
 

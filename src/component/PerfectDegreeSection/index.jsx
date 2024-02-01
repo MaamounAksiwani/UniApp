@@ -4,7 +4,8 @@ import './PerfectDegreeSection.css';
 import Container from "@mui/material/Container";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Logo from '../../../src/until/Image/bachelor.svg'
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router';
+
 
 
 const PerfectDegreeSection = () => {

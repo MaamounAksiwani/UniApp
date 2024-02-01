@@ -1,5 +1,6 @@
 .MastersDegreeBody {
   padding: 100px 0px;
+  background-color: #fafafa;
 }
 .childMastersDegreeBody {
   display: flex;
@@ -128,6 +129,9 @@
 .LinkedInIcon:hover,
 .TwitterIcon:hover {
   color: #20ad96;
+}
+.userSection{
+  margin: 25px 0px;
 }
 .userSection div:first-child {
   display: flex;

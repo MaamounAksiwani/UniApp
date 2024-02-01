@@ -2,7 +2,8 @@ import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
-import {  useNavigate  } from 'react-router-dom'
+import { useNavigate } from 'react-router';
+
 
 const StudyDestinations = () => {
     const navigate = useNavigate();

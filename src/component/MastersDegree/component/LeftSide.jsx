@@ -2,14 +2,14 @@ import React from 'react';
 import './index.css';
 import EastIcon from '@mui/icons-material/East';
 import FIlterSection from './FIlterSection';
-
+import { useNavigate } from 'react-router';
 const LeftSide = () => {
-
+    const navigate = useNavigate();
     return (
         <div className='LeftSideMenu'>
             <h2>Popular posts</h2>
 
-            <div>
+            <div onClick={() => { navigate('/14128-2/') }}>
                 <EastIcon className='arrowStyle' />
                 <p>(no title)</p>
             </div>

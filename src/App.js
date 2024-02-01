@@ -16,6 +16,8 @@ import BachelorsDegrees from "./component/BachelorsDegrees";
 import ScrollToTop from "./component/ScrollToTop";
 import OnlineDegrees from "./component/OnlineDegrees";
 import MastersDegree from "./component/MastersDegree/Index";
+import NoTitle from "./component/NoTitle";
+import CategoryUncategorized from "./component/CategoryUncategorized";
 
 
 
@@ -24,7 +26,6 @@ const App = () => {
     <>
       <BrowserRouter>
         <NavBar />
-        {/* <ScrollToTop/> */}
         <Routes>
           <Route exact path="/" element={<HomeScreen />} />
           <Route  path="/faq/" element={<FaqScreen />} />
@@ -39,6 +40,9 @@ const App = () => {
           <Route  path="/bachelors-degrees/" element={<BachelorsDegrees />} />
           <Route  path="/online-degrees/" element={<OnlineDegrees />} />        
           <Route  path="/masters-degree-in-tourism-and-hospitality-management/" element={<MastersDegree />} />
+          <Route  path="/14128-2/" element={<NoTitle />} />
+          <Route  path="/category/uncategorized/" element={<CategoryUncategorized />} />
+      
         </Routes>
         <Footer />
       </BrowserRouter>

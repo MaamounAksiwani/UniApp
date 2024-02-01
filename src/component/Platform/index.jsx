@@ -5,7 +5,7 @@ import { Container } from '@mui/material';
 import CategoryImage1 from '../../../src/until/Image/PNG/uniapp student.png';
 import CategoryImage2 from '../../../src/until/Image/PNG/uniapp - study agents.png';
 import CategoryImage3 from '../../../src/until/Image/PNG/uniapp - school partners.png';
-import { useNavigate } from 'react-router-dom'
+import { useNavigate } from 'react-router';
 
 
 const Platform = () => {

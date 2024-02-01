@@ -18,7 +18,7 @@ const RightSide = () => {
                     <img src={img} alt='not found' />
                     <p>Leila El Bishry</p>
                 </div>
-                <div style={{ display: 'flex ', justifyItems: 'center' }}>
+                <div style={{ display: 'flex' }}>
                     <DateRangeIcon style={{ marginTop: '15px', marginRight: '5px', fontSize: '18px' }} />
                     <p>July27,2022</p>
                 </div>

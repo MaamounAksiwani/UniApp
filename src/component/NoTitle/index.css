@@ -1,0 +1,12 @@
+.noTitle{
+    padding: 100px 0px;
+}
+
+.UNCATEGORIZED-Text{
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.UNCATEGORIZED-Text:hover{
+    color: #20ad96;
+}
