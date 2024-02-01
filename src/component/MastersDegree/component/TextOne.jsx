@@ -477,20 +477,6 @@ const TextOne = () => {
             </div>
 
 
-            {/* <div className='option'>
-
-                <div>
-                    <ArrowBackIosNewIcon style={{ fontSize: '18px', marginRight: '15px', color: '#20ad96' }} />
-
-                    <h6>What’s the Difference Between Leadership and Management?</h6>
-                </div>
-
-                <div>
-                    <h6>A Guide to Understanding the 13 Weirdest Grading Systems Worldwide</h6>
-                    <ArrowForwardIosIcon style={{ fontSize: '18px', marginLeft: '15px', color: '#20ad96' }} />
-                </div>
-
-            </div> */}
             <div className='option'>
                 <div
                     style={{ ...divStyle, ...(isHovered1 ? divHoverStyle : {}) }}
