@@ -1,15 +1,15 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Container from "@mui/material/Container";
 import './index.css'
 import LeftSide from '../MastersDegree/component/LeftSide';
-import Card from './Card'
-const CategoryUncategorized = () => {
+import Contant from './Contant';
+const StudyMedicineInGermany = () => {
     return (
         <div className='MastersDegreeBody'>
         <Container maxWidth="lg">
             <div className='childMastersDegreeBody'>
                 <div>
-                    <Card/>
+                    <Contant/>
                 </div>
                 <div>
                     <LeftSide />
@@ -20,4 +20,4 @@ const CategoryUncategorized = () => {
     );
 };
 
-export default CategoryUncategorized;
+export default StudyMedicineInGermany;

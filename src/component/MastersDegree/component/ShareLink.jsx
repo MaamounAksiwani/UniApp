@@ -8,7 +8,7 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 const ShareLink = ({ title
-    , subTitle, flag }) => {
+    , subTitle ,flag}) => {
 
     const [showOptions, setShowOptions] = useState(false);
 
@@ -24,8 +24,8 @@ const ShareLink = ({ title
         <>
 
             <div className='shareLink'>
-                {<div >
-                    <SellIcon style={{ color: '#696969', fontSize: '22px' }} />
+                { <div >
+                   {!flag ?  <SellIcon style={{ color: '#696969', fontSize: '22px' }} /> : <p></p>}
                     <p>{title}</p>
                     <p>{subTitle}</p>
                 </div>}

@@ -14,13 +14,13 @@ const LeftSide = () => {
                 <p>(no title)</p>
             </div>
             <hr style={{ width: '100%', borderTop: '1px solid #EEE' }} />
-            <div>
+            <div onClick={() => { navigate('/where-to-source-for-academic-papers/') }}>
                 <EastIcon className='arrowStyle' />
                 <p>Where to Source For Academic Papers</p>
             </div>
             <hr style={{ width: '100%', borderTop: '1px solid #EEE' }} />
 
-            <div>
+            <div onClick={()=>{navigate('/study-medicine-in-germany-for-international-students/')}}>
                 <EastIcon className='arrowStyle' />
                 <p>The Ultimate Guide to Study Medicine in Germany for International Students in 2023</p>
             </div>

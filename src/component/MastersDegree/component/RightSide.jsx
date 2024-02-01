@@ -19,7 +19,7 @@ const RightSide = () => {
                     <p>Leila El Bishry</p>
                 </div>
                 <div style={{ display: 'flex' }}>
-                    <DateRangeIcon style={{ marginTop: '15px', marginRight: '5px', fontSize: '18px' }} />
+                    <DateRangeIcon style={{ marginTop: '15px', marginRight: '5px', fontSize: '20px' , color:"#8e8e8e" }} />
                     <p>July27,2022</p>
                 </div>
             </div>

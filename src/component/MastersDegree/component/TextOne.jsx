@@ -25,7 +25,7 @@ const TextOne = () => {
     return (
         <div className='masterBody'>
 
-            <div style={{ marginTop: '15px' }}>
+            <div style={{ marginTop: '30px' }}>
                 <p style={{ color: '#696969', fontSize: '14px' }}>Why study  a master’s degree in tourism and hospitality management in 2023?  Master’s degrees in tourism
                     and hospitality management are postgraduate degrees focused on managing tourist resorts or hotels. However,
                     you might not know much about what this master’s degree is. You might also not be aware of why you should
@@ -33,7 +33,7 @@ const TextOne = () => {
                 </p>
             </div>
 
-            <div style={{ marginTop: '15px' }}>
+            <div style={{  marginTop: '30px' }}>
                 <p style={{ color: '#696969', fontSize: '14px' }}>
                     There are also specific skills that you should have when you choose to study a tourism and hospitality management
                     degree. This is so that you can be successful in the tourism and hospitality field after you graduate from the program.
@@ -69,7 +69,7 @@ const TextOne = () => {
                 </p>
             </div>
 
-            <div style={{ marginTop: '20px', marginBottom: '20px' }} >
+            <div style={{ marginTop: '30px', marginBottom: '20px' }} >
                 <p style={{ color: '#696969', fontSize: '14px' }} >Here are some reasons why you should study a tourism and hospitality management degree:</p>
             </div>
 

@@ -35,7 +35,7 @@ const NoTItleContent = () => {
                     <p>farmzone.net</p>
                 </div>
                 <div style={{ display: 'flex', justifyItems: 'center' }}>
-                    <DateRangeIcon style={{ marginTop: '15px', marginRight: '5px', fontSize: '18px' }} />
+                    <DateRangeIcon style={{ marginTop: '15px', marginRight: '5px', fontSize: '20px' , color:"#8e8e8e" }} />
                     <p>Nov22,2023</p>
                 </div>
             </div>

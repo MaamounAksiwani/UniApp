@@ -18,7 +18,8 @@ import OnlineDegrees from "./component/OnlineDegrees";
 import MastersDegree from "./component/MastersDegree/Index";
 import NoTitle from "./component/NoTitle";
 import CategoryUncategorized from "./component/CategoryUncategorized";
-
+import AcademicPapers from "./component/AcademicPapers";
+import StudyMedicineInGermany from "./component/StudyMedicineInGermany";
 
 
 const App = () => {
@@ -42,7 +43,9 @@ const App = () => {
           <Route  path="/masters-degree-in-tourism-and-hospitality-management/" element={<MastersDegree />} />
           <Route  path="/14128-2/" element={<NoTitle />} />
           <Route  path="/category/uncategorized/" element={<CategoryUncategorized />} />
-      
+          <Route  path="/where-to-source-for-academic-papers/" element={<AcademicPapers />} />
+          <Route  path="/study-medicine-in-germany-for-international-students/" element={<StudyMedicineInGermany />} />
+          
         </Routes>
         <Footer />
       </BrowserRouter>
