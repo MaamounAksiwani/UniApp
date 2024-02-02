@@ -29,21 +29,26 @@
   padding: 25px;
 }
 .mainTitle {
-  font-size: 18px;
+  font-size: 14px;
+  line-height: 2;
+  width: 500px;
   color: #ccc;
   letter-spacing: 3px;
-  font-weight: 300;
+  font-weight: 700;
 }
 
 
 .des {
-  font-size: 18px;
-  color: #ccc;
+  font-size: 16px;
+  color: #fff;
   letter-spacing: 1px;
   font-weight: 500;
+  line-height: 1.5;
 }
 .subTitle {
-  font-size: 72px;
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 66px;
   line-height: 1.13em;
 }
 .headerButton {
@@ -79,9 +84,11 @@
     margin-bottom: 0;
     line-height:1.5;
     font-weight: bold;
+    width: 100%;
   }
   .subTitle {
     font-size: 40px;
+    margin:20px 0px;
   }
   .des {
     font-size: 18px;
@@ -90,4 +97,5 @@
   .header-container {
     height: 90vh;
   }
+  
 }
