@@ -13,6 +13,28 @@
   padding: 15px 0px;
   color: white;
 }
+.bodyNavBar span{
+  cursor: pointer;
+}
+
+.bodyNavBar span:first-child{
+  padding:10px 20px;
+}
+.bodyNavBar  .btn{
+  padding:0px 20px !important;
+  transition: 0.3s ease;
+  font-size: 14px;
+  border-radius: 50px;
+  border: 1px solid #76d4f9;
+}
+
+.bodyNavBar .btn:hover{
+  background-color:  #76d4f9;
+  color: #fff !important;
+} 
+.bodyNavBar .navBarLink{
+  padding: 10px;
+}
 
 .logo img {
   width: 140px;
@@ -24,9 +46,7 @@
   gap: 20px;
 }
 
-.pages a {
-  color: #000;
-  font-weight: 500;
+.pages a { 
   text-decoration: none;
 }
 
