@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Container from "@mui/material/Container";
 import { Link, useLocation } from 'react-router-dom';
-
 import CloseIcon from '@mui/icons-material/Close';
 import './NavBar.css';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
@@ -36,12 +35,26 @@ const Navbar = () => {
     const sidebarStyle = {
         position: 'fixed',
         top: 0,
-        right: isOpen ? 0 : '-100%', // Show/hide the sidebar
+        right: isOpen ? 0 : '-100%',
         height: '100%',
-        width: '250px',
+        width: '300px',
         backgroundColor: '#fff',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
         transition: 'right 0.3s ease',
+    };
+
+
+
+
+    const overlayStyle = {
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: isOpen ? 'calc(100% - 300px)' : '0%',
+        height: '100%',
+        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        zIndex: 9999999,
+        transition: 'width 0.3s ease',
     };
 
     return (
@@ -53,6 +66,8 @@ const Navbar = () => {
                         && currentPath !== '/online-degrees/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
                     <Container maxWidth="lg">
+                    <div style={overlayStyle} onClick={handleToggleMenu}></div>
+
                         <nav className="navbar">
                             <Link to='/' className="logo">
                                 <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
