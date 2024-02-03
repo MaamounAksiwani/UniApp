@@ -54,7 +54,7 @@ const Navbar = () => {
         left: 0,
         width: isOpen ? 'calc(100% - 250px)' : '0%',
         height: '100%',
-        backgroundColor: 'rgba(0, 0, 0, 0.4)',
+        backgroundColor: 'rgba(0, 0, 0, 0.7)',
         zIndex: 9999999,
         transition: 'width 0.3s ease',
     };

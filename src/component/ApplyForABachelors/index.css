@@ -43,7 +43,7 @@
 
 .category {
   flex: 1;
-  min-width: 100px;
+  min-width: 120px;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -52,16 +52,14 @@
   cursor: pointer;
 }
 .category span:first-child {
-  font-size: 15px;
+  font-size: 12px !important;
 }
 
 
 .category.selected {
   background-color: #003e6a;
   margin: 5px;
-  padding: 5px 20px;
-
-  font-size: 10px;
+  /* padding: 5px 20px; */
   font-weight: 500;
   cursor: pointer;
   border-radius: 15px;
@@ -70,11 +68,9 @@
 
 .category.not-selected {
   background-color: #fff;
-  margin: 5px;
+  margin: 5px;  
+  /* padding: 5px 20px; */
 
-  
-  padding: 5px 20px;
-  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 15px;
@@ -88,7 +84,6 @@
   background-color: #003e6a;
   margin: 5px;
   padding: 5px 20px;
-  font-size: 15px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 15px;

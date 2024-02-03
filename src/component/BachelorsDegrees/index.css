@@ -269,7 +269,14 @@
     flex-direction: column;
   }
   .parentTheCountry {
-    height: 85vh;
+    height: 100vh;
+  }
+  .BachelorsDegreesText h1{
+
+    font-size: 30px !important;
+  }
+  .BachelorsDegreesText{
+    top: 20% !important;
   }
 
   .TextField-root {

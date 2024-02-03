@@ -75,7 +75,7 @@ const ApplyForABachelors = () => {
                             >
                                 <p className={`category ${selectedCategories.includes(ele) ? 'selected' : 'not-selected'}`}>
                                     <span>{ele}</span>
-                                    <span>{selectedCategories.includes(ele) && <CheckIcon style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '20px' }} />}</span>
+                                    <span>{selectedCategories.includes(ele) && <CheckIcon style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '15px' }} />}</span>
                                 </p>
                             </div>
                         ))}
