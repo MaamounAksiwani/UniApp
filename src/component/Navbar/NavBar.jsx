@@ -83,7 +83,7 @@ const Navbar = () => {
                                 <Link to='/' className="logo">
                                     <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
                                 </Link>
-                                <CloseIcon style={{ fontSize: '30px' }} />
+                                <CloseIcon onClick={handleToggleMenu} style={{ fontSize: '30px' }} />
                             </div>
 
                             <div className='menuSidebar'>
