@@ -1,6 +1,5 @@
-.bodyNavBar{
-  font-family: 'Montserrat', sans-serif;
-  
+.bodyNavBar {
+  font-family: "Montserrat", sans-serif;
 }
 .main {
   box-shadow: 0 40px 50px rgba(0, 0, 0, 0.1);
@@ -13,26 +12,26 @@
   padding: 15px 0px;
   color: white;
 }
-.bodyNavBar span{
+.bodyNavBar span {
   cursor: pointer;
 }
 
-.bodyNavBar span:first-child{
-  padding:10px 20px;
+.bodyNavBar span:first-child {
+  padding: 10px 20px;
 }
-.bodyNavBar  .btn{
-  padding:0px 20px !important;
+.bodyNavBar .btn {
+  padding: 0px 20px !important;
   transition: 0.3s ease;
   font-size: 14px;
   border-radius: 50px;
   border: 1px solid #76d4f9;
 }
 
-.bodyNavBar .btn:hover{
-  background-color:  #76d4f9;
+.bodyNavBar .btn:hover {
+  background-color: #76d4f9;
   color: #fff !important;
-} 
-.bodyNavBar .navBarLink{
+}
+.bodyNavBar .navBarLink {
   padding: 10px;
 }
 
@@ -46,10 +45,9 @@
   gap: 20px;
 }
 
-.pages a { 
+a {
   text-decoration: none;
 }
-
 
 .pages.show {
   display: flex;
@@ -74,26 +72,10 @@
   margin: 5px;
 }
 
-@media (max-width: 768px) {
-  .burger {
-    display: block;
-    color: red;
-  }
- 
-.logo img {
-  /* width: 75px; */
-  /* height: 75px; */
-}
-
-  .pages {
-    display: none;
-  }
-}
-
 /* 76d4f9 */
 .burger-menu-container {
   position: relative;
-  display: inline-block; 
+  display: inline-block;
 }
 
 .burger-menu {
@@ -123,11 +105,9 @@
   border-bottom: 2px solid #76d4f9;
 }
 
-.dropdown-menu:hover{
+.dropdown-menu:hover {
   color: black;
 }
-
-
 
 .burger-menu-container:hover .dropdown-menu,
 .dropdown-menu:hover {
@@ -142,4 +122,46 @@
 
 .burger-menu:hover {
   transform: none;
+}
+
+.sideBar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+.menuSidebar {
+  height: 100%;
+  background-color: #76d4f9;
+}
+
+.menuSidebar .menuNavBarLink {
+  color: #fff;
+  display: block;
+  padding: 15px;
+}
+.menuSidebar .menuNavBarLink a{
+  color: red  !important;
+}
+
+.smallMedia {
+  display: none !important;
+}
+.smallMedia div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .burger {
+    display: block;
+    color: red;
+  }
+  .smallMedia {
+    padding: 10px;
+    display: block !important;
+  }
+  .navbar {
+    display: none;
+  }
 }
