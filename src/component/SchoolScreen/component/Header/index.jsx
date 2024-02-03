@@ -56,7 +56,7 @@ const Header = () => {
 
     return (
         <>
-            <div style={{ padding: '0px 0px 50px 0px' }}>
+            <div style={{ padding: '0px 0px 50px 0px'  , backgroundColor:'#f8f8f8'}}>
                 <div className='Container-studentsPage'>
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>

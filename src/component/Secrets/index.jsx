@@ -48,7 +48,6 @@ const Secrets = () => {
           </div>
         </div>
 
-
         <div className='more-article'>
 
          <span>

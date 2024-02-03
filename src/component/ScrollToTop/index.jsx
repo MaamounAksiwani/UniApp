@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import './index.css'; // You may need to adjust the import based on your project structure and styling
+import ArrowUpwardIcon from '@mui/icons-material/ArrowUpward';
+import './index.css';
 
 const ScrollToTopButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -11,17 +12,15 @@ const ScrollToTopButton = () => {
       setIsVisible(scrollY > scrollThreshold);
     };
 
-    // Attach the event listener
+    
     window.addEventListener('scroll', handleScroll);
 
-    // Clean up the event listener on component unmount
     return () => {
       window.removeEventListener('scroll', handleScroll);
     };
   }, []);
 
   const scrollToTop = () => {
-    // Scroll to the top of the page
     window.scrollTo({
       top: 0,
       behavior: 'smooth',
@@ -30,23 +29,20 @@ const ScrollToTopButton = () => {
 
   return (
     <div>
-      {isVisible && (
-        <button className="scrollToTopButton" onClick={scrollToTop}>
-          Scroll to Top
-        </button>
-      )}
-    </div>
+    <button
+      className={`scrollToTopButton ${isVisible ? 'show' : ''}`}
+      onClick={scrollToTop}
+    >
+      <ArrowUpwardIcon style={{ fontSize: '23px' }} />
+    </button>
+  </div>
+
   );
 };
 
 const ScrollToTop = () => {
   return (
-    <div>
-      
-      <div >Scroll down...</div>
-
-      {/* Scroll to top button */}
-      <p>CLICK ME</p>
+    <div className='divScrollToTopButton'>
       <ScrollToTopButton />
     </div>
   );

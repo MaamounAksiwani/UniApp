@@ -10,8 +10,13 @@ const Navbar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
     const [isOpen, setIsOpen] = useState(false);
+    const [flag, setFlag] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-    const handleToggleMenu = () => setIsOpen(!isOpen);
+    const handleToggleMenu = () => {
+        setIsOpen(!isOpen);
+        setFlag(!flag)
+    }
+
 
     useEffect(() => {
         const handleScroll = () => {
@@ -37,20 +42,17 @@ const Navbar = () => {
         top: 0,
         right: isOpen ? 0 : '-100%',
         height: '100%',
-        width: '300px',
+        width: '250px',
         backgroundColor: '#fff',
         boxShadow: '0 0 10px rgba(0, 0, 0, 0.1)',
         transition: 'right 0.3s ease',
     };
 
-
-
-
     const overlayStyle = {
         position: 'fixed',
         top: 0,
         left: 0,
-        width: isOpen ? 'calc(100% - 300px)' : '0%',
+        width: isOpen ? 'calc(100% - 250px)' : '0%',
         height: '100%',
         backgroundColor: 'rgba(0, 0, 0, 0.4)',
         zIndex: 9999999,
@@ -66,18 +68,19 @@ const Navbar = () => {
                         && currentPath !== '/online-degrees/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
                     <Container maxWidth="lg">
-                    <div style={overlayStyle} onClick={handleToggleMenu}></div>
+                        <div style={overlayStyle} onClick={handleToggleMenu}></div>
 
                         <nav className="navbar">
-                            <Link to='/' className="logo">
+                            <Link to='/' className="logo" >
                                 <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
                             </Link>
+
                             <div className={`pages`}>
                                 <span style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} onClick={() => { window.location.href = 'https://uni-app.com/search' }}>Find Programs </span>
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/students/'>Students</Link>
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to="/study-agents/">Study Agents</Link>
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/schools/' >School</Link>
-                                <MenuIcon onClick={handleToggleMenu} style={{ marginTop:'8px',fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
+                                <MenuIcon onClick={handleToggleMenu} style={{ marginTop: '8px', fontSize: '20px',  cursor: 'pointer' , color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} />
                                 <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Login </span>
                                 <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Create Account </span>
                             </div>
@@ -85,9 +88,10 @@ const Navbar = () => {
 
                         <div className='smallMedia'>
                             <div>
-                                <Link to='/' className="logo">
+                                {!flag ? <Link to='/' className="logo">
                                     <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
-                                </Link>
+                                </Link> : <p></p>}
+
                                 <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '25px', cursor: 'pointer', color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} />
                             </div>
                         </div>

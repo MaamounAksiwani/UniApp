@@ -21,14 +21,14 @@
   padding: 20px 0px;
   border: 1px solid #eee;
   text-align: center;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
-  transition: box-shadow 0.3s ease;
+  transition: 0.5s ease;
 }
 .countryCard:hover {
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  border-style: solid;
-  border-color: #efefef;
-  border-width: 1px 1px 1px 1px;
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); */
+  /* border-style: solid; */
+  /* border-color: #efefef; */
+  /* background-color: red; */
+  /* border-width: 1px 1px 1px 1px; */
 }
 
 .countryCard p {

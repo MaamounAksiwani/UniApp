@@ -35,7 +35,6 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                      : <h2 className='headerName'>Apply for a <span className='title'> Bachelors or Masters </span>  Revealed  on UniApp</h2> 
                      : subTitle}
                     <h1 className='titleHeader'>{text}</h1>
-
                     <div className='btnStyle'>
                         <span onClick={()=>{handelClick()}}>
                          {btnText}

@@ -14,7 +14,6 @@ const HomeScreen = () => {
   return (
     <>
       <Header />
-      {/* <img src={divider} alt='not found' className='divider'/> */}
       <ApplyForABachelors />
       <Platform />
       <EasierWithUniApp />

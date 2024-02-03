@@ -12,7 +12,7 @@
   height: 100%;
   position: absolute;
   background: url("../../until/Image/JPG/stud.jpg") center/cover no-repeat;
-  filter: brightness(0.2);
+  filter: brightness(0.8) !important;
 }
 
 .inputContainer {
