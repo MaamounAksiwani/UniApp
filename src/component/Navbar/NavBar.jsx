@@ -4,6 +4,7 @@ import { Link, useLocation } from 'react-router-dom';
 
 import CloseIcon from '@mui/icons-material/Close';
 import './NavBar.css';
+import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 
 const Navbar = () => {
@@ -87,17 +88,29 @@ const Navbar = () => {
 
                             <div className='menuSidebar'>
 
-                            <Link to='/students/' className='menuNavBarLink' onClick={handleToggleMenu}>Students</Link>
-                            <hr style={{ width: '90%', borderTop: '1px solid #fff' }} />
+                                <Link to='/students/' className='menuNavBarLink' onClick={handleToggleMenu}>Students</Link>
+                                <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
 
-                            <Link to='/study-agents/' className='menuNavBarLink' onClick={handleToggleMenu}>Study Agents</Link>
-                            <hr style={{ width: '90%', borderTop: '1px solid #fff'}} />
+                                <Link to='/study-agents/' className='menuNavBarLink' onClick={handleToggleMenu}>Study Agents</Link>
+                                <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
 
-                            <Link to='/schools/' className='menuNavBarLink' onClick={handleToggleMenu}>School</Link>
-                            <hr style={{ width: '90%', borderTop: '1px solid #fff' }} />
+                                <Link to='/schools/' className='menuNavBarLink' onClick={handleToggleMenu}>School</Link>
+                                <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
+
+                                <div className='burgerSideMenu'>
+                                    <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
+                                    <ArrowDropDownIcon style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
+                                </div>
+                                <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
+
+
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='menuNavBarLink' >Login </span>
+                                <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='menuNavBarLink'  >Create Account </span>
+
 
                             </div>
-                         
+
                         </div>
                     </Container>
                 </div>

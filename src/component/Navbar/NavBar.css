@@ -132,16 +132,22 @@ a {
 }
 .menuSidebar {
   height: 100%;
-  background-color: #76d4f9;
+  background-color: #1EA7DD;
+  padding: 10px 15px;
 }
 
 .menuSidebar .menuNavBarLink {
   color: #fff;
   display: block;
-  padding: 15px;
+  font-weight: 300;
+  padding: 25px 0px;
+  
 }
-.menuSidebar .menuNavBarLink a{
-  color: red  !important;
+.menuSidebar .burgerSideMenu{
+  display: flex;
+  padding: 15px 0px;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .smallMedia {
