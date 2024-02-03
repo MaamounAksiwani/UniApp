@@ -62,6 +62,7 @@ const Navbar = () => {
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/students/'>Students</Link>
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to="/study-agents/">Study Agents</Link>
                                 <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/schools/' >School</Link>
+                                <MenuIcon onClick={handleToggleMenu} style={{ marginTop:'8px',fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
                                 <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Login </span>
                                 <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Create Account </span>
                             </div>
