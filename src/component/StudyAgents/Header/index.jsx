@@ -1,6 +1,7 @@
 import React, { useState , useEffect } from 'react';
 import './index.css';
 import { Container } from '@mui/material';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
     const [TeamCount, setTeamCount] = useState(0);
@@ -51,8 +52,7 @@ const Header = () => {
     })
 
     return (
-        <div>
-            <Container maxWidth="lg">
+        <div style={{backgroundColor:'#f8f8f8'}}>
             <div style={{ padding: '0px 0px 50px 0px' }}>
                 <div className='Container-studentsPage'>
                     <Container maxWidth="lg">
@@ -64,8 +64,8 @@ const Header = () => {
                                      intelligence to simplify the process of recruiting international  Students,  lets make international education a priority</p>
                                 <div className='btnStyle'>
                                     <span>
-                                        <a>HELLo</a>
-                                        {/* <Link to='/contact-us/'> Partner With Us</Link> */}
+                                        {/* <a>HELLo</a> */}
+                                        <Link to='/contact-us/'> Partner With Us</Link>
                                     </span>
                                 </div>
                             </div>
@@ -99,7 +99,7 @@ const Header = () => {
                     </Container>
                 </div>
             </div>
-            </Container >
+         
             </div>
     );
 }

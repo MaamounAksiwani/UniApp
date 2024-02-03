@@ -58,3 +58,12 @@
 .feat div{
     padding: 18px 0px;
 }
+
+@media only screen and (max-width: 768px) {
+    .feat-name ul li  {
+        /* padding: 0px; */
+    }
+  }
+  
+
+/* .feat-name ul li  */

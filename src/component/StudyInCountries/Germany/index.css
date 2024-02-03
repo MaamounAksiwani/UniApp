@@ -63,19 +63,30 @@
     top: 12.5%;
   }
   .parentTheDiv{
-    height: 100vh;
+    height: 90vh;
   }
 }
 
 .searchBtn {
-  background-color: #378fb4;
-  padding: 18px 40px;
+  background-color: #76d4f9;
+  padding: 18px 20px;
   cursor: pointer;
   border-radius: 30px;
   border: none;
   margin-left: 5px;
   color: #fff;
-  font-weight: 500;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 15px;
+  /* border: 1px solid #378fb4;
+  color: #fff;
+  border-radius: 25px;
+  transition: 0.4s;
+  font-size: 18px;
+  font-weight: 400;
+  margin-right: 16px;
+  background: #378fb4;
+  cursor: pointer;
+  padding: 5px 25px; */
+
 }
 

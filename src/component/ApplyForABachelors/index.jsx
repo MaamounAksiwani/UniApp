@@ -29,6 +29,8 @@ const ApplyForABachelors = () => {
         "Computer Science",
         "Medicine",
         "Financial Management (FM)",
+        "Arts, Design & Architecture",
+        'Business & Management'
     ];
 
     const [selectedCategories, setSelectedCategories] = useState([]);
@@ -40,6 +42,9 @@ const ApplyForABachelors = () => {
 
         setSelectedCategories(updatedCategories);
     };
+
+
+    console.log('selectedCategories', selectedCategories);
 
     return (
         <body className='bodyApplyForABachelors'>
@@ -82,8 +87,14 @@ const ApplyForABachelors = () => {
                     </div>
 
                     <div className='optionn'>
-                        <span>Start </span>
-                        <a href="/">Or View All Programs</a>
+                        <span onClick={() => {
+                            window.location.href = `https://uni-app.com/search`
+                        }}>Start </span>
+                        <span onClick={() => {
+                            window.location.href = `https://uni-app.com/search`
+                        }}>Or View All Programs</span>
+
+                        {/* <a href="/"></a> */}
                     </div>
                 </div>
             </Container>

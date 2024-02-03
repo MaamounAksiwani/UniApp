@@ -8,8 +8,8 @@
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  padding: 0px 0px 100px 0px !important;
 }
-
 .imageHeader {
   width: 65px;
   height: 65px;
@@ -17,6 +17,10 @@
 
 }
 
+
+.studentsPage-content h1{
+  font-weight: 600;
+}
 @media only screen and (min-width: 768px) {
   .studentsPage-content {
     flex-direction: row;
@@ -52,5 +56,9 @@
   .imageHeader{
     display: none;
   }
+  
+.studentsPage-content div:first-child{
+  padding: 0px 0px 20px 0px;
+}
 }
 

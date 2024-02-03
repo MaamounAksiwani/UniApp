@@ -10,8 +10,21 @@ const Navbar = () => {
     const location = useLocation();
     const currentPath = location.pathname;
     const [isOpen, setIsOpen] = useState(false);
+    const [isDropdownVisible, setDropdownVisible] = useState(false);
+
     const [flag, setFlag] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
+
+
+    const handleMouseEnter = () => {
+        setDropdownVisible(true);
+    };
+
+    const handleMouseLeave = () => {
+        setDropdownVisible(false);
+    };
+
+
     const handleToggleMenu = () => {
         setIsOpen(!isOpen);
         setFlag(!flag)
@@ -76,13 +89,32 @@ const Navbar = () => {
                             </Link>
 
                             <div className={`pages`}>
-                                <span style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} onClick={() => { window.location.href = 'https://uni-app.com/search' }}>Find Programs </span>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/students/'>Students</Link>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to="/study-agents/">Study Agents</Link>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} to='/schools/' >School</Link>
-                                <MenuIcon onClick={handleToggleMenu} style={{ marginTop: '8px', fontSize: '20px',  cursor: 'pointer' , color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} />
-                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Login </span>
-                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#000' }} >Create Account </span>
+                                <span style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} onClick={() => { window.location.href = 'https://uni-app.com/search' }}>Find Programs </span>
+                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to='/students/'>Students</Link>
+                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to="/study-agents/">Study Agents</Link>
+                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to='/schools/' >School</Link>
+                                <div
+                                    onMouseEnter={handleMouseEnter}
+                                    onMouseLeave={handleMouseLeave}
+                                    className='dropMenu'
+                                >
+
+                                    <MenuIcon style={{ fontSize: '20px', cursor: 'pointer', color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} />
+                                    {isDropdownVisible && (
+                                        <div className='mainDropMenu'
+                                        >
+
+                                            <p>Study Medicine</p>
+                                            <p>Study Destinations</p>
+                                            <p>Student Application Guide</p>
+                                            <p>Articles</p>
+                                            <p>About us</p>
+                                        </div>
+                                    )}
+                                </div>
+
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#696969' }} >Login </span>
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#696969' }} >Create Account </span>
                             </div>
                         </nav>
 
@@ -92,7 +124,7 @@ const Navbar = () => {
                                     <img src='https://static.udrus.com/assets/image/uniapp-logo.png' alt='logo not found' />
                                 </Link> : <p></p>}
 
-                                <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '25px', cursor: 'pointer', color: !isScrolled && currentPath === '/' ? '#fff' : '#000' }} />
+                                <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '25px', cursor: 'pointer', color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} />
                             </div>
                         </div>
 

@@ -1,5 +1,4 @@
-import React, { useState } from 'react';
-import { Container } from '@mui/material';
+import React from 'react';
 import './index.css'
 
 const About = () => {
@@ -24,19 +23,19 @@ const About = () => {
             </div>
 
 
-          <div>
-          <span>
-                If you want to learn to become responsible and many other skills and earn a high-level degree under your belt, then studying in Germany is the way to go.
-            </span>
+            <div>
+                <span>
+                    If you want to learn to become responsible and many other skills and earn a high-level degree under your belt, then studying in Germany is the way to go.
+                </span>
 
-             </div>
+            </div>
 
 
-         <div>
-         <span>Read on to learn many essential details about incomparable study destinations and why you should study in Germany so your application process can be breezy!
+            <div>
+                <span>Read on to learn many essential details about incomparable study destinations and why you should study in Germany so your application process can be breezy!
 
-</span>
-         </div>
+                </span>
+            </div>
 
             <div>
                 <h2>Languages</h2>
@@ -46,9 +45,9 @@ const About = () => {
             </div>
 
             <div>
-            <span>
-                What’s more, when it comes to pursuing a third language, German is the most popular choice for many international students. You can take advantage of this when you go to study in Germany, as you can take a language course and learn how to speak it.
-            </span>
+                <span>
+                    What’s more, when it comes to pursuing a third language, German is the most popular choice for many international students. You can take advantage of this when you go to study in Germany, as you can take a language course and learn how to speak it.
+                </span>
             </div>
 
             <div>
@@ -66,16 +65,16 @@ const About = () => {
                 </span>
             </div>
 
-<div>
-
-    
-<span>
-                Germany has spectacular scenic landscapes, with about one-third of the country covered in rich forests and woodlands teeming with wildlife. You can also find more than 2000 castles scattered throughout the country.
+            <div>
 
 
-            </span>
+                <span>
+                    Germany has spectacular scenic landscapes, with about one-third of the country covered in rich forests and woodlands teeming with wildlife. You can also find more than 2000 castles scattered throughout the country.
 
-</div>
+
+                </span>
+
+            </div>
 
             <div>
                 <h2>Religion</h2>
@@ -92,12 +91,12 @@ const About = () => {
                 </span>
             </div>
 
-      <div>
+            <div>
 
-      <span>
-                Germany is considered the European Union’s most robust and largest economy. It has a GDP of 3.73 trillion USD Dollars, making it the fourth most potent economy globally, behind the United States, China and Japan.
-            </span>
-      </div>
+                <span>
+                    Germany is considered the European Union’s most robust and largest economy. It has a GDP of 3.73 trillion USD Dollars, making it the fourth most potent economy globally, behind the United States, China and Japan.
+                </span>
+            </div>
 
 
             <div>
@@ -107,25 +106,25 @@ const About = () => {
                 </span>
             </div>
 
-          <div>
-          <span>Germany is also renowned for its health tourism. Many tourists go to the spa towns with hot springs to get treatments or preventative care for conditions they may be suffering from.
+            <div>
+                <span>Germany is also renowned for its health tourism. Many tourists go to the spa towns with hot springs to get treatments or preventative care for conditions they may be suffering from.
 
-</span>
+                </span>
 
-          </div>
+            </div>
 
-         <div>
-         <span>When it comes to cultural events, Germany hosts the biggest Beer Festival globally, the Oktoberfest in the city of Munich. There were many other events and activities about German culture. A fun fact is that more people go to cultural exhibitions than football matches in Germany.
+            <div>
+                <span>When it comes to cultural events, Germany hosts the biggest Beer Festival globally, the Oktoberfest in the city of Munich. There were many other events and activities about German culture. A fun fact is that more people go to cultural exhibitions than football matches in Germany.
 
-</span>
-         </div>
+                </span>
+            </div>
 
-          <div>
+            <div>
 
-          <span>When it comes to cultural events, Germany hosts the biggest Beer Festival globally, the Oktoberfest in the city of Munich. There were many other events and activities about German culture. A fun fact is that more people go to cultural exhibitions than football matches in Germany.
+                <span>When it comes to cultural events, Germany hosts the biggest Beer Festival globally, the Oktoberfest in the city of Munich. There were many other events and activities about German culture. A fun fact is that more people go to cultural exhibitions than football matches in Germany.
 
-</span>
-          </div>
+                </span>
+            </div>
 
             <div>
                 <h2 className='header'>
@@ -137,12 +136,12 @@ const About = () => {
                 </span>
             </div>
 
-         <div>
-         <span>
-                Another well-known attraction is the Cathedral in Cologne, known as the
-            </span>
+            <div>
+                <span>
+                    Another well-known attraction is the Cathedral in Cologne, known as the
+                </span>
 
-         </div>
+            </div>
 
             <div>
                 <span>
@@ -201,8 +200,8 @@ const About = () => {
             <div>
                 <h2 className='header'>Kartoffelpuffer & Bratkartoffeln</h2>
                 <span>A dish that is similar to Rosti from Switzerland, the Kartoffelpuffer, translated to puffed potato, is
-                     a pancake made of potatoes that have been grated then mixed with egg and flour. As a breakfast dish, it is
-                      often presented at restaurants as a side with eggs and bacon. It can also be served with a steak dinner as a side for lunch or dinner.
+                    a pancake made of potatoes that have been grated then mixed with egg and flour. As a breakfast dish, it is
+                    often presented at restaurants as a side with eggs and bacon. It can also be served with a steak dinner as a side for lunch or dinner.
                 </span>
                 <span>Another famous dish, Bratkartoffeln, is a sauteed potato or one that is hashed.
 

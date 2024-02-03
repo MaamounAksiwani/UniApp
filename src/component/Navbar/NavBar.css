@@ -19,6 +19,7 @@
 .bodyNavBar span:first-child {
   padding: 10px 20px;
   transition: 0.3s ease;
+  font-size: 15px !important;
 }
 
 .bodyNavBar span:first-child:hover {
@@ -26,10 +27,10 @@
   font-weight: 400;
 }
 .bodyNavBar .btn {
-  padding: 0px 15px !important;
+  padding: 0px 10px !important;
   transition: 0.3s ease;
-  font-size: 14px;
-  border-radius: 50px;
+  font-size: 15px;
+  border-radius: 25px;
   border: 1px solid #76d4f9;
 }
 
@@ -40,6 +41,7 @@
 .bodyNavBar .navBarLink {
   padding: 10px;
   transition: 0.3s ease;
+  font-size: 15px !important;
 }
 
 .bodyNavBar .navBarLink:hover {
@@ -168,6 +170,40 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.dropMenu {
+  position: relative;
+  padding: 10px;
+}
+.mainDropMenu {
+  position: absolute;
+  top: 100%;
+  left: 10px;
+  margin-top: 15px;
+  background: #fff;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 10px 15px;
+  width: 223px;
+  height: 200px;
+  border-bottom: 4px solid #76d4f9;
+  z-index: 1000;
+}
+
+.dropMenu p {
+  transition: 0.3s ease;
+  letter-spacing: 0em;
+  line-height: 1.38;
+  color: #696969;
+  font-weight: 400;
+  font-size: 15px !important;
+  cursor: pointer;
+}
+
+.dropMenu p:hover {
+  color: #333;
+  font-weight: 500;
 }
 @media (max-width: 768px) {
   .burger {
