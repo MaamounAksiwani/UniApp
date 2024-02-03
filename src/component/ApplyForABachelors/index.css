@@ -1,5 +1,4 @@
-
-.bodyApplyForABachelors{
+.bodyApplyForABachelors {
   padding: 50px 0px;
 }
 .box {
@@ -44,18 +43,25 @@
 
 .category {
   flex: 1;
-  min-width: 150px;
-  text-align: center;
+  min-width: 100px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
   margin: 5px;
   box-sizing: border-box;
   cursor: pointer;
 }
+.category span:first-child {
+  font-size: 15px;
+}
+
 
 .category.selected {
   background-color: #003e6a;
   margin: 5px;
-  padding: 5px 10px;
-  font-size: 15px;
+  padding: 5px 20px;
+
+  font-size: 10px;
   font-weight: 500;
   cursor: pointer;
   border-radius: 15px;
@@ -65,7 +71,9 @@
 .category.not-selected {
   background-color: #fff;
   margin: 5px;
-  padding: 5px 10px;
+
+  
+  padding: 5px 20px;
   font-size: 15px;
   font-weight: 500;
   cursor: pointer;
@@ -79,21 +87,21 @@
   transition-delay: 0.25s;
   background-color: #003e6a;
   margin: 5px;
-  padding: 5px 10px;
+  padding: 5px 20px;
   font-size: 15px;
-  font-weight: 400;
+  font-weight: 500;
   cursor: pointer;
   border-radius: 15px;
   color: #fff;
 }
 
-.option {
+.optionn {
   display: flex;
   margin: 20px 0px;
   align-items: center;
 }
 
-.option span:nth-child(1) {
+.optionn span:nth-child(1) {
   border: 1px solid #76d4f9;
   color: #fff;
   border-radius: 25px;
@@ -106,51 +114,49 @@
   padding: 10px 41px;
 }
 
-.option span:nth-child(1):hover {
+.optionn span:nth-child(1):hover {
   border: 1px solid #fff;
   color: #76d4f9;
   border-radius: 25px;
   transition: 0.4s;
   font-size: 18px;
-  font-weight: 600;
+  font-weight: 500;
   margin-right: 16px;
   background: #fff;
   cursor: pointer;
   padding: 10px 41px;
 }
 
-.option a {
+.optionn a {
   text-decoration: none;
   color: #fff;
   font-size: 15px;
   font-weight: 600;
 }
 
-.input1{
+.input1 {
   width: 40%;
 }
-.input2{
-    width: 40%;
 
+.input2 {
+  width: 40%;
 }
 
-
-
 @media only screen and (max-width: 768px) {
-  .input1 , .input2{
+  .input1,
+  .input2 {
     width: 100%;
   }
-  .input2{
+  .input2 {
     margin: 15px 0px !important;
   }
-  .inputs{
+  .inputs {
     flex-direction: column;
   }
-  .category{
+  .category {
     min-width: 90px;
   }
   .box h2 {
     font-size: 30px;
   }
-
 }

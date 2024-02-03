@@ -1,6 +1,9 @@
 import React from 'react';
 import './Header.css';
 import { Container } from '@mui/material';
+import ReactWOW from 'react-wow'
+
+
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 
 
@@ -12,6 +15,7 @@ const Header = () => {
 
     return (
         <body className='bodyHeaderUnderNavBar'>
+              {/* <ReactWOW animation='fadeIn'> */}
             <div className="header-container">
                 <div className="overlayImg"></div>
                 <Container maxWidth="lg">
@@ -32,6 +36,7 @@ const Header = () => {
                 </Container>
 
             </div>
+               {/* </ReactWOW> */}
         </body>
     );
 }

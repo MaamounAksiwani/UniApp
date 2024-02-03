@@ -12,7 +12,7 @@
   position: absolute;
   background: url("../../../../src/until/Image/JPG/AdobeStock_487411238.jpeg")
     center/cover no-repeat;
-  filter: brightness(0.4);
+  filter: brightness(0.9);
 }
 
 .CountryOverlay {

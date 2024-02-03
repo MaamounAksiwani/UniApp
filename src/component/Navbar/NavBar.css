@@ -9,7 +9,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 0px;
+  padding: 10px 0px;
   color: white;
 }
 .bodyNavBar span {
@@ -18,9 +18,15 @@
 
 .bodyNavBar span:first-child {
   padding: 10px 20px;
+  transition: 0.3s ease;
+}
+
+.bodyNavBar span:first-child:hover {
+  color: #76d4f9 !important;
+  font-weight: 400;
 }
 .bodyNavBar .btn {
-  padding: 0px 20px !important;
+  padding: 0px 15px !important;
   transition: 0.3s ease;
   font-size: 14px;
   border-radius: 50px;
@@ -33,6 +39,12 @@
 }
 .bodyNavBar .navBarLink {
   padding: 10px;
+  transition: 0.3s ease;
+}
+
+.bodyNavBar .navBarLink:hover {
+  font-weight: 400;
+  color: #76d4f9 !important;
 }
 
 .logo img {
@@ -132,7 +144,7 @@ a {
 }
 .menuSidebar {
   height: 100%;
-  background-color: #1EA7DD;
+  background-color: #1ea7dd;
   padding: 10px 15px;
 }
 
@@ -141,9 +153,8 @@ a {
   display: block;
   font-weight: 300;
   padding: 25px 0px;
-  
 }
-.menuSidebar .burgerSideMenu{
+.menuSidebar .burgerSideMenu {
   display: flex;
   padding: 15px 0px;
   justify-content: space-between;

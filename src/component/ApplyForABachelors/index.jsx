@@ -1,12 +1,14 @@
 import React, { useState } from 'react';
 import { Container, TextField } from '@mui/material';
 import './index.css';
+import CheckIcon from '@mui/icons-material/Check';
+
 
 const ApplyForABachelors = () => {
     const inputStyle = {
         backgroundColor: '#fff',
         borderRadius: '18px',
-        margin:'0px 15px'
+        margin: '0px 15px',
     };
 
     const headingStyle = {
@@ -55,7 +57,7 @@ const ApplyForABachelors = () => {
                         />
                         <TextField
                             className='input2'
-                            
+
                             placeholder='What do you want to study'
 
                             InputProps={{ style: { ...inputStyle } }}
@@ -72,13 +74,14 @@ const ApplyForABachelors = () => {
                                 onClick={() => handleCategoryClick(ele)}
                             >
                                 <p className={`category ${selectedCategories.includes(ele) ? 'selected' : 'not-selected'}`}>
-                                    {ele}
+                                    <span>{ele}</span>
+                                    <span>{selectedCategories.includes(ele) && <CheckIcon style={{ marginLeft: '5px', fontWeight: 'bold', fontSize: '20px' }} />}</span>
                                 </p>
                             </div>
                         ))}
                     </div>
 
-                    <div className='option'>
+                    <div className='optionn'>
                         <span>Start </span>
                         <a href="/">Or View All Programs</a>
                     </div>
