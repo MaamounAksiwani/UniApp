@@ -3,7 +3,7 @@ import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 import './index.css';
 import UniAppTimeStudents from '../../../until/Image/uni-app-first-time.png'
 import UniAppSecTimeStudents from '../../../until/Image/uni-app-sec-time.png'
-import { Link, NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 const UniAppTImeStudents = () => {
     return (
         <>
@@ -13,7 +13,7 @@ const UniAppTImeStudents = () => {
                     <p>Yearly, more than 450 million students start their secondary school, through our online university application platform students can plan accordingly what and where to study, Learn more about applying through our first-time application guide
                     </p>
                     <div className='transferLink'>
-                        <Link to='/' className='transfer-page'>First-Time-Students-Guide </Link>
+                        <Link to='/' className='new-page'>First-Time-Students-Guide </Link>
                         <ArrowRightAltIcon style={{ color: '#6EC1E4', fontSize: '25px' }} />
                     </div>
                 </div>
@@ -36,7 +36,7 @@ const UniAppTImeStudents = () => {
                         for and apply to any of our partner universities that accept Uni App for transfer
                     </p>
                     <div className='transferLink'>
-                        <Link to='/' className='transfer-page'>Transfer-Students-Guide </Link>
+                        <Link to='/' className='new-page'>Transfer-Students-Guide </Link>
                         <ArrowRightAltIcon style={{ color: '#6EC1E4', fontSize: '25px' }} />
                     </div>
                 </div>
@@ -49,13 +49,13 @@ const UniAppTImeStudents = () => {
                 <h1>Student Application Guide Support</h1>
                 <h6>it’s time to prepare for your future, it’s never early or too late. Our student application guide will ease uni planning for you</h6>
                 <div>
-                log into your uniapp account for support
+                {/* log into your uniapp account for support */}
                 </div>
                 
-                {/* <div className='transferLink'>
+                <div className='transferLink'>
                     <Link to='/' className='transfer-page'>Log into your uniapp account for support</Link>
-                    <ArrowRightAltIcon style={{ color: '#6EC1E4', fontSize: '25px' }} />
-                </div> */}
+                    <ArrowRightAltIcon style={{ color: '#fff', fontSize: '25px' }} />
+                </div>
             </div>
         </>
     );

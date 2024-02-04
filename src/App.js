@@ -20,7 +20,8 @@ import NoTitle from "./component/NoTitle";
 import CategoryUncategorized from "./component/CategoryUncategorized";
 import AcademicPapers from "./component/AcademicPapers";
 import StudyMedicineInGermany from "./component/StudyMedicineInGermany";
-
+import GuideFirstTimeStudents from "./component/StudentApplicationGuide/GuideToCollege/GuideFirstTimeStudents";
+import GuideTransferStudent from "./component/StudentApplicationGuide/GuideToCollege/GuideTransferStudent";
 
 const App = () => {
   return (
@@ -45,7 +46,14 @@ const App = () => {
           <Route  path="/category/uncategorized/" element={<CategoryUncategorized />} />
           <Route  path="/where-to-source-for-academic-papers/" element={<AcademicPapers />} />
           <Route  path="/study-medicine-in-germany-for-international-students/" element={<StudyMedicineInGermany />} />
-          
+          <Route  path="/student-application-guide/first-time-students/" element={<GuideFirstTimeStudents />} />
+
+          <Route  path="/student-application-guide/transfer-student/" element={<GuideTransferStudent />} />
+
+
+      {/* /student-application-guide/transfer-student/ */}
+
+      {/* GuideTransferStudent */}
         </Routes>
         <ScrollToTop/>
         <Footer />

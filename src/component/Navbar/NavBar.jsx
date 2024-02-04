@@ -5,8 +5,10 @@ import CloseIcon from '@mui/icons-material/Close';
 import './NavBar.css';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
+import { useNavigate } from 'react-router';
 
 const Navbar = () => {
+    const navigate = useNavigate();
     const location = useLocation();
     const currentPath = location.pathname;
     const [isOpen, setIsOpen] = useState(false);
@@ -105,10 +107,10 @@ const Navbar = () => {
                                         >
 
                                             <p>Study Medicine</p>
-                                            <p>Study Destinations</p>
-                                            <p>Student Application Guide</p>
+                                            <p onClick={()=>{navigate('/study-destinations/')}}>Study Destinations</p>
+                                            <p onClick={()=>{navigate('/student-application-guide/')}}>Student Application Guide</p>
                                             <p>Articles</p>
-                                            <p>About us</p>
+                                            <p onClick={()=>{navigate('/about-us/') }}>About us</p>
                                         </div>
                                     )}
                                 </div>

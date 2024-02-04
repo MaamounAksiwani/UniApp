@@ -14,12 +14,13 @@
   border-radius: 2px;
   cursor: pointer;
 }
-.mainBox .left-side div:first-child{
-  background-color: #76d4f9;  
 
+.activeTab {
+  color: #fff !important;
+  background-color: #76d4f9 !important;
 }
-.mainBox .left-side div:first-child h4{
-  color: #FFF;
+.activeTab h4{
+  color: #fff !important;
 }
 .mainBox .left-side div:hover {
   background-color: #76d4f9;
@@ -30,7 +31,6 @@
 }
 .mainBox .right-side {
   flex: 3;
-  background-color: #eee;
   margin: 10px;
 }
 
@@ -46,6 +46,4 @@
   .mainBox{
     flex-direction: column-reverse;
   }
-
-  
 }

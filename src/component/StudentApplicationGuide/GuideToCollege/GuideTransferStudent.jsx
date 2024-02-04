@@ -1,9 +1,9 @@
 import React from 'react';
 import './index.css';
-import { Container } from '@mui/material';
-import Tabs from './GuideToCollege/Tabs'
-import StudentAppGuide from './GuideToCollege';
-const StudentApplicationGuide = () => {
+import { Container } from '@mui/material'
+import Tabs from '../GuideToCollege/Tabs'
+import GuideTransferStudentComponent from './GuideTransferStudentComponent';
+const GuideTransferStudent = () => {
     return (
         <div style={{padding:'100px 0px'}}>
             <Container maxWidth="lg">
@@ -13,7 +13,8 @@ const StudentApplicationGuide = () => {
                     </div>
                     <div className='right-side' >
                         <div>
-                        <StudentAppGuide />
+                            <GuideTransferStudentComponent/>
+                
                         </div>
                     </div>
                 </div>
@@ -21,4 +22,4 @@ const StudentApplicationGuide = () => {
         </div>
     );
 }
-export default StudentApplicationGuide;
+export default GuideTransferStudent;
