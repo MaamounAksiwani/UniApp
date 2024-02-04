@@ -11,7 +11,7 @@ import ShareCom from "../../ShareCom";
 import StudyDestinations from "../../StudyDestinations";
 const HomeScreen = () => {
   return (
-    <>
+<body style={{ fontFamily: 'Roboto, sans-serif'}}>
       <Header />
       <ApplyForABachelors />
       <Platform />
@@ -37,7 +37,7 @@ const HomeScreen = () => {
         flag={true}
       />
 
-    </>
+    </body>
 
 
   );
