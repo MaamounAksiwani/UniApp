@@ -1,7 +1,11 @@
 import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
-import HandshakeIcon from '@mui/icons-material/Handshake'
+import PageviewTwoToneIcon from '@mui/icons-material/PageviewTwoTone';
+import LanguageTwoToneIcon from '@mui/icons-material/LanguageTwoTone';
+import PortraitTwoToneIcon from '@mui/icons-material/PortraitTwoTone';
+import GroupAddTwoToneIcon from '@mui/icons-material/GroupAddTwoTone';
+
 const AllPlatForm = () => {
     return (
         <>
@@ -16,14 +20,14 @@ const AllPlatForm = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "60px", color: "#76d4f9" }} />
+                                        <PageviewTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>Program Finder</h3>
                                         <p style={{marginTop:'0'}}>Our AI-powered matches students with the eligible desired courses</p>
                                     </div>
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "60px", color: "#76d4f9" }} />
+                                    <LanguageTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Global Reach</h3>
                                     <p style={{marginTop:'0'}}>in MENA, Europe & Asia, receive leads who urge for higher education.</p>
 
@@ -32,7 +36,7 @@ const AllPlatForm = () => {
                             <div className='first-section'>
                                 <div>
                                     <div>
-                                        <HandshakeIcon style={{ fontSize: "60px", color: "#76d4f9" }} />
+                                        <PortraitTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
                                         <h3 style={{marginBottom:'5px'}}>One application</h3>
                                         <p style={{marginTop:'0'}}>one application form to apply to multiple programs for free.
                                             .</p>
@@ -40,7 +44,7 @@ const AllPlatForm = () => {
 
                                 </div>
                                 <div>
-                                    <HandshakeIcon style={{ fontSize: "60px", color: "#76d4f9" }} />
+                                    <GroupAddTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
                                     <h3 style={{marginBottom:'5px'}}>Lead Management</h3>
                                     <p style={{marginTop:'0'}}>Uni-App allows you to track and convert leads into applicants</p>
                                 </div>

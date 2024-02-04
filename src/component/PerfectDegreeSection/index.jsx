@@ -4,6 +4,8 @@ import './PerfectDegreeSection.css';
 import Container from "@mui/material/Container";
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import Logo from '../../../src/until/Image/bachelor.svg'
+import master from '../../../src/until/Image/masters.svg'
+import online from '../../../src/until/Image/online.svg'
 import { useNavigate } from 'react-router';
 
 
@@ -20,14 +22,14 @@ const PerfectDegreeSection = () => {
         },
         {
             id: 2,
-            image: Logo,
+            image: master,
             title: `Master's Degree`,
             des: `You are planning to start your Master’s degrees?`,
             btnTitle: `Search Masters`,
         },
         {
             id: 3,
-            image: Logo,
+            image: online,
             title: `Online Degrees`,
             des: `You are planning to start your Online degrees?`,
             btnTitle: `Search Online courses`,

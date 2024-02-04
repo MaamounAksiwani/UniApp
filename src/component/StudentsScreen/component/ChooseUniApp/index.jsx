@@ -7,6 +7,17 @@ import DevicesIcon from '@mui/icons-material/Devices';
 import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
 
 
+
+
+
+import HeadsetMicTwoToneIcon from '@mui/icons-material/HeadsetMicTwoTone';
+import DevicesTwoToneIcon from '@mui/icons-material/DevicesTwoTone';
+import HandshakeTwoToneIcon from '@mui/icons-material/HandshakeTwoTone';
+import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone';
+import StarTwoToneIcon from '@mui/icons-material/StarTwoTone';
+
+import AirplaneTicketTwoToneIcon from '@mui/icons-material/AirplaneTicketTwoTone';
+
 import ShieldIcon from '@mui/icons-material/Shield';
 const ChooseUniApp = () => {
     return (
@@ -18,7 +29,8 @@ const ChooseUniApp = () => {
                 <div className='platformBox'>
 
                     <div>
-                        <ShieldIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
+                        {/* <ShieldIcon style={{ fontSize: "75px", color: "#76d4f9" }} /> */}
+                        <HeadsetMicTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }}  />
                         <h3>Assdmission Counselling</h3>
                         <p>From the comfort of your home, talk to a study agent near you and receive a free consultation
                         </p>
@@ -27,7 +39,8 @@ const ChooseUniApp = () => {
                     </div>
 
                     <div>
-                        <FlightTakeoffIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
+                        <AirplaneTicketTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
+                        {/* <FlightTakeoffIcon style={{ fontSize: "75px", color: "#76d4f9" }} /> */}
                         <h3>Visa Assistance
                         </h3>
                         <p>With the help of our agents in your country, the visa process will be simplified
@@ -37,8 +50,7 @@ const ChooseUniApp = () => {
                     </div>
 
                     <div>
-                        <FlightTakeoffIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
-                        <h3>Partner Schools
+                    <HandshakeTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />                        <h3>Partner Schools
                         </h3>
                         <p>From thousands of study programs, Apply to via your Uni-App
                         </p>
@@ -49,7 +61,7 @@ const ChooseUniApp = () => {
 
 
                     <div>
-                        <PeopleIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
+                    <QuestionAnswerTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
                         <h3>Continuous Support
                         </h3>
                         <p>Study agents provide 1-on-1 support at any step of the journey
@@ -59,7 +71,10 @@ const ChooseUniApp = () => {
                     </div>
 
                     <div>
-                        <VolunteerActivismIcon style={{ fontSize: "75px", color: "#76d4f9" }} />                        <h3>Scholarships
+                        <StarTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }}  />
+                        {/* <VolunteerActivismIcon style={{ fontSize: "75px", color: "#76d4f9" }} />        */}
+                        
+                                         <h3>Scholarships
                         </h3>
                         <p>Our partner universities offer exclusive scholarships and other financial support options
                         </p>
@@ -70,7 +85,7 @@ const ChooseUniApp = () => {
                     <div>
 
 
-                        <DevicesIcon style={{ fontSize: "75px", color: "#76d4f9" }} />
+<DevicesTwoToneIcon style={{ fontSize: "50px", color: "#76d4f9" }} />
 
                         <h3>Smart Application
 

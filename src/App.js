@@ -47,19 +47,13 @@ const App = () => {
           <Route  path="/where-to-source-for-academic-papers/" element={<AcademicPapers />} />
           <Route  path="/study-medicine-in-germany-for-international-students/" element={<StudyMedicineInGermany />} />
           <Route  path="/student-application-guide/first-time-students/" element={<GuideFirstTimeStudents />} />
-
           <Route  path="/student-application-guide/transfer-student/" element={<GuideTransferStudent />} />
-
-
-      {/* /student-application-guide/transfer-student/ */}
-
-      {/* GuideTransferStudent */}
         </Routes>
         <ScrollToTop/>
         <Footer />
       </BrowserRouter>
     </>
-  );
+  )
 };
 
 export default App;
