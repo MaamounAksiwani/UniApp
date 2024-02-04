@@ -5,7 +5,26 @@
   background-color: #f8f8f8;
   border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
 }
-
+.countryBox{
+  /*  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 35px 0px;
+  gap: 20px; */
+}
+.countryTitle{
+  text-align: center;
+}
+.countryTitle p{
+  font-size: 15px;
+  line-height: 1.6;
+  color: #696969;
+}
+.countryTitle h1{
+  font-size: 32px;
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #000;
+}
 .serviceContact h1 {
   font-size: 32px;
   margin-bottom: 0;
