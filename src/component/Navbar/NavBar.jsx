@@ -80,7 +80,7 @@ const Navbar = () => {
                 <div style={{
                     background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/'
                         && currentPath !== '/study-destinations/' && currentPath !== '/about-us/' && currentPath !== '/bachelors-degrees/'
-                        && currentPath !== '/online-degrees/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
+                        && currentPath !== '/online-degrees/' && currentPath !== '/Afghanistan/' ) ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
                     <Container maxWidth="lg">
                         <div style={overlayStyle} onClick={handleToggleMenu}></div>

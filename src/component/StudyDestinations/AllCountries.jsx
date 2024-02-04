@@ -3,7 +3,12 @@ import './index.css';
 import { Container } from '@mui/material';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import arrow from '../../../src/until/Image/SVG/angle-right-light.svg'
+
+import { useNavigate } from 'react-router';
+
 const AllCountries = () => {
+    const navigate = useNavigate();
+
     const countries = [
         "Afghanistan",
         "Albania",
@@ -109,6 +114,12 @@ const AllCountries = () => {
         "United States"
     ];
 
+    const handelPage = (ele) => {
+        if (ele === 'Afghanistan') {
+            navigate('/Afghanistan/')
+        }
+    }
+
     return (
         <>
             <div className="parentTheCountry">
@@ -126,10 +137,9 @@ const AllCountries = () => {
                 <div className='city'>
                     {countries.map((ele) => {
                         return (
-                            <div>
+                            <div onClick={() => { handelPage(ele) }}>
                                 <p>{ele}  </p>
-                                {/* <img src={arrow} alt='arrow not found' style={{width:'7.5' , height:'12px'}}/> */}
-                                <ArrowForwardIosIcon style={{ fontSize: '15px' , marginLeft:'5px' }} />
+                                <ArrowForwardIosIcon style={{ fontSize: '15px', marginLeft: '5px' }} />
                             </div>
                         )
                     })}

@@ -2,9 +2,9 @@ import './index.css';
 import React from 'react';
 import Container from "@mui/material/Container";
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
-// tb7
-import YazanImage from '../../../until/Image/yazan.jpeg'
-import tb7 from '../../../until/Image/JPG/tb7.jpg'
+import tb7 from '../../../until/Image/tb7.jpg'
+import tb9 from '../../../until/Image/tb9.jpg';
+import tb11 from '../../../until/Image/tb11.jpg'
 const ManagementTeam = () => {
 
   const cardsData = [
@@ -16,13 +16,13 @@ const ManagementTeam = () => {
     },
     {
       id: 2,
-      imgSrc: 'https://images.pexels.com/photos/9623674/pexels-photo-9623674.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
+      imgSrc: tb9,
       title: 'Fahed Jaarah',
       Job: 'CEO & Founder',
     },
     {
       id: 3,
-      imgSrc: YazanImage,
+      imgSrc: tb11,
       title: 'Yazan Alkhatib',
       Job: 'Engineering',
     },
@@ -45,7 +45,7 @@ const ManagementTeam = () => {
                 </div>
                 <div className="overlay">
                   <div className='hoverIcon'> 
-                    
+  
                 <LinkedInIcon style={{ fontSize: 20, color: 'gray' , cursor:'pointer' }}  />
                   </div>
                 </div>

@@ -3,33 +3,37 @@ import React from 'react';
 import Container from "@mui/material/Container";
 import './index.css'
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import tb1 from '../../../../until/Image/tb1.jpg'
+import tb3 from '../../../../until/Image/tb3.jpg';
+import tb5 from '../../../../until/Image/tb5.jpg';
+import tb6 from '../../../../until/Image/tb6.jpg';
 const AdvisoryBoard = () => {
 
   const cardsData = [
     {
       id: 1,
-      imgSrc: 'https://images.pexels.com/photos/3777569/pexels-photo-3777569.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      title: 'Simon Landsberg      ',
-      Job: 'Chief Growth Officer',
+      imgSrc: tb5,
+      title: 'Dr. Torsten Netzer',
+      Job: 'Advisory Board',
     },
     {
       id: 2,
-      imgSrc: 'https://images.pexels.com/photos/9623674/pexels-photo-9623674.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      title: 'Fahed Jaarah',
-      Job: 'CEO & Founder',
+      imgSrc: tb3,
+      title: 'Dr. Caner Aver',
+      Job: 'Advisory Board',
     },
     {
       id: 3,
-      imgSrc: 'https://images.pexels.com/photos/3778069/pexels-photo-3778069.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-      title: 'Mahmud Hasan',
-      Job: 'Engineering',
+      imgSrc: tb1,
+       title: 'Dr. Rolf van Dawen',
+       Job: 'Advisory Board',
     },
     {
-        id: 4,
-        imgSrc: 'https://images.pexels.com/photos/3777569/pexels-photo-3777569.jpeg?auto=compress&cs=tinysrgb&w=600&lazy=load',
-        title: 'Simon Landsberg      ',
-        Job: 'Chief Growth Officer',
-      },
+      id: 4,
+      imgSrc: tb6,
+       title: 'Dr. René Rüth',
+       Job: 'Advisory Board',
+    },
   ];
 
 
@@ -49,9 +53,9 @@ const AdvisoryBoard = () => {
                   <img src={card.imgSrc} alt={card.title} className="card-image" />
                 </div>
                 <div className="overlayAdvisoryCard">
-                  <div className='hoverIcon'> 
-                    
-                <LinkedInIcon style={{ fontSize: 20, color: 'gray' , cursor:'pointer' }}  />
+                  <div className='hoverIcon'>
+
+                    <LinkedInIcon style={{ fontSize: 20, color: 'gray', cursor: 'pointer' }} />
                   </div>
                 </div>
                 <h2>{card.title}</h2>

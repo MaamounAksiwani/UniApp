@@ -100,8 +100,8 @@
   width: 100%;
   height: 100%;
   position: absolute;
-  background: url("../../../src//until/Image/JPG/AdobeStock_219776591.jpeg")
-    center/cover no-repeat;
+  background: url("../../../src//until/Image/StudyDestination.jpg") 
+    center/cover no-repeat !important; 
   filter: brightness(0.7);
 }
 

@@ -8,6 +8,12 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import PhoneEnabledIcon from '@mui/icons-material/PhoneEnabled';
 import QueryBuilderIcon from '@mui/icons-material/QueryBuilder';
 
+
+import LocationOnOutlinedIcon from '@mui/icons-material/LocationOnOutlined';
+
+import PhoneEnabledOutlinedIcon from '@mui/icons-material/PhoneEnabledOutlined';
+
+import WatchLaterOutlinedIcon from '@mui/icons-material/WatchLaterOutlined';
 const ContactUs = () => {
     return (
         <div style={{padding:'100px 0px'}}>
@@ -19,7 +25,7 @@ const ContactUs = () => {
 
                     <div className='contactBox'>
                         <div>
-                            <LocationOnIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px' , marginRight:'10px' }} />
+                            <LocationOnOutlinedIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px' , marginRight:'10px' }} />
                         </div>
                         <div className='contactText'>
                             <h1 style={{ marginBottom: '0' }}>Address</h1>
@@ -29,7 +35,7 @@ const ContactUs = () => {
                     </div>
                     <div className='contactBox'>
                         <div>
-                            <PhoneEnabledIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px' , marginRight:'10px'  }} />
+                            <PhoneEnabledOutlinedIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px' , marginRight:'10px'  }} />
                         </div>
                         <div className='contactText'>
                             <h1 style={{ marginBottom: '0' }}>Contact</h1>
@@ -40,7 +46,7 @@ const ContactUs = () => {
                     </div>
                     <div className='contactBox'>
                         <div>
-                            <QueryBuilderIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px', marginRight:'10px'  }} />
+                            <WatchLaterOutlinedIcon style={{ color: '#76d4f9', fontSize: '30px', marginTop: '12px', marginRight:'10px'  }} />
                         </div>
                         <div className='contactText'>
                             <h1 style={{ marginBottom: '0' }}>Hour of operation</h1>

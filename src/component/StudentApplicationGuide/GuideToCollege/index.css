@@ -6,20 +6,20 @@
 
 .background-image {
 
-  background: url("https://images.pexels.com/photos/7718757/pexels-photo-7718757.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1")
+  background: url("../../../until/Image/AdobeStock_143012483.jpg")
     center/cover no-repeat;
 
 }
 .background-image-GuideFirstTime {
 
-  background: url("../../../until/Image/JPG/AdobeStock_330099838.jpeg")
+  background: url("../../../until/Image/AdobeStock_351530010.jpg")
     center/cover no-repeat;
 
 }
 
 .background-image-TransferStudent {
  
-  background: url("https://images.prismic.io/element451/b3c2f7a7-2537-4302-a59d-3c4bb973f1f8_Main+Image_+Marketing+for+Public+vs.+Private+Schools.jpg?auto=format&ixlib=react-9.0.3&h=1080&w=1920&q=75&dpr=1")
+  background: url("../../../until/Image/AdobeStock_345571107.jpg")
     center/cover no-repeat;
 
 }
