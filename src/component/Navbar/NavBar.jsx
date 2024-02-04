@@ -106,7 +106,7 @@ const Navbar = () => {
                                         <div className='mainDropMenu'
                                         >
 
-                                            <p>Study Medicine</p>
+                                            <p onClick={()=>{navigate('/study-medicine-in-europe/')}}>Study Medicine</p>
                                             <p onClick={()=>{navigate('/study-destinations/')}}>Study Destinations</p>
                                             <p onClick={()=>{navigate('/student-application-guide/')}}>Student Application Guide</p>
                                             <p>Articles</p>

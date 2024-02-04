@@ -1,9 +1,10 @@
 .bodyHeaderUnderNavBar {
-  /* font-family: "Montserrat", sans-serif; */
+  /* font-family: 'Courier New', Courier, monospace; */
+  /* font-family: 'Outfit', sans-serif !important; */
 }
 
 .header-container {
-  background-image: url('../../until/Image/JPG/UniApp\ hero\ bg.jpeg');
+  background-image: url("../../until/Image/JPG/UniApp\ hero\ bg.jpeg");
   background-size: cover;
   background-position: center;
   position: relative;
@@ -36,7 +37,6 @@
   letter-spacing: 3px;
   font-weight: 700;
 }
-
 
 .des {
   font-size: 16px;
@@ -82,13 +82,13 @@
     font-size: 15px;
     margin-top: 25px;
     margin-bottom: 0;
-    line-height:1.5;
+    line-height: 1.5;
     font-weight: bold;
     width: 100%;
   }
   .subTitle {
     font-size: 40px;
-    margin:20px 0px;
+    margin: 20px 0px;
   }
   .des {
     font-size: 18px;
@@ -97,5 +97,4 @@
   .header-container {
     height: 90vh;
   }
-  
 }

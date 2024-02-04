@@ -1,0 +1,44 @@
+.serviceContact {
+  color: #696969;
+  text-align: center;
+  padding: 50px 0px;
+  background-color: #f8f8f8;
+  border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
+}
+
+.serviceContact h1 {
+  font-size: 32px;
+  color: #000;
+}
+
+.futureMedical {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 50px 0px;
+  gap: 25px;
+}
+
+.futureMedical div {
+  cursor: pointer;
+  padding: 25px 10px;
+  transition: 0.3s ease;
+}
+
+.futureMedical div:hover{
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+}
+
+.futureMedical h3 {
+  /* font-size: ; */
+  color: #3f3a64;
+  font-weight: 600;
+}
+.futureMedical p {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #696969;
+}
+.studentsPage {
+  background-color: #f8f8f8;
+}

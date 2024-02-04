@@ -23,7 +23,7 @@ import StudyMedicineInGermany from "./component/StudyMedicineInGermany";
 import GuideFirstTimeStudents from "./component/StudentApplicationGuide/GuideToCollege/GuideFirstTimeStudents";
 import GuideTransferStudent from "./component/StudentApplicationGuide/GuideToCollege/GuideTransferStudent";
 import Afghanistan from "./component/StudyInCountries/Afghanistan";
-
+import StudyMedicine from "./component/StudyMedicine";
 
 const App = () => {
   return (
@@ -50,10 +50,9 @@ const App = () => {
           <Route  path="/study-medicine-in-germany-for-international-students/" element={<StudyMedicineInGermany />} />
           <Route  path="/student-application-guide/first-time-students/" element={<GuideFirstTimeStudents />} />
           <Route  path="/student-application-guide/transfer-student/" element={<GuideTransferStudent />} />
-
-          
           <Route  path="/student-application-guide/transfer-student/" element={<GuideTransferStudent />} />
           <Route  path="/Afghanistan/" element={<Afghanistan/>} />
+          <Route  path="/study-medicine-in-europe/" element={<StudyMedicine/>} />
         </Routes>
         <ScrollToTop/>
         <Footer />
