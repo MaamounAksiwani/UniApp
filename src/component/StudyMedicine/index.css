@@ -8,14 +8,16 @@
 
 .serviceContact h1 {
   font-size: 32px;
+  margin-bottom: 0;
+  margin-top: 0;
   color: #000;
 }
 
 .futureMedical {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  padding: 50px 0px;
-  gap: 25px;
+  padding: 35px 0px;
+  gap: 20px;
 }
 
 .futureMedical div {
@@ -30,7 +32,6 @@
 }
 
 .futureMedical h3 {
-  /* font-size: ; */
   color: #3f3a64;
   font-weight: 600;
 }
@@ -42,3 +43,16 @@
 .studentsPage {
   background-color: #f8f8f8;
 }
+
+.notSurePart{
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 14px;
+}
+.notSurePart div p:first-child{
+    color: #76d4f9;
+    
+}
+

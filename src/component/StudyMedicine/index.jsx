@@ -3,14 +3,13 @@ import Container from "@mui/material/Container";
 import './index.css'
 import Header from './Header';
 import Services from './Services';
+import LicensedDoctor from './LicensedDoctor';
 const StudyMedicine = () => {
     return (
         <div style={{ paddingTop: '100px' }}>
-
-          
-                <Header/>
-                <Services/>
-       
+            <Header />
+            <Services />
+            <LicensedDoctor />
         </div>
 
     );

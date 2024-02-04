@@ -9,7 +9,9 @@
 }
 .studentsPage-content{
     padding: 15px;
-    /* background-color: red !important; */
+}
+.studentsPage-content p{
+    line-height: 1.5;
 }
 .count h1{
     font-size: 60px;
