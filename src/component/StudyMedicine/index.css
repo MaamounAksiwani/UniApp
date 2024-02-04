@@ -39,6 +39,14 @@
   gap: 20px;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .futureMedical {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
 .futureMedical div {
   cursor: pointer;
   padding: 25px 10px;
