@@ -5,23 +5,17 @@
 }
 
 .background-image {
-
-  background: url("../../../until/Image/AdobeStock_143012483.jpg")
-    center/cover no-repeat;
-
+  background: url("../../../until/Image/AdobeStock_143012483.jpg") center/cover
+    no-repeat;
 }
 .background-image-GuideFirstTime {
-
-  background: url("../../../until/Image/AdobeStock_351530010.jpg")
-    center/cover no-repeat;
-
+  background: url("../../../until/Image/AdobeStock_351530010.jpg") center/cover
+    no-repeat;
 }
 
 .background-image-TransferStudent {
- 
-  background: url("../../../until/Image/AdobeStock_345571107.jpg")
-    center/cover no-repeat;
-
+  background: url("../../../until/Image/AdobeStock_345571107.jpg") center/cover
+    no-repeat;
 }
 
 .background-image-GuideFirstTime,
@@ -30,15 +24,13 @@
   width: 100%;
   height: 100%;
   filter: brightness(0.5);
-  
-
 }
 
 .guideFirstTimeBox {
   padding: 10px 0px;
 }
 .guideFirstTimeBox h1 {
-  font-size: 38px;
+  font-size: 32px;
   line-height: 1.17em;
   color: #333333;
 }
@@ -69,7 +61,7 @@
   align-items: center;
   padding: 50px 0px;
 }
-.contact div{
+.contact div {
 }
 .contact h1 {
   color: #333;
@@ -141,9 +133,6 @@
 }
 @media only screen and (max-width: 768px) {
   .contact {
-    
-    /* justify-content: center  !important; */
-    /* align-items: center !important; */
     flex-direction: column-reverse;
   }
   .Guide-Support h1 {
@@ -155,10 +144,13 @@
   }
 
   .contact div img {
-    /* width: 340px; */
-    /* height: 229px; */
-    /* margin-top: 10px; */
     margin: 20px 0px;
-
+  }
+  .contact h1 {
+    margin-top: 10px;
+    font-size: 25px;
+  }
+  .guideFirstTimeBox h1 {
+    font-size: 26px;
   }
 }

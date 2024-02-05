@@ -5,7 +5,7 @@ import Tabs from './GuideToCollege/Tabs'
 import StudentAppGuide from './GuideToCollege';
 const StudentApplicationGuide = () => {
     return (
-        <div style={{padding:'100px 0px'}}>
+        <div style={{padding:'50px 0px'}}>
             <Container maxWidth="lg">
                 <div className='mainBox'>
                     <div className='left-side'>

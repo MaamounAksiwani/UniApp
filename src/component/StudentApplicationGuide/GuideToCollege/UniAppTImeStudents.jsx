@@ -22,11 +22,7 @@ const UniAppTImeStudents = () => {
                     <img src={UniAppTimeStudents} alt='image not found ' />
                 </div>
             </div>
-
-
-
             <div className='contact'>
-
                 <div>
                     <img src={UniAppSecTimeStudents} alt='image not found ' />
                 </div>
@@ -40,18 +36,13 @@ const UniAppTImeStudents = () => {
                         <ArrowRightAltIcon style={{ color: '#6EC1E4', fontSize: '25px' }} />
                     </div>
                 </div>
-
             </div>
-
-
             <div className='Guide-Support'>
-
                 <h1>Student Application Guide Support</h1>
                 <h6>it’s time to prepare for your future, it’s never early or too late. Our student application guide will ease uni planning for you</h6>
                 <div>
                 {/* log into your uniapp account for support */}
                 </div>
-                
                 <div className='transferLink'>
                     <Link to='/' className='transfer-page'>Log into your uniapp account for support</Link>
                     <ArrowRightAltIcon style={{ color: '#fff', fontSize: '25px' }} />
