@@ -10,7 +10,8 @@ import Expect from './Expect';
 import ShareCom from '../../component/ShareCom'
 const StudyMedicine = () => {
     return (
-        <div style={{ paddingTop: '100px' }}>
+        // paddingTop: '100px'
+        <div style={{ }}>
             <Header />
             <Services />
             <LicensedDoctor />

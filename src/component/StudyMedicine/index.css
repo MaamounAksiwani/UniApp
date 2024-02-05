@@ -1,5 +1,6 @@
 .serviceContact {
   color: #696969;
+
   text-align: center;
   padding: 50px 0px;
   background-color: #f8f8f8;
@@ -84,7 +85,13 @@
   color: #696969;
 }
 .studentsPage {
+  /* padding: 100px 0px 0px 0px; */
+  /* background-color: red !important; */
   background-color: #f8f8f8;
+}
+.headerMedicine{
+  padding: 100px 0px 0px 0px;
+  /* background-color: red ; */
 }
 .ExpectBody {
   background-color: #f8f8f8;
@@ -131,7 +138,7 @@
     flex-direction: column;
     margin: 10px 0px;
   }
-  .studentsPage {
-    /* background-color: red; */
+  .headerMedicine {
+    /* padding: 100px 0px 0px 0px; */
   }
 }

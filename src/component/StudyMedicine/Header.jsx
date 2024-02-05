@@ -7,7 +7,7 @@ const Header = () => {
   
     return (
         <>
-            <div className='studentsPage'>
+            <div className='studentsPage headerMedicine'>
                 <div className='Container-studentsPage'>
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>

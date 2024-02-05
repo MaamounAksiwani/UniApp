@@ -3,6 +3,7 @@ import Container from "@mui/material/Container";
 import { Link, useLocation } from 'react-router-dom';
 import CloseIcon from '@mui/icons-material/Close';
 import './NavBar.css';
+import ArrowDropUpIcon from '@mui/icons-material/ArrowDropUp';
 import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import MenuIcon from '@mui/icons-material/Menu';
 import { useNavigate } from 'react-router';
@@ -159,11 +160,11 @@ const Navbar = () => {
 
                                 <div className='burgerSideMenu' onClick={handleToggleMenuSideMenu}>
                                     <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
-                                    <ArrowDropDownIcon style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
+                                    {isH1Visible ? <ArrowDropUpIcon style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} /> : <ArrowDropDownIcon style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />}
                                 </div>
 
 
-                                {isH1Visible && <> <div  className={isH1Visible ? 'visible' : 'hidden'}>
+                                {isH1Visible && <> <div className={isH1Visible ? 'visible' : 'hidden'}>
                                     <p onClick={() => { navigate('/study-medicine-in-europe/') }}>Study Medicine</p>
                                     <p onClick={() => { navigate('/study-destinations/') }}>Study Destinations</p>
                                     <p onClick={() => { navigate('/student-application-guide/') }}>Student Application Guide</p>

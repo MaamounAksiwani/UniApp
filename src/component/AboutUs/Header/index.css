@@ -1,6 +1,6 @@
 .parentDiv {
   position: relative;
-  height: 60vh;
+  height: 55vh;
 }
 
 .backgroundImagee {
@@ -21,9 +21,9 @@ filter: brightness(0.7);
   position: absolute;
 }
 
-.centerText {
+.parentDiv .centerText {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
