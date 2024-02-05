@@ -42,9 +42,6 @@
   line-height: 1.17em;
   color: #333333;
 }
-.Collapse ul {
-}
-
 .Collapse h2 {
   font-size: 16px;
   color: #696969;
@@ -70,8 +67,9 @@
 .contact {
   display: flex;
   align-items: center;
-  /* background-color: #fff !important; */
-  /* background-color: red; */
+  padding: 50px 0px;
+}
+.contact div{
 }
 .contact h1 {
   color: #333;
@@ -88,7 +86,9 @@
 }
 
 .contact div img {
-  width: 100%;
+  width: 340px;
+  height: 229px;
+  margin-top: -70px;
 }
 .active {
   background-color: #76d4f9;
@@ -110,7 +110,6 @@
   font-size: 15px;
   font-weight: bold;
   color: #fff;
-  /* color:#76d4f9; */
   text-decoration: none;
 }
 
@@ -142,6 +141,9 @@
 }
 @media only screen and (max-width: 768px) {
   .contact {
+    
+    /* justify-content: center  !important; */
+    /* align-items: center !important; */
     flex-direction: column-reverse;
   }
   .Guide-Support h1 {
@@ -150,5 +152,13 @@
 
   .Guide-Support h6 {
     margin: 10px 0px;
+  }
+
+  .contact div img {
+    /* width: 340px; */
+    /* height: 229px; */
+    /* margin-top: 10px; */
+    margin: 20px 0px;
+
   }
 }
