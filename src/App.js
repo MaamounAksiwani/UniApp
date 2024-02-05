@@ -55,7 +55,7 @@ const App = () => {
           <Route  path="/study-medicine-in-europe/" element={<StudyMedicine/>} />
         </Routes>
         <ScrollToTop/>
-        <Footer />
+        {/* <Footer /> */}
       </BrowserRouter>
     </>
   )

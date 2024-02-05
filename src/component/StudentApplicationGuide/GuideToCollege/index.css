@@ -70,7 +70,8 @@
 .contact {
   display: flex;
   align-items: center;
-  background-color: #fff !important;
+  /* background-color: #fff !important; */
+  background-color: red;
 }
 .contact h1 {
   color: #333;
