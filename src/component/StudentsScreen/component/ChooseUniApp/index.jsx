@@ -1,24 +1,14 @@
 import React from 'react';
 import './index.css';
-import FlightTakeoffIcon from '@mui/icons-material/FlightTakeoff';
-import PeopleIcon from '@mui/icons-material/People';
 import { Container } from '@mui/material';
-import DevicesIcon from '@mui/icons-material/Devices';
-import VolunteerActivismIcon from '@mui/icons-material/VolunteerActivism';
-
-
-
-
-
 import HeadsetMicTwoToneIcon from '@mui/icons-material/HeadsetMicTwoTone';
 import DevicesTwoToneIcon from '@mui/icons-material/DevicesTwoTone';
 import HandshakeTwoToneIcon from '@mui/icons-material/HandshakeTwoTone';
 import QuestionAnswerTwoToneIcon from '@mui/icons-material/QuestionAnswerTwoTone';
 import StarTwoToneIcon from '@mui/icons-material/StarTwoTone';
-
 import AirplaneTicketTwoToneIcon from '@mui/icons-material/AirplaneTicketTwoTone';
 
-import ShieldIcon from '@mui/icons-material/Shield';
+
 const ChooseUniApp = () => {
     return (
         <div className='platFormPart'>

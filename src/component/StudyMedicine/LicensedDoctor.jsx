@@ -5,15 +5,6 @@ import { Container } from '@mui/material';
 import ArrowRightAltIcon from '@mui/icons-material/ArrowRightAlt';
 const LicensedDoctor = () => {
 
-    const [isHovered, setIsHovered] = useState(false);
-
-    const handleMouseEnter = () => {
-        setIsHovered(true);
-    };
-
-    const handleMouseLeave = () => {
-        setIsHovered(false);
-    };
     return (
         <>
             <div>
@@ -42,38 +33,7 @@ const LicensedDoctor = () => {
                                 </div>
                             </div>
                             <div>
-                                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave} style={{
-                                        margin: '25px 0px',
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                        alignItems: "center",
-                                    }}>
-                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/plus-light.svg' className='imageHeader' alt='not found' />
-                                    <img
-                                        src="https://uni-app.com/wp-content/uploads/2022/04/feather-pointed-light.svg"
-                                        className='imageHeader'
-                                        alt="not found"
-                                    />
-                                </div>
                                 <img src={img} alt="mobile image not found" className='mainImage' />
-
-                                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
-                                    onMouseEnter={handleMouseEnter}
-                                    onMouseLeave={handleMouseLeave} style={{
-                                        display: "flex",
-                                        justifyContent: "space-between",
-                                        alignItems: "center"
-                                    }}>
-                                    <img src='https://uni-app.com/wp-content/uploads/2022/04/book-open-light.svg' className='imageHeader' alt='not found' />
-                                    <img
-                                        src="https://uni-app.com/wp-content/uploads/2022/04/diamond-light.svg"
-                                        className='imageHeader'
-                                        alt="not found"
-                                    />
-                                </div>
-
                             </div>
                         </div>
                     </Container>

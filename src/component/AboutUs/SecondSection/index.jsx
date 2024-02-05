@@ -44,11 +44,7 @@ const SecondSection = () => {
                                     alignItems: "center"
                                 }}>
                                 <img src='https://uni-app.com/wp-content/uploads/2022/03/expand-light.svg' className='imageHeader' alt='not found' />
-                                {/* <img
-                                    src="https://uni-app.com/wp-content/uploads/2022/04/diamond-light.svg"
-                                    className='imageHeader'
-                                    alt="not found"
-                                /> */}
+                               
                             </div>
 
                         </div>
