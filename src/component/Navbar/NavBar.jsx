@@ -17,6 +17,12 @@ const Navbar = () => {
     const [flag, setFlag] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
 
+    const [isH1Visible, setIsH1Visible] = useState(false);
+
+    const handleToggleMenuSideMenu = () => {
+        setIsH1Visible(!isH1Visible);
+    };
+
 
     const handleMouseEnter = () => {
         setDropdownVisible(true);
@@ -80,7 +86,7 @@ const Navbar = () => {
                 <div style={{
                     background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/'
                         && currentPath !== '/study-destinations/' && currentPath !== '/about-us/' && currentPath !== '/bachelors-degrees/'
-                        && currentPath !== '/online-degrees/' && currentPath !== '/Afghanistan/' ) ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
+                        && currentPath !== '/online-degrees/' && currentPath !== '/Afghanistan/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
                     <Container maxWidth="lg">
                         <div style={overlayStyle} onClick={handleToggleMenu}></div>
@@ -106,11 +112,11 @@ const Navbar = () => {
                                         <div className='mainDropMenu'
                                         >
 
-                                            <p onClick={()=>{navigate('/study-medicine-in-europe/')}}>Study Medicine</p>
-                                            <p onClick={()=>{navigate('/study-destinations/')}}>Study Destinations</p>
-                                            <p onClick={()=>{navigate('/student-application-guide/')}}>Student Application Guide</p>
+                                            <p onClick={() => { navigate('/study-medicine-in-europe/') }}>Study Medicine</p>
+                                            <p onClick={() => { navigate('/study-destinations/') }}>Study Destinations</p>
+                                            <p onClick={() => { navigate('/student-application-guide/') }}>Student Application Guide</p>
                                             <p>Articles</p>
-                                            <p onClick={()=>{navigate('/about-us/') }}>About us</p>
+                                            <p onClick={() => { navigate('/about-us/') }}>About us</p>
                                         </div>
                                     )}
                                 </div>
@@ -151,10 +157,20 @@ const Navbar = () => {
                                 <Link to='/schools/' className='menuNavBarLink' onClick={handleToggleMenu}>School</Link>
                                 <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
 
-                                <div className='burgerSideMenu'>
+                                <div className='burgerSideMenu' onClick={handleToggleMenuSideMenu}>
                                     <MenuIcon onClick={handleToggleMenu} style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
                                     <ArrowDropDownIcon style={{ fontSize: '20px', color: '#fff', cursor: 'pointer' }} />
                                 </div>
+
+
+                                {isH1Visible && <> <div  className={isH1Visible ? 'visible' : 'hidden'}>
+                                    <p onClick={() => { navigate('/study-medicine-in-europe/') }}>Study Medicine</p>
+                                    <p onClick={() => { navigate('/study-destinations/') }}>Study Destinations</p>
+                                    <p onClick={() => { navigate('/student-application-guide/') }}>Student Application Guide</p>
+                                    <p>Articles</p>
+                                    <p onClick={() => { navigate('/about-us/') }}>About us</p>
+                                </div> </>}
+
                                 <div style={{ width: '100%', height: '0.5px', background: '#fff' }} />
 
 

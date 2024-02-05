@@ -161,6 +161,7 @@ a {
   padding: 15px 0px;
   justify-content: space-between;
   align-items: center;
+  cursor: pointer;
 }
 
 .smallMedia {
@@ -204,6 +205,20 @@ a {
 .dropMenu p:hover {
   color: #333;
   font-weight: 500;
+}
+
+.visible {
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+.visible p{
+  font-size: 14px;
+  color: #fff;
+}
+
+.hidden {
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 @media (max-width: 768px) {
   .burger {
