@@ -78,7 +78,6 @@
 .image-container {
   transition: 0.3s ease;
   overflow: hidden;
-  /* background-color: red; */
 }
 
 .TeamCard:hover .image-container {
@@ -89,7 +88,6 @@
 @media only screen and (max-width: 768px) {
   .card-container {
     flex-direction: column;
-    /* margin: 25px 0px; */
   }
   .TeamCard img {
     width: 100%;
@@ -98,7 +96,7 @@
     display: none;
   }
   .TeamCard:hover .image-container {
-    /* transform: none; */
+    transform: none;
   }
 }
 
