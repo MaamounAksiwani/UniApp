@@ -23,11 +23,11 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
     return (
         <div className='shareComCont'>
             <Container maxWidth="lg">
-                <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
+                {/* <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
                     <img src={image1} alt="image not found" />
-                </div>
+                </div> */}
                 <div className='sideMain'>
 
                     {!subTitle ? flag ?
@@ -41,11 +41,11 @@ const ShareCom = ({ flag, text, image1, image2, btnText, subTitle }) => {
                         </span>
                     </div>
                 </div>
-                <div className={` rightSide hover-text ${isHovered ? 'hovered' : ''}`}
+                {/* <div className={` rightSide hover-text ${isHovered ? 'hovered' : ''}`}
                     onMouseEnter={handleMouseEnter}
                     onMouseLeave={handleMouseLeave}>
                     <img src={image2} alt="image not found" />
-                </div>
+                </div> */}
             </Container >
         </div >
     );

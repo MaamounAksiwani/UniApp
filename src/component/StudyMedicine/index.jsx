@@ -7,6 +7,7 @@ import LicensedDoctor from './LicensedDoctor';
 import Country from './Country';
 import SecondSection from './SecondSection';
 import Expect from './Expect';
+import ShareCom from '../../component/ShareCom'
 const StudyMedicine = () => {
     return (
         <div style={{ paddingTop: '100px' }}>
@@ -16,6 +17,14 @@ const StudyMedicine = () => {
             <Country />
             <SecondSection />
             <Expect />
+            <ShareCom
+                mainTitle={`Study Medicine Not Sure?`}
+                text="Our Study Advisors Are There To Answer All Sorts Of Questions"
+                image1="https://uni-app.com/wp-content/uploads/2022/04/diploma-light.svg"
+                image2="https://uni-app.com/wp-content/uploads/2022/04/graduation-cap-light.svg"
+                btnText="Ask Your Question"
+                flag={true}
+            />
         </div>
 
     );

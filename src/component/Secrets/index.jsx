@@ -1,6 +1,16 @@
 import React from 'react';
 import './index.css';
 import { Container } from '@mui/material';
+import Image1 from '../../../src/until/Image/PNG/Secrets1.jpg'
+
+import Image2 from '../../../src/until/Image/PNG/Secrets2.webp'
+
+import Image3 from '../../../src/until/Image/PNG/Secrets3.jpg'
+
+import Image4 from '../../../src/until/Image/PNG/Secrets4.webp'
+
+import Image5 from '../../../src/until/Image/PNG/Secrets5.webp'
+
 
 const Secrets = () => {
   return (
@@ -9,18 +19,18 @@ const Secrets = () => {
         <h1 className='headerName'>Secrets of <span className='title'> Studying Abroad </span>  Revealed <br /> in Articles</h1>
         <div className='flex-Card'>
           <div className='ContainerCard'>
-            <img src='https://uni-app.com/wp-content/uploads/2023/03/pexels-vidal-balielo-jr-1250655-scaled-480x356.jpg' alt='image not found' />
+            <img src={Image1} alt='image not found' />
             <div className='card-text'>
               <p>MEDICINE</p>
               <p>How to Study Medicine in Germany in English? Breaking the Language Barrier</p>
             </div>
           </div>
           <div className='ContainerCard'>
-            <img src='https://uni-app.com/wp-content/uploads/2022/04/Untitled-_500-%C3%97-680-px_-_2_.webp' alt='the image not found' className='middleImage' />
+            <img src={Image2} alt='the image not found' className='middleImage' />
           </div>
 
           <div className='ContainerCard'>
-            <img src='https://uni-app.com/wp-content/uploads/2023/03/pexels-zakir-rushanly-11661531-scaled-480x356.jpg' alt='image not found' />
+            <img src={Image3} alt='image not found' />
             <div className='card-text'>
               <p>MEDICINE</p>
               <p>How to Study Medicine in Germany in English? Breaking the Language Barrier</p>
@@ -30,7 +40,7 @@ const Secrets = () => {
 
         <div className='flex-Card'>
           <div className='ContainerCard'>
-            <img src='https://uni-app.com/wp-content/uploads/2022/04/Untitled-_500-%C3%97-680-px_-_1_-480x356.webp' alt='image not found' />
+            <img src={Image4} alt='image not found' />
             <div className='card-text'>
               <p>MEDICINE</p>
               <p>How to Study Medicine in Germany in English? Breaking the Language Barrier</p>
@@ -40,7 +50,7 @@ const Secrets = () => {
           </div>
 
           <div className='ContainerCard'>
-            <img src='https://uni-app.com/wp-content/uploads/2022/04/Untitled-_500-%C3%97-680-px_-480x356.webp' alt='image not found' />
+            <img src={Image5} alt='image not found' />
             <div className='card-text'>
               <p>MEDICINE</p>
               <p>How to Study Medicine in Germany in English? Breaking the Language Barrier</p>
@@ -50,9 +60,9 @@ const Secrets = () => {
 
         <div className='more-article'>
 
-         <span>
-          <a> More article</a>
-         </span>
+          <span>
+            <a> More article</a>
+          </span>
 
         </div>
 
