@@ -57,7 +57,7 @@ const Platform = () => {
                             <div>
                                 <div className='link'>
                                     <span>Start here </span>
-                                    <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' , marginTop:'2px' }} />
+                                    <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' }} />
                                 </div>
                             </div>
                         </div>

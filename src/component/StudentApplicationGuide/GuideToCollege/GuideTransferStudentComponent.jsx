@@ -143,7 +143,7 @@ const GuideTransferStudentComponent = () => {
                         const isOpen = openState === item.id;
                         return (
                             <div
-                                className={`collapse-box childBox ${isOpen ? 'active' : ''}`}
+                                className={`collapse-box ${isOpen ? 'active' : ''}`}
                                 key={item.id}
                             >
                                 <div
@@ -184,7 +184,7 @@ const GuideTransferStudentComponent = () => {
                         const isOpen = openState === item.id;
                         return (
                             <div
-                                className={`collapse-box childBox ${isOpen ? 'active' : ''}`}
+                                className={`collapse-box ${isOpen ? 'active' : ''}`}
                                 key={item.id}
                             >
                                 <div
@@ -224,7 +224,7 @@ const GuideTransferStudentComponent = () => {
                         const isOpen = openState === item.id;
                         return (
                             <div
-                                className={`collapse-box childBox ${isOpen ? 'active' : ''}`}
+                                className={`collapse-box ${isOpen ? 'active' : ''}`}
                                 key={item.id}
                             >
                                 <div
@@ -263,7 +263,7 @@ const GuideTransferStudentComponent = () => {
                         const isOpen = openState === item.id;
                         return (
                             <div
-                                className={`collapse-box childBox ${isOpen ? 'active' : ''}`}
+                                className={`collapse-box ${isOpen ? 'active' : ''}`}
                                 key={item.id}
                             >
                                 <div
@@ -302,7 +302,7 @@ const GuideTransferStudentComponent = () => {
                         const isOpen = openState === item.id;
                         return (
                             <div
-                                className={`collapse-box childBox ${isOpen ? 'active' : ''}`}
+                                className={`collapse-box ${isOpen ? 'active' : ''}`}
                                 key={item.id}
                             >
                                 <div

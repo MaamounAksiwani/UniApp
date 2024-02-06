@@ -99,9 +99,9 @@ const Navbar = () => {
 
                             <div className={`pages`}>
                                 <span style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} onClick={() => { window.location.href = 'https://uni-app.com/search' }}>Find Programs </span>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to='/students/'>Students</Link>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to="/study-agents/">Study Agents</Link>
-                                <Link className='navBarLink' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to='/schools/' >School</Link>
+                                <Link className={currentPath === '/students/' ? 'activeNav navBarLink ' : 'navBarLink'} style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969'  }} to='/students/'>Students</Link>
+                                <Link className={currentPath === '/study-agents/' ? 'activeNav navBarLink ' : 'navBarLink'} style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to="/study-agents/">Study Agents</Link>
+                                <Link className={currentPath === '/schools/' ? 'activeNav navBarLink ' : 'navBarLink'} style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} to='/schools/' >School</Link>
                                 <div
                                     onMouseEnter={handleMouseEnter}
                                     onMouseLeave={handleMouseLeave}

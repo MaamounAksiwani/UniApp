@@ -132,14 +132,13 @@ const AllCountries = () => {
                 </Container>
             </div>
 
-
             <Container maxWidth="lg">
                 <div className='city'>
                     {countries.map((ele) => {
                         return (
                             <div onClick={() => { handelPage(ele) }}>
                                 <p>{ele}  </p>
-                                <ArrowForwardIosIcon style={{ fontSize: '15px', marginLeft: '5px' }} />
+                                <ArrowForwardIosIcon style={{ color:'#696969' , fontSize: '15px', marginLeft: '5px' }} />
                             </div>
                         )
                     })}

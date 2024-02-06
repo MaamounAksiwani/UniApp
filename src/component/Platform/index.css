@@ -45,9 +45,9 @@
 
 .link {
   margin: 25px 0px;
+  transition: 0.3s ease;
   display: flex;
   justify-items: center;
-  transition: 0.3s ease;
   justify-content: center;
 }
 

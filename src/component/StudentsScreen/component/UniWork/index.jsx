@@ -19,7 +19,9 @@ const UniWork = () => {
                         <div>
                             <div className='link'>
                                 <a style={{fontWeight:'bold'}}> Create Account </a>
-                                <ArrowForwardIcon />
+                                <ArrowForwardIcon  style={{ fontSize: '18px', marginLeft: '10px' }} />
+
+                                {/* IN EASY STEPS */}
                             </div>
                         </div>
                     </div>
@@ -28,7 +30,7 @@ const UniWork = () => {
                         <h2> Explore Study Programs</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>                        <div className='link'>
                             <a style={{fontWeight:'bold'}}>Explore Program </a>
-                            <ArrowForwardIcon />
+                            <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' }}  />
                         </div>
                     </div>
                     <div className='cardWork'>
@@ -36,7 +38,7 @@ const UniWork = () => {
                         <h2>Apply to School</h2>
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has</p>                        <div className='link'>
                             <a style={{fontWeight:'bold'}}>Get Started </a>
-                            <ArrowForwardIcon />
+                            <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' }}  />
                         </div>
                     </div>
                 </div>

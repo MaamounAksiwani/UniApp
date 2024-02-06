@@ -61,7 +61,7 @@ const PerfectDegreeSection = () => {
                                 <div>
                                     <div className='link'  onClick={() => { GoToPage(ele.title) }}>
                                         <span>{ele.btnTitle} </span>
-                                        <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px', marginTop: '2px' }} />
+                                        <ArrowForwardIcon style={{ fontSize: '18px', marginLeft: '10px' }} />
                                     </div>
                                 </div>
                             </div>

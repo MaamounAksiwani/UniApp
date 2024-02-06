@@ -1,35 +1,30 @@
 import React, { useEffect, useState } from 'react';
 import './index.css';
-import { useNavigate } from 'react-router';
+import { useNavigate , useLocation } from 'react-router';
 const Tabs = () => {
+    const location = useLocation();
     const navigate = useNavigate();
-    const [activeTab, setActiveTab] = useState(null);
+    const currentPath = location.pathname;
 
-    const handleTabClick = (tabName) => {
-        setActiveTab(tabName);
-        navigate(`/student-application-guide/${tabName}`);
-    };
-
-    useEffect(() => {
-        setActiveTab('');
-    }, [])
+    const isActive = (path) => currentPath === path ? 'active' : '';
     return (
         <>
             <div
-                onClick={() => handleTabClick('')}
-                className={activeTab === '' ? 'activeTab' : ''}
+               onClick={() => navigate('/student-application-guide/')}
+               className={isActive('/student-application-guide/')}
             >
                 <h4>Students Application Guide</h4>
             </div>
             <div
-                onClick={() => handleTabClick('first-time-students')}
-                className={activeTab === 'first-time-students' ? 'activeTab' : ''}
+      
+            onClick={() => navigate('/student-application-guide/first-time-students/')}
+            className={isActive('/student-application-guide/first-time-students/')}
             >
                 <h4>First-Time Students</h4>
             </div>
             <div
-                onClick={() => handleTabClick('transfer-student')}
-                className={activeTab === 'transfer-student' ? 'activeTab' : ''}
+            onClick={() => navigate('/student-application-guide/transfer-student/')}
+            className={isActive('/student-application-guide/transfer-student/')}
             >
                 <h4>Transfer Students</h4>
             </div>

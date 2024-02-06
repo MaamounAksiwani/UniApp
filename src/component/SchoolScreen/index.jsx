@@ -9,7 +9,7 @@ import ShareCom from '../ShareCom';
 
 const SchoolScreen = () => {
     return (
-      <div style={{padding:'100px 0px' }}> 
+      <> 
         <Header/>
         <Studentsworldwide/>
         <CarouselCard/>
@@ -22,7 +22,7 @@ const SchoolScreen = () => {
         btnText="Partner with us"
         flag={true}
       />
-        </div>
+        </>
     );
 }
 

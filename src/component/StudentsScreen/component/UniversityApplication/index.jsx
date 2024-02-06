@@ -14,13 +14,13 @@ const UniversityApplication = () => {
     };
     return (
         <>
-            <div style={{ backgroundColor: '#0077A7ad', padding: '36px' }}>
+            <div style={{ backgroundColor: '#0077A7ad',padding: '75px 0px' }}>
                 <Container maxWidth="lg">
-                    <div className={`rightSide hover-text ${isHovered ? 'hovered' : ''}`}
+                    {/* <div className={`rightSide hover-text ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
                         <img src='https://uni-app.com/wp-content/uploads/2022/04/signs-post-light.svg' alt="image not found" className='imgIcon' />
-                    </div>
+                    </div> */}
                     <div className='sideMain'>
 
                         <h2 style={{ color: '#fff' }}> You can be your own guiding star with our help!</h2>
@@ -32,11 +32,11 @@ const UniversityApplication = () => {
                             <Link className='link' to='/student-application-guide/' >Student Application Guide</Link>
                         </div>
                     </div>
-                    <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
+                    {/* <div className={`hover-text ${isHovered ? 'hovered' : ''}`}
                         onMouseEnter={handleMouseEnter}
                         onMouseLeave={handleMouseLeave}>
                         <img src='https://uni-app.com/wp-content/uploads/2022/03/envelope-open-text-light-2.svg' alt="image not found" className='imgIcon' />
-                    </div>
+                    </div> */}
                 </Container>
             </div>
         </>
