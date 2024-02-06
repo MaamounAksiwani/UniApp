@@ -6,7 +6,9 @@
   background-color: #f8f8f8;
   border-radius: 0% 0% 50% 50% / 0% 0% 50% 50%;
 }
-.countryBox {
+.countryBox img {
+  width: 120px;
+  height: 120px;
 }
 .countryTitle {
   text-align: center;
@@ -85,13 +87,10 @@
   color: #696969;
 }
 .studentsPage {
-  /* padding: 100px 0px 0px 0px; */
-  /* background-color: red !important; */
   background-color: #f8f8f8;
 }
 .headerMedicine{
   padding: 100px 0px 0px 0px;
-  /* background-color: red ; */
 }
 .ExpectBody {
   background-color: #f8f8f8;

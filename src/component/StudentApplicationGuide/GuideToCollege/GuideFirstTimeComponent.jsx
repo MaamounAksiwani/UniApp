@@ -151,7 +151,6 @@ const GuideFirstTimeComponent = () => {
                 </div>
             </div>
 
-
             <div className='guideFirstTimeBox'>
                 <h1>  Prepare Your <span className='title'>University Application</span></h1>
                 <div>
@@ -307,7 +306,6 @@ const GuideFirstTimeComponent = () => {
 
                 </div>
             </div>
-
 
             <div className='guideFirstTimeBox'>
                 <h1>  Review And  <span className='title'> Submit </span> Your Application </h1>
