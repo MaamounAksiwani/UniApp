@@ -23,8 +23,10 @@ import StudyMedicineInGermany from "./component/StudyMedicineInGermany";
 import GuideFirstTimeStudents from "./component/StudentApplicationGuide/GuideToCollege/GuideFirstTimeStudents";
 import GuideTransferStudent from "./component/StudentApplicationGuide/GuideToCollege/GuideTransferStudent";
 import Afghanistan from "./component/StudyInCountries/Afghanistan";
-import StudyMedicine from "./component/StudyMedicine";
-
+import StudyMedicine from "./component/StudyMedicine"
+import PrivacyAndTerms from "./component/PrivacyAndTerms";
+import Terms from "./component/PrivacyAndTerms/Terms";
+import Impressum from "./component/PrivacyAndTerms/Impressum";
 const App = () => {
   return (
     <>
@@ -53,6 +55,9 @@ const App = () => {
           <Route  path="/student-application-guide/transfer-student/" element={<GuideTransferStudent />} />
           <Route  path="/Afghanistan/" element={<Afghanistan/>} />
           <Route  path="/study-medicine-in-europe/" element={<StudyMedicine/>} />
+          <Route path="/privacy/" element={<PrivacyAndTerms/>}/>
+          <Route path="/impressum/" element={<Impressum/>}/>
+          <Route path="/terms/" element={<Terms/>}/>
         </Routes>
         <ScrollToTop/>
         <Footer />

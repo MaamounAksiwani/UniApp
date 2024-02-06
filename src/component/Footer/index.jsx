@@ -37,8 +37,8 @@ const Footer = () => {
                                 <li onClick={() => navigate('/contact-us/')}>Contact us</li>
                             </ul>
                             <ul>
-                                <li>Students</li>
-                                <li>Recruitment Partners</li>
+                                <li onClick={()=>{navigate('/students/')}}>Students</li>
+                                <li onClick={()=>{navigate('/study-agents/')}}>Recruitment Partners</li>
                                 <img onClick={() => window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Finsurance%2Fbarmer'} src={Logo} alt='logo not found' />
                             </ul>
                         </div>
@@ -48,9 +48,9 @@ const Footer = () => {
                         <h4>Information</h4>
                         <div>
                             <ul>
-                                <li onClick={() => navigate('/about-us/')}>About us</li>
-                                <li>Universities</li>
-                                <li onClick={() => navigate('/contact-us/')}>Contact us</li>
+                                <li onClick={() => navigate('/privacy/')}>Privacy</li>
+                                <li onClick={() => navigate('/impressum/')} >Impressum</li>
+                                <li onClick={() => navigate('/terms/')}>Terms</li>
                             </ul>
 
                             <div>

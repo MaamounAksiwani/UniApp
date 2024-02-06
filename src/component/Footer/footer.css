@@ -66,12 +66,16 @@
 
 .Footer ul li {
   color: #ABABAB;
-  font-size: 1rem;
-  margin-bottom: 20px;
+  font-size: 14px;
+  /* font-size: 1rem; */
+  margin-bottom: 15px;
   font-weight: 300;
   text-transform: capitalize;
   cursor: pointer;
-  transition: color 0.3s ease;
+  transition: 0.3s ease;
+}
+.Footer ul li:hover{
+  color: #76d4f9;
 }
 .socialMedia{
   display: flex;
@@ -85,7 +89,8 @@
   justify-content: center;
   align-items: center;
   margin-top: 50px;
-  font-size: 16px;
+  font-size: 14px;
+
 }
 @media (max-width: 767px) {
   .footerContact {

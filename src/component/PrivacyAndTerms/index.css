@@ -1,0 +1,15 @@
+.active{
+    background-color: #76d4f9;
+}
+
+.active h4{
+    color: #fff 
+}
+.right-side .Impressum h2{
+    font-weight: 600;
+}
+
+.right-side .Impressum p{
+    color: #696969;
+    font-size: 14px;
+}

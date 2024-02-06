@@ -1,20 +1,18 @@
 import React from 'react';
 import './index.css';
-import { Container } from '@mui/material'
-import Tabs from '../GuideToCollege/Tabs'
-import GuideFirstTimeComponent from './GuideFirstTimeComponent';
-
-const GuideFirstTimeStudents = () => {
+import { Container } from '@mui/material';
+import Pages from './Pages';
+const PrivacyAndTerms = () => {
     return (
-        <div style={{padding:'50px 0px'}}>
+        <div style={{ padding: '50px 0px' }}>
             <Container maxWidth="lg">
                 <div className='mainBox'>
                     <div className='left-side'>
-                        <Tabs/>
+                        <Pages />
                     </div>
                     <div className='right-side' >
                         <div>
-                            <GuideFirstTimeComponent/>
+                            PrivacyAndTerms
                         </div>
                     </div>
                 </div>
@@ -22,4 +20,4 @@ const GuideFirstTimeStudents = () => {
         </div>
     );
 }
-export default GuideFirstTimeStudents;
+export default PrivacyAndTerms;
