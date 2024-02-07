@@ -3,7 +3,7 @@ import './index.css';
 import { Container } from '@mui/material';
 import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
 import { useNavigate } from 'react-router';
-import germany  from '../../../src/until/Image/PNG/UDRUS-POST-18-1.svg'
+import germany from '../../../src/until/Image/PNG/UDRUS-POST-18-1.svg'
 import france from '../../../src/until/Image/PNG/FRANCE-19.svg';
 import USA from '../../../src/until/Image/PNG/USA-20.svg'
 import UK from '../../../src/until/Image/PNG/UK-21.svg'
@@ -23,7 +23,7 @@ const StudyDestinations = () => {
             cityName: "France",
             title: "France includes public universities for international students. Also, it has 27 French universities that are ranked among the top 500 universities",
             url: "path",
-            image:france
+            image: france
         }
         ,
         {
@@ -44,15 +44,18 @@ const StudyDestinations = () => {
 
 
     const handleClick = (path) => {
-        if(path === 'Germany'){
+        if (path === 'Germany') {
             navigate('/study-destinations/study-in-germany/');
+        } else if (path == 'France') {
+            navigate('/study-destinations/study-in-france/')
+
         }
-      };
+    };
 
 
-      const GoPageStudyDestinations = ()=>{
+    const GoPageStudyDestinations = () => {
         navigate('/study-destinations/');
-      }
+    }
 
     return (
         <div style={{ padding: '50px 0px' }}>
@@ -67,16 +70,16 @@ const StudyDestinations = () => {
                                     <img src={item.image} alt={`Image ${index + 1}`} />
                                     <h2>{item.cityName}</h2>
                                     <p>{item.title}</p>
-                                        <div className='link' onClick={()=>{handleClick(item.cityName)}}>
-                                            <a className='link-href'>Discover </a>
-                                            <ArrowForwardIcon className='icon-link' />
-                                        </div>
+                                    <div className='link' onClick={() => { handleClick(item.cityName) }}>
+                                        <a className='link-href'>Discover </a>
+                                        <ArrowForwardIcon className='icon-link' />
+                                    </div>
                                 </div>
                             ))}
                         </div>
                     </div>
                     <div className='btn'>
-                        <span onClick={GoPageStudyDestinations}> 
+                        <span onClick={GoPageStudyDestinations}>
                             View All Study Destinations
                         </span>
                     </div>

@@ -27,6 +27,8 @@ import StudyMedicine from "./component/StudyMedicine"
 import PrivacyAndTerms from "./component/PrivacyAndTerms";
 import Terms from "./component/PrivacyAndTerms/Terms";
 import Impressum from "./component/PrivacyAndTerms/Impressum";
+import France from "./component/StudyInCountries/France";
+
 const App = () => {
   return (
     <>
@@ -58,6 +60,7 @@ const App = () => {
           <Route path="/privacy/" element={<PrivacyAndTerms/>}/>
           <Route path="/impressum/" element={<Impressum/>}/>
           <Route path="/terms/" element={<Terms/>}/>
+          <Route path="/study-destinations/study-in-france/" element={<France/>}/>
         </Routes>
         <ScrollToTop/>
         <Footer />
