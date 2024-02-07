@@ -48,7 +48,8 @@ const StudyDestinations = () => {
             navigate('/study-destinations/study-in-germany/');
         } else if (path == 'France') {
             navigate('/study-destinations/study-in-france/')
-
+        }else if (path == 'USA'){
+            navigate('/study-destinations/study-in-usa/');
         }
     };
 

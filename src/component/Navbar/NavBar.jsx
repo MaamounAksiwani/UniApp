@@ -85,7 +85,7 @@ const Navbar = () => {
         <body className='bodyNavBar'>
             <div style={navbarStyle}>
                 <div style={{
-                    background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/' && currentPath !== '/study-destinations/study-in-france/'
+                    background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/' && currentPath !== '/study-destinations/study-in-france/' && currentPath  !== '/study-destinations/study-in-usa/'
                         && currentPath !== '/study-destinations/' && currentPath !== '/about-us/' && currentPath !== '/bachelors-degrees/'
                         && currentPath !== '/online-degrees/' && currentPath !== '/Afghanistan/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
