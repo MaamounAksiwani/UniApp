@@ -12,8 +12,8 @@ const Germany = () => {
     return (
         <>
             <div className="parentTheDiv">
-                <div className="backgroundImageCountry"></div>
-                <div className="CountryOverlay"></div>
+                {/* <div className="backgroundImageCountry"></div> */}
+                {/* <div className="CountryOverlay"></div> */}
                 <Container maxWidth="lg">
                 <div className="CountryText">
                     <h1>Why study a Bachelor or Master in Germany</h1>

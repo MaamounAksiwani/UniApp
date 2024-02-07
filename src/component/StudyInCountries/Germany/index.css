@@ -1,7 +1,8 @@
 .parentTheDiv {
   position: relative;
+  background: transparent linear-gradient(180deg, #76d4f9 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
   height: 55vh;
-  border-bottom: 8px solid #378fb4;
+  /* border-bottom: 3px solid #76d4f9; */
 }
 
 .backgroundImageCountry {
@@ -30,16 +31,17 @@
 }
 .CountryText h1 {
   margin-bottom: 16px;
-  color: #ebebeb;
+  /* color: #76d4f9; */
   font-size: 48px;
-  font-weight: 600;
+  color: black;
+  font-weight: 400;
 }
 
 .CountryText p {
   margin-bottom: 8px;
   font-size: 16px;
-  font-weight: 900;
-  color: #d8d8d8;
+  font-weight: 500;
+  color: black;
 }
 .sssss {
   display: flex;
