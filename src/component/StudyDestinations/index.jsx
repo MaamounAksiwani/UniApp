@@ -46,10 +46,12 @@ const StudyDestinations = () => {
     const handleClick = (path) => {
         if (path === 'Germany') {
             navigate('/study-destinations/study-in-germany/');
-        } else if (path == 'France') {
+        } else if (path === 'France') {
             navigate('/study-destinations/study-in-france/')
-        }else if (path == 'USA'){
+        }else if (path === 'USA'){
             navigate('/study-destinations/study-in-usa/');
+        }else{
+            navigate('/study-destinations/study-in-united-kingdom/');
         }
     };
 
