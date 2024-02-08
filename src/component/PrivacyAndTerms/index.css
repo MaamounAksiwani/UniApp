@@ -13,3 +13,19 @@
     color: #696969;
     font-size: 14px;
 }
+
+.ContainerTerms{
+    /* padding: 10px 0px; */
+    /* background-color: red; */
+}
+
+.ContainerTerms p{
+    /* color: red; */
+    line-height: 1.8;
+    color: #696969;
+}
+.ContainerTerms ul li{
+    /* color: red; */
+    line-height: 1.8;
+    color: #696969;
+}
