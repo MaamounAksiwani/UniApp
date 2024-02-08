@@ -14,16 +14,14 @@ const Navbar = () => {
     const currentPath = location.pathname;
     const [isOpen, setIsOpen] = useState(false);
     const [isDropdownVisible, setDropdownVisible] = useState(false);
-
     const [flag, setFlag] = useState(false);
     const [isScrolled, setIsScrolled] = useState(false);
-
     const [isH1Visible, setIsH1Visible] = useState(false);
+
 
     const handleToggleMenuSideMenu = () => {
         setIsH1Visible(!isH1Visible);
     };
-
 
     const handleMouseEnter = () => {
         setDropdownVisible(true);
@@ -32,7 +30,6 @@ const Navbar = () => {
     const handleMouseLeave = () => {
         setDropdownVisible(false);
     };
-
 
     const handleToggleMenu = () => {
         setIsOpen(!isOpen);
@@ -85,7 +82,7 @@ const Navbar = () => {
         <body className='bodyNavBar'>
             <div style={navbarStyle}>
                 <div style={{
-                    background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/' && currentPath !== '/study-destinations/study-in-france/' && currentPath !== '/study-destinations/study-in-united-kingdom/' && currentPath  !== '/study-destinations/study-in-usa/'
+                    background: !isScrolled && (currentPath !== '/study-destinations/study-in-germany/' && currentPath !== '/study-medicine-in-europe/study-medicine-in-germany/' && currentPath !== '/study-destinations/study-in-france/' && currentPath !== '/study-destinations/study-in-united-kingdom/' && currentPath  !== '/study-destinations/study-in-usa/'
                         && currentPath !== '/study-destinations/' && currentPath !== '/about-us/' && currentPath !== '/bachelors-degrees/'
                         && currentPath !== '/online-degrees/' && currentPath !== '/Afghanistan/') ? 'transparent' : '#FFF', transition: 'background 0.3s ease'
                 }}>
@@ -122,8 +119,8 @@ const Navbar = () => {
                                     )}
                                 </div>
 
-                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#696969' }} >Login </span>
-                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath == '/' ? '#fff' : '#696969' }} >Create Account </span>
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-in?redirectURL=%2Fhome' }} className='btn' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} >Login </span>
+                                <span onClick={() => { window.location.href = 'https://my.uni-app.com/sign-up' }} className='btn' style={{ color: !isScrolled && currentPath === '/' ? '#fff' : '#696969' }} >Create Account </span>
                             </div>
                         </nav>
 
@@ -137,7 +134,6 @@ const Navbar = () => {
                             </div>
                         </div>
 
-                        {/* Sidebar */}
                         <div style={sidebarStyle}>
                             <div className='sideBar'>
 

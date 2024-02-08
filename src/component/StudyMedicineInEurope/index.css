@@ -1,0 +1,28 @@
+.DestinationsAbroad{
+    text-align: center;
+    padding: 50px 0px;
+   
+}
+.DestinationsAbroad img{
+    width: 250px;
+    border-radius: 25px;
+}
+.DestinationsAbroad h2{
+    color: #1ea7dd;
+    font-weight: 700;
+
+}
+.DestinationsAbroad button{
+    border: none;
+    background-color: white;
+    border: 1px solid #1ea7dd;
+    padding: 10px 20px;
+    cursor: pointer;
+    color: #000;
+    border-radius: 50px;
+}
+@media only screen and (max-width: 768px) {
+    .DestinationsAbroad img{
+        width: 100%;
+    }
+  }

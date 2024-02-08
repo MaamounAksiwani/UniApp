@@ -9,10 +9,14 @@ import img4 from '../../until/Image/c-31.svg';
 import img5 from '../../until/Image/c-32.svg';
 import img6 from '../../until/Image/c-33.svg';
 import img7 from '../../until/Image/c-34.svg';
-import img8 from '../../until/Image/c-35.svg';
+import img8 from '../../until/Image/c-35.svg'; 
+import { useNavigate } from 'react-router';
+
 
 
 const Country = () => {
+    const navigate = useNavigate();
+
 
     const data = [
         {
@@ -35,7 +39,7 @@ const Country = () => {
             cityName: "Latvia",
             title: "Studying medicine in Latvia? You have made the right decision. The popular universities for medicine in Latvia made their mark in history",
             url: "path",
-            image:img2
+            image: img2
         },
         {
             id: 4,
@@ -73,6 +77,12 @@ const Country = () => {
             image: img5
         }
     ]
+
+    const handelPage = (name) => {
+        if (name === 'Germany') {
+            navigate('/study-medicine-in-europe/study-medicine-in-germany/')
+        }
+    }
     return (
         <div style={{ padding: '50px 0px' }}>
             <Container maxWidth='lg'>
@@ -87,7 +97,7 @@ const Country = () => {
                     <div className='cardBox'>
                         <div className='gridContainer'>
                             {data.map((item, index) => (
-                                <div key={index} className='countryCard'>
+                                <div key={index} className='countryCard' onClick={() => handelPage(item.cityName)}>
                                     <img src={item.image} alt={`Image ${index + 1}`} />
                                     <h2>{item.cityName}</h2>
                                     <p>{item.title}</p>

@@ -30,7 +30,7 @@ import Impressum from "./component/PrivacyAndTerms/Impressum";
 import France from "./component/StudyInCountries/France";
 import USA from './component/StudyInCountries/USA'
 import UnitedKingdom from "./component/StudyInCountries/UnitedKingdom";
-
+import Germany from './component/StudyMedicineInEurope/Germany'
 
 const App = () => {
   return (
@@ -66,6 +66,8 @@ const App = () => {
           <Route path="/study-destinations/study-in-france/" element={<France/>}/>
           <Route path="/study-destinations/study-in-usa/" element={<USA/>}/>
           <Route path="/study-destinations/study-in-united-kingdom/" element={<UnitedKingdom/>}/>
+
+          <Route path='/study-medicine-in-europe/study-medicine-in-germany/' element={<Germany/>} />
 
           {/* /study-destinations/study-in-united-kingdom/ */}
         </Routes>
