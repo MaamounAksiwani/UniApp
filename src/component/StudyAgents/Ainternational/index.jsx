@@ -4,6 +4,7 @@ import { Container } from '@mui/material';
 import Collapse from '@mui/material/Collapse';
 import AddIcon from '@mui/icons-material/Add';
 import RemoveIcon from '@mui/icons-material/Remove';
+import img from '../../../until/Image/PNG/uniapp-laptop-dashboard.png'
 const Ainternational = () => {
     const [openStates, setOpenStates] = useState([false, false, false]); // Initial state for each collapse box
 
@@ -42,7 +43,7 @@ const Ainternational = () => {
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>
                             <div>
-                                <img src="https://uni-app.com/wp-content/uploads/2022/02/uniapp-laptop-dashboard.png" alt="mobile image not found" style={{ width: "100%", height: "100%" }} />
+                                  <img src={img} alt="mobile image not found" style={{ width: "100%", height: "100%" }} />
                             </div>
                             <div>
                                 <p style={{ fontWeight: '400' , color:"#696969" }}>SCALE YOUR BUSINESS</p>

@@ -6,6 +6,8 @@ import LanguageTwoToneIcon from '@mui/icons-material/LanguageTwoTone';
 import PortraitTwoToneIcon from '@mui/icons-material/PortraitTwoTone';
 import GroupAddTwoToneIcon from '@mui/icons-material/GroupAddTwoTone';
 
+import img from '../../../until/Image/PNG/uniapp-laptop-dashboard.png'
+
 const AllPlatForm = () => {
     return (
         <>
@@ -54,7 +56,7 @@ const AllPlatForm = () => {
 
                         <div className='right-side'>
 
-                            <img src="https://uni-app.com/wp-content/uploads/2022/02/uniapp-laptop-dashboard.png" alt="image not found" />
+                            <img src={img} alt="image not found" />
                         </div>
                     </div>
                 </Container>

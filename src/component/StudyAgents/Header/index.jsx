@@ -65,7 +65,7 @@ const Header = () => {
                                 <div className='btnStyle'>
                                     <span>
                                         {/* <a>HELLo</a> */}
-                                        <Link to='/contact-us/'> Partner With Us</Link>
+                                        <Link className='btnContact' to='/contact-us/'> Partner With Us</Link>
                                     </span>
                                 </div>
                             </div>

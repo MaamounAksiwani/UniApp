@@ -2,7 +2,9 @@
     color: #696969;
 }
 
-
+.btnContact{
+    color: #fff !important;
+}
 
 @media only screen and (max-width: 768px) {
    .Container-studentsPage .count div h1{

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './index.css';
+import img from '../../../../until/Image/PNG/coverstudents.jpg'
 import { Container } from '@mui/material';
 const Header = () => {
     return (
@@ -8,7 +9,7 @@ const Header = () => {
                 <div className='Container-studentsPage'>
                     <Container maxWidth="lg">
                         <div className='studentsPage-content'>
-                            <div>
+                            <div style={{padding:'50px 0px 100px 0px'}}>
                                 <h1> <span className='title'>Study</span> in Europe <br /> and Worldwide</h1>
                                 <p>Apply for a Masters's degree or a bachelor's degree and discover schools, get 1-on-1
                                     support from our study agents to start your dream at the best Universities, and easily submit your applications. Uni-App guides you!.</p>
@@ -20,7 +21,7 @@ const Header = () => {
                             </div>
                             <div>
 
-                                <img src="https://uni-app.com/wp-content/uploads/2022/03/uniapp_students.jpg" alt="mobile image not found" className='mainImage' />
+                                <img src={img} alt="mobile image not found" className='mainImage' />
 
 
 
